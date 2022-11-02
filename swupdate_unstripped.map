@@ -1,0 +1,3578 @@
+Archive member included to satisfy reference by file (symbol)
+
+corelib/lib.a(downloader.o)   core/built-in.o (download_print_help)
+corelib/lib.a(lua_interface.o)
+                              core/built-in.o (lua_handlers_init)
+corelib/lib.a(mtd-interface.o)
+                              handlers/built-in.o (flash_erase_sector)
+corelib/lib.a(parsing_library_libconfig.o)
+                              core/built-in.o (get_child_libconfig)
+corelib/lib.a(parsing_library_libjson.o)
+                              core/built-in.o (get_child_json)
+corelib/lib.a(swupdate_settings.o)
+                              core/built-in.o (read_module_settings)
+corelib/lib.a(channel_curl.o)
+                              corelib/lib.a(downloader.o) (channel_new)
+mongoose/lib.a(mongoose_interface.o)
+                              core/built-in.o (mongoose_print_help)
+mongoose/lib.a(mongoose_multipart.o)
+                              mongoose/lib.a(mongoose_interface.o) (multipart_upload_handler)
+mongoose/lib.a(mongoose.o)    mongoose/lib.a(mongoose_multipart.o) (mg_call)
+parser/lib.a(parse_external.o)
+                              core/built-in.o (parse_external)
+parser/lib.a(parser.o)        core/built-in.o (parse_cfg)
+/usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libubi.a(libubi.o)
+                              corelib/lib.a(mtd-interface.o) (libubi_open)
+/usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libmtd.a(libmtd.o)
+                              corelib/lib.a(mtd-interface.o) (libmtd_open)
+/usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libmtd.a(libmtd_legacy.o)
+                              /usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libmtd.a(libmtd.o) (legacy_procfs_is_supported)
+/usr/lib/aarch64-linux-gnu/libc_nonshared.a(elf-init.oS)
+                              /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o (__libc_csu_init)
+/usr/lib/aarch64-linux-gnu/libc_nonshared.a(atexit.oS)
+                              core/built-in.o (atexit)
+/usr/lib/aarch64-linux-gnu/libc_nonshared.a(stat.oS)
+                              core/built-in.o (stat)
+/usr/lib/aarch64-linux-gnu/libc_nonshared.a(fstat.oS)
+                              core/built-in.o (fstat)
+
+As-needed library included to satisfy reference by file (symbol)
+
+libpthread.so.0               core/built-in.o (write@@GLIBC_2.17)
+liblua5.3.so.0                corelib/lib.a(lua_interface.o) (lua_getfield@@LUA_5.3)
+libcurl.so.4                  corelib/lib.a(channel_curl.o) (curl_easy_cleanup@@CURL_OPENSSL_4)
+libconfig.so.9                corelib/lib.a(parsing_library_libconfig.o) (config_setting_get_string)
+libarchive.so.13              handlers/built-in.o (archive_write_disk_set_options)
+libjson-c.so.4                corelib/lib.a(channel_curl.o) (json_tokener_parse_ex)
+libcrypto.so.1.1              mongoose/lib.a(mongoose.o) (ERR_print_errors_fp@@OPENSSL_1_1_0)
+libssl.so.1.1                 mongoose/lib.a(mongoose.o) (TLS_server_method@@OPENSSL_1_1_0)
+libz.so.1                     core/built-in.o (inflateEnd)
+libsystemd.so.0               core/built-in.o (sd_booted@@LIBSYSTEMD_209)
+libc.so.6                     core/built-in.o (setuid@@GLIBC_2.17)
+ld-linux-aarch64.so.1         core/built-in.o (__stack_chk_guard@@GLIBC_2.17)
+
+Allocating common symbols
+Common symbol       size              file
+
+bootloader_env_get  0x8               core/built-in.o
+global_auth_domain  0x8               mongoose/lib.a(mongoose_interface.o)
+bootloader_env_set  0x8               core/built-in.o
+global_auth_file    0x8               mongoose/lib.a(mongoose_interface.o)
+bootloader_apply_list
+                    0x8               core/built-in.o
+supported_types     0x1600            core/built-in.o
+bootloader_env_unset
+                    0x8               core/built-in.o
+extract_thread      0x8               handlers/built-in.o
+
+Discarded input sections
+
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/crtbeginS.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/crtbeginS.o
+ .text          0x0000000000000000        0x0 core/built-in.o
+ .data          0x0000000000000000        0x0 core/built-in.o
+ .bss           0x0000000000000000        0x0 core/built-in.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 core/built-in.o
+ .text          0x0000000000000000        0x0 handlers/built-in.o
+ .data          0x0000000000000000        0x0 handlers/built-in.o
+ .bss           0x0000000000000000        0x0 handlers/built-in.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 handlers/built-in.o
+ .text          0x0000000000000000        0x0 bootloader/built-in.o
+ .data          0x0000000000000000        0x0 bootloader/built-in.o
+ .bss           0x0000000000000000        0x0 bootloader/built-in.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 bootloader/built-in.o
+ .text          0x0000000000000000        0x0 ipc/built-in.o
+ .data          0x0000000000000000        0x0 ipc/built-in.o
+ .bss           0x0000000000000000        0x0 ipc/built-in.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ipc/built-in.o
+ .text          0x0000000000000000        0x0 corelib/lib.a(downloader.o)
+ .data          0x0000000000000000        0x0 corelib/lib.a(downloader.o)
+ .bss           0x0000000000000000        0x0 corelib/lib.a(downloader.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 corelib/lib.a(downloader.o)
+ .text          0x0000000000000000        0x0 corelib/lib.a(lua_interface.o)
+ .data          0x0000000000000000        0x0 corelib/lib.a(lua_interface.o)
+ .bss           0x0000000000000000        0x0 corelib/lib.a(lua_interface.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 corelib/lib.a(lua_interface.o)
+ .text          0x0000000000000000        0x0 corelib/lib.a(mtd-interface.o)
+ .data          0x0000000000000000        0x0 corelib/lib.a(mtd-interface.o)
+ .bss           0x0000000000000000        0x0 corelib/lib.a(mtd-interface.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 corelib/lib.a(mtd-interface.o)
+ .text          0x0000000000000000        0x0 corelib/lib.a(parsing_library_libconfig.o)
+ .data          0x0000000000000000        0x0 corelib/lib.a(parsing_library_libconfig.o)
+ .bss           0x0000000000000000        0x0 corelib/lib.a(parsing_library_libconfig.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 corelib/lib.a(parsing_library_libconfig.o)
+ .text          0x0000000000000000        0x0 corelib/lib.a(parsing_library_libjson.o)
+ .data          0x0000000000000000        0x0 corelib/lib.a(parsing_library_libjson.o)
+ .bss           0x0000000000000000        0x0 corelib/lib.a(parsing_library_libjson.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 corelib/lib.a(parsing_library_libjson.o)
+ .text          0x0000000000000000        0x0 corelib/lib.a(swupdate_settings.o)
+ .data          0x0000000000000000        0x0 corelib/lib.a(swupdate_settings.o)
+ .bss           0x0000000000000000        0x0 corelib/lib.a(swupdate_settings.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 corelib/lib.a(swupdate_settings.o)
+ .text          0x0000000000000000        0x0 corelib/lib.a(channel_curl.o)
+ .data          0x0000000000000000        0x0 corelib/lib.a(channel_curl.o)
+ .bss           0x0000000000000000        0x0 corelib/lib.a(channel_curl.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 corelib/lib.a(channel_curl.o)
+ .text          0x0000000000000000        0x0 mongoose/lib.a(mongoose_interface.o)
+ .bss           0x0000000000000000        0x0 mongoose/lib.a(mongoose_interface.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 mongoose/lib.a(mongoose_interface.o)
+ .text          0x0000000000000000        0x0 mongoose/lib.a(mongoose_multipart.o)
+ .data          0x0000000000000000        0x0 mongoose/lib.a(mongoose_multipart.o)
+ .bss           0x0000000000000000        0x0 mongoose/lib.a(mongoose_multipart.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 mongoose/lib.a(mongoose_multipart.o)
+ .text          0x0000000000000000        0x0 mongoose/lib.a(mongoose.o)
+ .data          0x0000000000000000        0x0 mongoose/lib.a(mongoose.o)
+ .bss           0x0000000000000000        0x0 mongoose/lib.a(mongoose.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 mongoose/lib.a(mongoose.o)
+ .text          0x0000000000000000        0x0 parser/lib.a(parse_external.o)
+ .data          0x0000000000000000        0x0 parser/lib.a(parse_external.o)
+ .bss           0x0000000000000000        0x0 parser/lib.a(parse_external.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 parser/lib.a(parse_external.o)
+ .text          0x0000000000000000        0x0 parser/lib.a(parser.o)
+ .data          0x0000000000000000        0x0 parser/lib.a(parser.o)
+ .bss           0x0000000000000000        0x0 parser/lib.a(parser.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 parser/lib.a(parser.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libubi.a(libubi.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libubi.a(libubi.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libubi.a(libubi.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libmtd.a(libmtd.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libmtd.a(libmtd.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libmtd.a(libmtd.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libmtd.a(libmtd_legacy.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libmtd.a(libmtd_legacy.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libmtd.a(libmtd_legacy.o)
+ .data          0x0000000000000000        0x0 /usr/lib/aarch64-linux-gnu/libc_nonshared.a(elf-init.oS)
+ .bss           0x0000000000000000        0x0 /usr/lib/aarch64-linux-gnu/libc_nonshared.a(elf-init.oS)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/aarch64-linux-gnu/libc_nonshared.a(elf-init.oS)
+ .data          0x0000000000000000        0x0 /usr/lib/aarch64-linux-gnu/libc_nonshared.a(atexit.oS)
+ .bss           0x0000000000000000        0x0 /usr/lib/aarch64-linux-gnu/libc_nonshared.a(atexit.oS)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/aarch64-linux-gnu/libc_nonshared.a(atexit.oS)
+ .data          0x0000000000000000        0x0 /usr/lib/aarch64-linux-gnu/libc_nonshared.a(stat.oS)
+ .bss           0x0000000000000000        0x0 /usr/lib/aarch64-linux-gnu/libc_nonshared.a(stat.oS)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/aarch64-linux-gnu/libc_nonshared.a(stat.oS)
+ .data          0x0000000000000000        0x0 /usr/lib/aarch64-linux-gnu/libc_nonshared.a(fstat.oS)
+ .bss           0x0000000000000000        0x0 /usr/lib/aarch64-linux-gnu/libc_nonshared.a(fstat.oS)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/aarch64-linux-gnu/libc_nonshared.a(fstat.oS)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/crtendS.o
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/crtendS.o
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/crtendS.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/crtendS.o
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crtn.o
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crtn.o
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crtn.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o
+LOAD /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o
+LOAD /usr/lib/gcc/aarch64-linux-gnu/9/crtbeginS.o
+START GROUP
+LOAD core/built-in.o
+LOAD handlers/built-in.o
+LOAD bootloader/built-in.o
+LOAD ipc/built-in.o
+LOAD corelib/lib.a
+LOAD mongoose/lib.a
+LOAD parser/lib.a
+LOAD suricatta/lib.a
+LOAD fs/lib.a
+END GROUP
+START GROUP
+LOAD /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/libpthread.so
+LOAD /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/liblua5.3.so
+LOAD /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/libcurl.so
+LOAD /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/libconfig.so
+LOAD /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/libarchive.so
+LOAD /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/libjson-c.so
+LOAD /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/libcrypto.so
+LOAD /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/libssl.so
+LOAD /usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libubi.a
+LOAD /usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libmtd.a
+LOAD /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/libz.so
+LOAD /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/libsystemd.so
+END GROUP
+LOAD /usr/lib/gcc/aarch64-linux-gnu/9/libgcc.a
+LOAD /usr/lib/gcc/aarch64-linux-gnu/9/libgcc_eh.a
+LOAD /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/libc.so
+START GROUP
+LOAD /lib/aarch64-linux-gnu/libc.so.6
+LOAD /usr/lib/aarch64-linux-gnu/libc_nonshared.a
+LOAD /lib/aarch64-linux-gnu/ld-linux-aarch64.so.1
+END GROUP
+LOAD /usr/lib/gcc/aarch64-linux-gnu/9/libgcc.a
+LOAD /usr/lib/gcc/aarch64-linux-gnu/9/libgcc_eh.a
+LOAD /usr/lib/gcc/aarch64-linux-gnu/9/crtendS.o
+LOAD /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crtn.o
+                [!provide]                        PROVIDE (__executable_start = SEGMENT_START ("text-segment", 0x0))
+                0x0000000000000238                . = (SEGMENT_START ("text-segment", 0x0) + SIZEOF_HEADERS)
+
+.interp         0x0000000000000238       0x1b
+ *(SORT_BY_ALIGNMENT(.interp))
+ .interp        0x0000000000000238       0x1b /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o
+
+.note.gnu.build-id
+                0x0000000000000254       0x24
+ *(SORT_BY_ALIGNMENT(.note.gnu.build-id))
+ .note.gnu.build-id
+                0x0000000000000254       0x24 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o
+
+.note.ABI-tag   0x0000000000000278       0x20
+ .note.ABI-tag  0x0000000000000278       0x20 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o
+
+.hash
+ *(SORT_BY_ALIGNMENT(.hash))
+
+.gnu.hash       0x0000000000000298      0xde0
+ *(SORT_BY_ALIGNMENT(.gnu.hash))
+ .gnu.hash      0x0000000000000298      0xde0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o
+
+.dynsym         0x0000000000001078     0x4b60
+ *(SORT_BY_ALIGNMENT(.dynsym))
+ .dynsym        0x0000000000001078     0x4b60 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o
+
+.dynstr         0x0000000000005bd8     0x2cc6
+ *(SORT_BY_ALIGNMENT(.dynstr))
+ .dynstr        0x0000000000005bd8     0x2cc6 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o
+
+.gnu.version    0x000000000000889e      0x648
+ *(SORT_BY_ALIGNMENT(.gnu.version))
+ .gnu.version   0x000000000000889e      0x648 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o
+
+.gnu.version_d  0x0000000000008ee8        0x0
+ *(SORT_BY_ALIGNMENT(.gnu.version_d))
+ .gnu.version_d
+                0x0000000000008ee8        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o
+
+.gnu.version_r  0x0000000000008ee8      0x100
+ *(SORT_BY_ALIGNMENT(.gnu.version_r))
+ .gnu.version_r
+                0x0000000000008ee8      0x100 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o
+
+.rela.dyn       0x0000000000008fe8     0x1a88
+ *(SORT_BY_ALIGNMENT(.rela.init))
+ *(SORT_BY_ALIGNMENT(.rela.text) SORT_BY_ALIGNMENT(.rela.text.*) SORT_BY_ALIGNMENT(.rela.gnu.linkonce.t.*))
+ *(SORT_BY_ALIGNMENT(.rela.fini))
+ *(SORT_BY_ALIGNMENT(.rela.rodata) SORT_BY_ALIGNMENT(.rela.rodata.*) SORT_BY_ALIGNMENT(.rela.gnu.linkonce.r.*))
+ *(SORT_BY_ALIGNMENT(.rela.data) SORT_BY_ALIGNMENT(.rela.data.*) SORT_BY_ALIGNMENT(.rela.gnu.linkonce.d.*))
+ .rela.data.rel.ro
+                0x0000000000008fe8        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o
+ .rela.data.rel.local
+                0x0000000000008fe8       0x18 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o
+ .rela.data.rel.local.loglevnames
+                0x0000000000009000       0x78 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o
+ .rela.data.rel.local.long_options
+                0x0000000000009078      0x360 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o
+ .rela.data.rel.ro.local.ascii_string_attributes
+                0x00000000000093d8       0xd8 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o
+ .rela.data.rel.ro.local.ascii_string_colors
+                0x00000000000094b0       0xd8 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o
+ .rela.data.rel.ro.parsers
+                0x0000000000009588       0x48 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o
+ .rela.data.rel.local.none
+                0x00000000000095d0       0x60 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o
+ .rela.data.rel.local.SOCKET_CTRL_PATH
+                0x0000000000009630       0x18 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o
+ .rela.data.rel.local.SOCKET_PROGRESS_PATH
+                0x0000000000009648       0x18 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o
+ .rela.data.rel.local.statfields
+                0x0000000000009660      0x2a0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o
+ .rela.data.rel.ro.local.l_swupdate
+                0x0000000000009900      0x270 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o
+ .rela.data.rel.ro.local.l_swupdate_bootenv
+                0x0000000000009b70       0x90 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o
+ .rela.data     0x0000000000009c00      0x138 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o
+ .rela.data.rel.local.fs_posix_no_list
+                0x0000000000009d38       0xf0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o
+ .rela.data.rel.local.mg_fs_packed
+                0x0000000000009e28       0xf0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o
+ .rela.data.rel.local.mg_fs_posix
+                0x0000000000009f18       0xf0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o
+ .rela.data.rel.local.s_log_func
+                0x000000000000a008       0x18 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o
+ .rela.data.rel.ro.local.s_known_types
+                0x000000000000a020      0x5a0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o
+ *(SORT_BY_ALIGNMENT(.rela.tdata) SORT_BY_ALIGNMENT(.rela.tdata.*) SORT_BY_ALIGNMENT(.rela.gnu.linkonce.td.*))
+ *(SORT_BY_ALIGNMENT(.rela.tbss) SORT_BY_ALIGNMENT(.rela.tbss.*) SORT_BY_ALIGNMENT(.rela.gnu.linkonce.tb.*))
+ *(SORT_BY_ALIGNMENT(.rela.ctors))
+ *(SORT_BY_ALIGNMENT(.rela.dtors))
+ *(SORT_BY_ALIGNMENT(.rela.got))
+ .rela.got      0x000000000000a5c0      0x330 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o
+ *(SORT_BY_ALIGNMENT(.rela.bss) SORT_BY_ALIGNMENT(.rela.bss.*) SORT_BY_ALIGNMENT(.rela.gnu.linkonce.b.*))
+ .rela.bss      0x000000000000a8f0        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o
+ *(SORT_BY_ALIGNMENT(.rela.ifunc))
+ .rela.ifunc    0x000000000000a8f0        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o
+ .rela.fini_array
+                0x000000000000a8f0       0x18 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o
+ .rela.init_array
+                0x000000000000a908      0x168 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o
+
+.rela.plt       0x000000000000aa70     0x1c38
+ *(SORT_BY_ALIGNMENT(.rela.plt))
+ .rela.plt      0x000000000000aa70     0x1c38 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o
+ *(SORT_BY_ALIGNMENT(.rela.iplt))
+
+.init           0x000000000000c6a8       0x14
+ *(SORT_NONE(.init))
+ .init          0x000000000000c6a8        0xc /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o
+                0x000000000000c6a8                _init
+ .init          0x000000000000c6b4        0x8 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crtn.o
+
+.plt            0x000000000000c6c0     0x12f0
+ *(SORT_BY_ALIGNMENT(.plt))
+ .plt           0x000000000000c6c0     0x12f0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o
+ *(SORT_BY_ALIGNMENT(.iplt))
+
+.text           0x000000000000d9b0    0x37734
+ *(SORT_BY_ALIGNMENT(.text.unlikely) SORT_BY_ALIGNMENT(.text.*_unlikely) SORT_BY_ALIGNMENT(.text.unlikely.*))
+ *(SORT_BY_ALIGNMENT(.text.exit) SORT_BY_ALIGNMENT(.text.exit.*))
+ *(SORT_BY_ALIGNMENT(.text.startup) SORT_BY_ALIGNMENT(.text.startup.*))
+ *(SORT_BY_ALIGNMENT(.text.hot) SORT_BY_ALIGNMENT(.text.hot.*))
+ *(SORT_BY_NAME(SORT_BY_ALIGNMENT(.text.sorted.*)))
+ *(SORT_BY_ALIGNMENT(.text) SORT_BY_ALIGNMENT(.stub) SORT_BY_ALIGNMENT(.text.*) SORT_BY_ALIGNMENT(.gnu.linkonce.t.*))
+ .text          0x000000000000d9b0       0xbc /usr/lib/gcc/aarch64-linux-gnu/9/crtbeginS.o
+ *fill*         0x000000000000da6c        0x4 1f2003d5
+ .text          0x000000000000da70     0x304c /usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libubi.a(libubi.o)
+                0x000000000000e6f8                libubi_close
+                0x000000000000e7d8                libubi_open
+                0x000000000000eba8                ubi_attach
+                0x000000000000ecb8                ubi_remove_dev
+                0x000000000000ed28                ubi_get_info
+                0x000000000000efd0                mtd_num2ubi_dev
+                0x000000000000f0c8                ubi_detach_mtd
+                0x000000000000f160                ubi_detach
+                0x000000000000f1c0                ubi_probe_node
+                0x000000000000f4c0                ubi_mkvol
+                0x000000000000f658                ubi_rmvol
+                0x000000000000f738                ubi_rnvols
+                0x000000000000f7a8                ubi_rsvol
+                0x000000000000f8b8                ubi_vol_block_create
+                0x000000000000f8c8                ubi_vol_block_remove
+                0x000000000000f8d8                ubi_update_start
+                0x000000000000f908                ubi_leb_change_start
+                0x000000000000f988                ubi_dev_present
+                0x000000000000fa68                ubi_get_dev_info1
+                0x000000000000fe48                ubi_get_dev_info
+                0x0000000000010118                ubi_get_vol_info1
+                0x0000000000010500                ubi_get_vol_info
+                0x0000000000010878                ubi_get_vol_info1_nm
+                0x0000000000010a00                ubi_set_property
+                0x0000000000010a70                ubi_leb_unmap
+                0x0000000000010a98                ubi_is_mapped
+ *fill*         0x0000000000010abc        0x4 1f2003d5
+ .text          0x0000000000010ac0     0x33f0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libmtd.a(libmtd.o)
+                0x0000000000011f78                libmtd_close
+                0x0000000000012000                libmtd_open
+                0x0000000000012240                mtd_dev_present
+                0x0000000000012340                mtd_get_info
+                0x0000000000012358                mtd_get_dev_info1
+                0x00000000000129a0                mtd_get_dev_info
+                0x0000000000012bf8                mtd_lock
+                0x0000000000012c10                mtd_unlock
+                0x0000000000012c28                mtd_erase_multi
+                0x0000000000012e90                mtd_erase
+                0x0000000000012e98                mtd_regioninfo
+                0x0000000000012f68                mtd_is_locked
+                0x0000000000013090                mtd_is_bad
+                0x00000000000131d0                mtd_mark_bad
+                0x0000000000013320                mtd_read
+                0x0000000000013508                mtd_write
+                0x0000000000013a00                mtd_torture
+                0x0000000000013c58                mtd_read_oob
+                0x0000000000013c70                mtd_write_oob
+                0x0000000000013c88                mtd_probe_node
+ .text          0x0000000000013eb0      0xfd4 /usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libmtd.a(libmtd_legacy.o)
+                0x00000000000142b8                legacy_procfs_is_supported
+                0x0000000000014398                legacy_dev_present
+                0x0000000000014428                legacy_mtd_get_info
+                0x00000000000144e0                legacy_get_mtd_oobavail
+                0x0000000000014720                legacy_get_mtd_oobavail1
+                0x0000000000014790                legacy_get_dev_info
+                0x0000000000014e08                legacy_get_dev_info1
+ *fill*         0x0000000000014e84        0x4 1f2003d5
+ .text          0x0000000000014e88       0x84 /usr/lib/aarch64-linux-gnu/libc_nonshared.a(elf-init.oS)
+                0x0000000000014e88                __libc_csu_init
+                0x0000000000014f08                __libc_csu_fini
+ *fill*         0x0000000000014f0c        0x4 1f2003d5
+ .text          0x0000000000014f10       0x10 /usr/lib/aarch64-linux-gnu/libc_nonshared.a(atexit.oS)
+                0x0000000000014f10                atexit
+ .text          0x0000000000014f20       0x10 /usr/lib/aarch64-linux-gnu/libc_nonshared.a(stat.oS)
+                0x0000000000014f20                stat
+                0x0000000000014f20                __stat
+ .text          0x0000000000014f30       0x10 /usr/lib/aarch64-linux-gnu/libc_nonshared.a(fstat.oS)
+                0x0000000000014f30                __fstat
+                0x0000000000014f30                fstat
+ .text          0x0000000000014f40       0x38 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o
+                0x0000000000014f40                _start
+ .text          0x0000000000014f78       0x14 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o
+ .text.sigterm_handler
+                0x0000000000014f8c        0xc core/built-in.o
+ .text.parse_image_selector
+                0x0000000000014f98      0x1a4 core/built-in.o
+ .text.read_processes_settings
+                0x000000000001513c      0x268 core/built-in.o
+ .text.read_console_settings
+                0x00000000000153a4       0xb0 core/built-in.o
+ .text.parse_cert_purpose
+                0x0000000000015454      0x10c core/built-in.o
+ .text.read_globals_settings
+                0x0000000000015560      0x364 core/built-in.o
+ .text.get_flash_info
+                0x00000000000158c4        0xc core/built-in.o
+                0x00000000000158c4                get_flash_info
+ .text.get_swupdate_cfg
+                0x00000000000158d0        0xc core/built-in.o
+                0x00000000000158d0                get_swupdate_cfg
+ .text.main     0x00000000000158dc      0xfc4 core/built-in.o
+                0x00000000000158dc                main
+ .text.fill_buffer
+                0x00000000000168a0      0x1a4 core/built-in.o
+ .text.input_step
+                0x0000000000016a44       0x94 core/built-in.o
+ .text.gunzip_step
+                0x0000000000016ad8      0x188 core/built-in.o
+ .text.copy_write
+                0x0000000000016c60      0x1f0 core/built-in.o
+                0x0000000000016c60                copy_write
+ .text.__swupdate_copy
+                0x0000000000016e50      0x5e8 core/built-in.o
+ .text.get_cpiohdr
+                0x0000000000017438      0x170 core/built-in.o
+                0x0000000000017438                get_cpiohdr
+ .text.extract_padding
+                0x00000000000175a8      0x144 core/built-in.o
+                0x00000000000175a8                extract_padding
+ .text.copyfile
+                0x00000000000176ec       0x58 core/built-in.o
+                0x00000000000176ec                copyfile
+ .text.copybuffer
+                0x0000000000017744       0x44 core/built-in.o
+                0x0000000000017744                copybuffer
+ .text.copyimage
+                0x0000000000017788       0x54 core/built-in.o
+                0x0000000000017788                copyimage
+ .text.extract_cpio_header
+                0x00000000000177dc      0x208 core/built-in.o
+                0x00000000000177dc                extract_cpio_header
+ .text.extract_img_from_cpio
+                0x00000000000179e4      0x248 core/built-in.o
+                0x00000000000179e4                extract_img_from_cpio
+ .text.swupdate_verify_chksum
+                0x0000000000017c2c      0x114 core/built-in.o
+                0x0000000000017c2c                swupdate_verify_chksum
+ .text.extract_next_file
+                0x0000000000017d40      0x328 core/built-in.o
+                0x0000000000017d40                extract_next_file
+ .text.cpio_scan
+                0x0000000000018068      0x344 core/built-in.o
+                0x0000000000018068                cpio_scan
+ .text.progress_notifier
+                0x00000000000183ac       0xa8 core/built-in.o
+ .text.process_notifier
+                0x0000000000018454       0x20 core/built-in.o
+ .text.console_notifier
+                0x0000000000018474      0x318 core/built-in.o
+ .text.notifier_set_color
+                0x000000000001878c       0xf4 core/built-in.o
+                0x000000000001878c                notifier_set_color
+ .text.register_notifier
+                0x0000000000018880       0x78 core/built-in.o
+                0x0000000000018880                register_notifier
+ .text.notify   0x00000000000188f8      0x134 core/built-in.o
+                0x00000000000188f8                notify
+ .text.notifier_thread
+                0x0000000000018a2c      0x17c core/built-in.o
+ .text.notify_init
+                0x0000000000018ba8      0x310 core/built-in.o
+                0x0000000000018ba8                notify_init
+ .text.register_handler
+                0x0000000000018eb8       0xf0 core/built-in.o
+                0x0000000000018eb8                register_handler
+ .text.print_registered_handlers
+                0x0000000000018fa8      0x130 core/built-in.o
+                0x0000000000018fa8                print_registered_handlers
+ .text.find_handler
+                0x00000000000190d8       0x88 core/built-in.o
+                0x00000000000190d8                find_handler
+ .text.get_next_handler
+                0x0000000000019160       0x50 core/built-in.o
+                0x0000000000019160                get_next_handler
+ .text.get_handler_mask
+                0x00000000000191b0       0x20 core/built-in.o
+                0x00000000000191b0                get_handler_mask
+ .text.register_bootloader
+                0x00000000000191d0       0x74 core/built-in.o
+                0x00000000000191d0                register_bootloader
+ .text.set_bootloader
+                0x0000000000019244       0xb8 core/built-in.o
+                0x0000000000019244                set_bootloader
+ .text.get_bootloader
+                0x00000000000192fc       0x14 core/built-in.o
+                0x00000000000192fc                get_bootloader
+ .text.print_registered_bootloaders
+                0x0000000000019310      0x148 core/built-in.o
+                0x0000000000019310                print_registered_bootloaders
+ .text.readimage
+                0x0000000000019458       0x40 core/built-in.o
+ .text.endupdate
+                0x0000000000019498      0x194 core/built-in.o
+ .text.install_from_file
+                0x000000000001962c      0x1f0 core/built-in.o
+                0x000000000001962c                install_from_file
+ .text._remove_directory_cb
+                0x000000000001981c        0x4 core/built-in.o
+ .text.countargc
+                0x0000000000019820       0x98 core/built-in.o
+ .text.filter_slave
+                0x00000000000198b8       0x3c core/built-in.o
+ .text.get_root_containerized_fs
+                0x00000000000198f4       0xbc core/built-in.o
+ .text.getroot_abs_path
+                0x00000000000199b0      0x178 core/built-in.o
+ .text.get_root_from_partitions
+                0x0000000000019b28      0x168 core/built-in.o
+ .text.check_free_space
+                0x0000000000019c90      0x1b0 core/built-in.o
+ .text.sdup     0x0000000000019e40       0x38 core/built-in.o
+                0x0000000000019e40                sdup
+ .text.get_tmpdir
+                0x0000000000019e78       0x98 core/built-in.o
+                0x0000000000019e78                get_tmpdir
+ .text.get_tmpdirscripts
+                0x0000000000019f10       0x68 core/built-in.o
+                0x0000000000019f10                get_tmpdirscripts
+ .text.swupdate_create_directory
+                0x0000000000019f78      0x188 core/built-in.o
+                0x0000000000019f78                swupdate_create_directory
+ .text.swupdate_remove_directory
+                0x000000000001a100      0x138 core/built-in.o
+                0x000000000001a100                swupdate_remove_directory
+ .text.splitargs
+                0x000000000001a238       0x88 core/built-in.o
+                0x000000000001a238                splitargs
+ .text.freeargs
+                0x000000000001a2c0       0x24 core/built-in.o
+                0x000000000001a2c0                freeargs
+ .text.saferealloc
+                0x000000000001a2e4       0x38 core/built-in.o
+                0x000000000001a2e4                saferealloc
+ .text.mstrcat  0x000000000001a31c      0x160 core/built-in.o
+                0x000000000001a31c                mstrcat
+ .text.substring
+                0x000000000001a47c       0x70 core/built-in.o
+                0x000000000001a47c                substring
+ .text.string_tolower
+                0x000000000001a4ec       0x40 core/built-in.o
+                0x000000000001a4ec                string_tolower
+ .text.openfileoutput
+                0x000000000001a52c      0x108 core/built-in.o
+                0x000000000001a52c                openfileoutput
+ .text.mkpath   0x000000000001a634      0x108 core/built-in.o
+                0x000000000001a634                mkpath
+ .text.get_hw_revision
+                0x000000000001a73c      0x224 core/built-in.o
+                0x000000000001a73c                get_hw_revision
+ .text.hwid_match
+                0x000000000001a960      0x20c core/built-in.o
+                0x000000000001a960                hwid_match
+ .text.check_hw_compatibility
+                0x000000000001ab6c        0x8 core/built-in.o
+                0x000000000001ab6c                check_hw_compatibility
+ .text.from_ascii
+                0x000000000001ab74      0x27c core/built-in.o
+                0x000000000001ab74                from_ascii
+ .text.ascii_to_bin
+                0x000000000001adf0       0x84 core/built-in.o
+                0x000000000001adf0                ascii_to_bin
+ .text.ascii_to_hash
+                0x000000000001ae74        0xc core/built-in.o
+                0x000000000001ae74                ascii_to_hash
+ .text.hash_to_ascii
+                0x000000000001ae80       0x58 core/built-in.o
+                0x000000000001ae80                hash_to_ascii
+ .text.IsValidHash
+                0x000000000001aed8       0x2c core/built-in.o
+                0x000000000001aed8                IsValidHash
+ .text.count_elem_list
+                0x000000000001af04       0x1c core/built-in.o
+                0x000000000001af04                count_elem_list
+ .text.get_aes_key
+                0x000000000001af20        0xc core/built-in.o
+                0x000000000001af20                get_aes_key
+ .text.get_aes_keylen
+                0x000000000001af2c       0x18 core/built-in.o
+                0x000000000001af2c                get_aes_keylen
+ .text.get_aes_ivt
+                0x000000000001af44       0x14 core/built-in.o
+                0x000000000001af44                get_aes_ivt
+ .text.set_aes_key
+                0x000000000001af58       0xb8 core/built-in.o
+                0x000000000001af58                set_aes_key
+ .text.load_decryption_key
+                0x000000000001b010      0x168 core/built-in.o
+                0x000000000001b010                load_decryption_key
+ .text.set_aes_ivt
+                0x000000000001b178       0x3c core/built-in.o
+                0x000000000001b178                set_aes_ivt
+ .text.string_split
+                0x000000000001b1b4       0xf8 core/built-in.o
+                0x000000000001b1b4                string_split
+ .text.count_string_array
+                0x000000000001b2ac       0x1c core/built-in.o
+                0x000000000001b2ac                count_string_array
+ .text.free_string_array
+                0x000000000001b2c8       0x3c core/built-in.o
+                0x000000000001b2c8                free_string_array
+ .text.ustrtoull
+                0x000000000001b304      0x12c core/built-in.o
+                0x000000000001b304                ustrtoull
+ .text.size_delimiter_match
+                0x000000000001b430       0x70 core/built-in.o
+                0x000000000001b430                size_delimiter_match
+ .text.strtobool
+                0x000000000001b4a0       0x50 core/built-in.o
+                0x000000000001b4a0                strtobool
+ .text.swupdate_mount
+                0x000000000001b4f0        0xc core/built-in.o
+                0x000000000001b4f0                swupdate_mount
+ .text.swupdate_umount
+                0x000000000001b4fc        0x4 core/built-in.o
+                0x000000000001b4fc                swupdate_umount
+ .text.swupdate_time_iso8601
+                0x000000000001b500      0x108 core/built-in.o
+                0x000000000001b500                swupdate_time_iso8601
+ .text.swupdate_file_setnonblock
+                0x000000000001b608       0x58 core/built-in.o
+                0x000000000001b608                swupdate_file_setnonblock
+ .text.snescape
+                0x000000000001b660       0x94 core/built-in.o
+                0x000000000001b660                snescape
+ .text.get_root_device
+                0x000000000001b6f4      0x294 core/built-in.o
+                0x000000000001b6f4                get_root_device
+ .text.read_lines_notify
+                0x000000000001b988      0x23c core/built-in.o
+                0x000000000001b988                read_lines_notify
+ .text.get_output_size
+                0x000000000001bbc4      0x328 core/built-in.o
+                0x000000000001bbc4                get_output_size
+ .text.img_check_free_space
+                0x000000000001beec       0x48 core/built-in.o
+                0x000000000001beec                img_check_free_space
+ .text.check_handler
+                0x000000000001bf34      0x184 core/built-in.o
+ .text.check_handler_list.isra.0
+                0x000000000001c0b8       0x90 core/built-in.o
+ .text.check_hash_absent.isra.0
+                0x000000000001c148      0x10c core/built-in.o
+ .text.parse    0x000000000001c254      0x558 core/built-in.o
+                0x000000000001c254                parse
+ .text.parent_dead_handler
+                0x000000000001c7ac        0xc core/built-in.o
+ .text.start_swupdate_subprocess
+                0x000000000001c7b8      0x520 core/built-in.o
+ .text.start_thread
+                0x000000000001ccd8       0xb4 core/built-in.o
+                0x000000000001ccd8                start_thread
+ .text.thread_ready
+                0x000000000001cd8c       0x3c core/built-in.o
+                0x000000000001cd8c                thread_ready
+ .text.wait_threads_ready
+                0x000000000001cdc8       0x58 core/built-in.o
+                0x000000000001cdc8                wait_threads_ready
+ .text.start_subprocess_from_file
+                0x000000000001ce20       0x20 core/built-in.o
+                0x000000000001ce20                start_subprocess_from_file
+ .text.start_subprocess
+                0x000000000001ce40       0x1c core/built-in.o
+                0x000000000001ce40                start_subprocess
+ .text.run_system_cmd
+                0x000000000001ce5c      0x7a0 core/built-in.o
+                0x000000000001ce5c                run_system_cmd
+ .text.sigchld_handler
+                0x000000000001d5fc      0x1fc core/built-in.o
+                0x000000000001d5fc                sigchld_handler
+ .text.pctl_getfd_from_type
+                0x000000000001d7f8       0x54 core/built-in.o
+                0x000000000001d7f8                pctl_getfd_from_type
+ .text.pctl_getname_from_type
+                0x000000000001d84c       0x58 core/built-in.o
+                0x000000000001d84c                pctl_getname_from_type
+ .text.save_state
+                0x000000000001d8a4       0xdc core/built-in.o
+                0x000000000001d8a4                save_state
+ .text.get_state
+                0x000000000001d980      0x2d8 core/built-in.o
+                0x000000000001d980                get_state
+ .text.syslog_notifier
+                0x000000000001dc58       0xfc core/built-in.o
+ .text.syslog_init
+                0x000000000001dd54       0x1c core/built-in.o
+                0x000000000001dd54                syslog_init
+ .text.run_prepost_scripts.isra.0
+                0x000000000001dd70       0x9c core/built-in.o
+ .text.extract_scripts.isra.0
+                0x000000000001de0c      0x3e0 core/built-in.o
+ .text.check_if_required
+                0x000000000001e1ec      0x220 core/built-in.o
+                0x000000000001e1ec                check_if_required
+ .text.install_single_image
+                0x000000000001e40c      0x1b4 core/built-in.o
+                0x000000000001e40c                install_single_image
+ .text.free_image
+                0x000000000001e5c0       0x1c core/built-in.o
+                0x000000000001e5c0                free_image
+ .text.install_images
+                0x000000000001e5dc      0x818 core/built-in.o
+                0x000000000001e5dc                install_images
+ .text.cleanup_files
+                0x000000000001edf4      0x3a0 core/built-in.o
+                0x000000000001edf4                cleanup_files
+ .text.preupdatecmd
+                0x000000000001f194      0x108 core/built-in.o
+                0x000000000001f194                preupdatecmd
+ .text.postupdate
+                0x000000000001f29c      0x110 core/built-in.o
+                0x000000000001f29c                postupdate
+ .text.unlink_socket
+                0x000000000001f3ac       0x40 core/built-in.o
+ .text.send_subprocess_reply
+                0x000000000001f3ec       0xfc core/built-in.o
+ .text.clean_msg
+                0x000000000001f4e8       0x40 core/built-in.o
+ .text.write_notify_msg
+                0x000000000001f528       0x74 core/built-in.o
+ .text.handle_subprocess_ipc
+                0x000000000001f59c      0x3d4 core/built-in.o
+ .text.subprocess_thread
+                0x000000000001f970       0xc8 core/built-in.o
+ .text.network_notifier
+                0x000000000001fa38      0x220 core/built-in.o
+ .text.listener_create
+                0x000000000001fc58      0x318 core/built-in.o
+                0x000000000001fc58                listener_create
+ .text.network_thread
+                0x000000000001ff70      0xcd8 core/built-in.o
+                0x000000000001ff70                network_thread
+ .text.get_state_string
+                0x0000000000020c48       0x78 core/built-in.o
+ .text.cpfiles  0x0000000000020cc0       0xc8 core/built-in.o
+ .text.update_transaction_state
+                0x0000000000020d88      0x13c core/built-in.o
+ .text.extract_file_to_tmp.constprop.0
+                0x0000000000020ec4      0x314 core/built-in.o
+ .text.network_initializer
+                0x00000000000211d8     0x1150 core/built-in.o
+                0x00000000000211d8                network_initializer
+ .text.get_install_swset
+                0x0000000000022328       0x20 core/built-in.o
+                0x0000000000022328                get_install_swset
+ .text.get_install_running_mode
+                0x0000000000022348       0x20 core/built-in.o
+                0x0000000000022348                get_install_running_mode
+ .text.get_install_info
+                0x0000000000022368       0x64 core/built-in.o
+                0x0000000000022368                get_install_info
+ .text.set_version_range
+                0x00000000000223cc       0xd8 core/built-in.o
+                0x00000000000223cc                set_version_range
+ .text.send_progress_msg
+                0x00000000000224a4       0xc8 core/built-in.o
+ .text.swupdate_progress_init
+                0x000000000002256c       0x5c core/built-in.o
+                0x000000000002256c                swupdate_progress_init
+ .text.swupdate_progress_update
+                0x00000000000225c8       0x54 core/built-in.o
+                0x00000000000225c8                swupdate_progress_update
+ .text.swupdate_download_update
+                0x000000000002261c       0xec core/built-in.o
+                0x000000000002261c                swupdate_download_update
+ .text.swupdate_progress_inc_step
+                0x0000000000022708       0x7c core/built-in.o
+                0x0000000000022708                swupdate_progress_inc_step
+ .text.swupdate_progress_step_completed
+                0x0000000000022784       0x34 core/built-in.o
+                0x0000000000022784                swupdate_progress_step_completed
+ .text.swupdate_progress_end
+                0x00000000000227b8       0x48 core/built-in.o
+                0x00000000000227b8                swupdate_progress_end
+ .text.swupdate_progress_info
+                0x0000000000022800       0x88 core/built-in.o
+                0x0000000000022800                swupdate_progress_info
+ .text.swupdate_progress_done
+                0x0000000000022888       0x78 core/built-in.o
+                0x0000000000022888                swupdate_progress_done
+ .text.progress_bar_thread
+                0x0000000000022900      0x324 core/built-in.o
+                0x0000000000022900                progress_bar_thread
+ .text.check_field_string
+                0x0000000000022c24      0x124 core/built-in.o
+                0x0000000000022c24                check_field_string
+ .text.get_array_length
+                0x0000000000022d48       0x30 core/built-in.o
+                0x0000000000022d48                get_array_length
+ .text.get_child
+                0x0000000000022d78       0x28 core/built-in.o
+                0x0000000000022d78                get_child
+ .text.iterate_field
+                0x0000000000022da0       0x28 core/built-in.o
+                0x0000000000022da0                iterate_field
+ .text.get_elem_from_idx
+                0x0000000000022dc8       0x28 core/built-in.o
+                0x0000000000022dc8                get_elem_from_idx
+ .text.get_field_string
+                0x0000000000022df0       0x28 core/built-in.o
+                0x0000000000022df0                get_field_string
+ .text.get_field_string_with_size
+                0x0000000000022e18       0x50 core/built-in.o
+                0x0000000000022e18                get_field_string_with_size
+ .text.get_field
+                0x0000000000022e68       0x28 core/built-in.o
+                0x0000000000022e68                get_field
+ .text.exist_field_string
+                0x0000000000022e90       0x74 core/built-in.o
+                0x0000000000022e90                exist_field_string
+ .text.find_root
+                0x0000000000022f04       0x30 core/built-in.o
+                0x0000000000022f04                find_root
+ .text.get_node
+                0x0000000000022f34       0x28 core/built-in.o
+                0x0000000000022f34                get_node
+ .text.get_hash_value
+                0x0000000000022f5c       0x7c core/built-in.o
+                0x0000000000022f5c                get_hash_value
+ .text.set_find_path
+                0x0000000000022fd8      0x42c core/built-in.o
+                0x0000000000022fd8                set_find_path
+ .text.version_to_number
+                0x0000000000023404      0x194 core/built-in.o
+ .text.is_oldstyle_version
+                0x0000000000023598       0x68 core/built-in.o
+ .text.versions_settings
+                0x0000000000023600      0x210 core/built-in.o
+ .text.read_sw_version_file
+                0x0000000000023810      0x2c0 core/built-in.o
+ .text.get_sw_versions
+                0x0000000000023ad0       0x3c core/built-in.o
+                0x0000000000023ad0                get_sw_versions
+ .text.compare_versions
+                0x0000000000023b0c      0x318 core/built-in.o
+                0x0000000000023b0c                compare_versions
+ .text.insert_entry
+                0x0000000000023e24       0x60 core/built-in.o
+ .text.insert_list_elem
+                0x0000000000023e84       0x60 core/built-in.o
+ .text.get_entry.isra.0
+                0x0000000000023ee4       0x3c core/built-in.o
+ .text.remove_entry
+                0x0000000000023f20       0x74 core/built-in.o
+ .text.dict_entry_get_key
+                0x0000000000023f94        0xc core/built-in.o
+                0x0000000000023f94                dict_entry_get_key
+ .text.dict_entry_get_value
+                0x0000000000023fa0       0x14 core/built-in.o
+                0x0000000000023fa0                dict_entry_get_value
+ .text.dict_get_list
+                0x0000000000023fb4       0x1c core/built-in.o
+                0x0000000000023fb4                dict_get_list
+ .text.dict_get_value
+                0x0000000000023fd0       0x20 core/built-in.o
+                0x0000000000023fd0                dict_get_value
+ .text.dict_insert_value
+                0x0000000000023ff0       0x54 core/built-in.o
+                0x0000000000023ff0                dict_insert_value
+ .text.dict_set_value
+                0x0000000000024044       0x58 core/built-in.o
+                0x0000000000024044                dict_set_value
+ .text.dict_remove
+                0x000000000002409c       0x20 core/built-in.o
+                0x000000000002409c                dict_remove
+ .text.dict_drop_db
+                0x00000000000240bc       0x28 core/built-in.o
+                0x00000000000240bc                dict_drop_db
+ .text.dict_parse_script
+                0x00000000000240e4      0x274 core/built-in.o
+                0x00000000000240e4                dict_parse_script
+ .text.has_valid_chars
+                0x0000000000024358       0x70 core/built-in.o
+ .text.parse_slice
+                0x00000000000243c8       0x68 core/built-in.o
+ .text.compare_prerelease
+                0x0000000000024430      0x208 core/built-in.o
+ .text.concat_num
+                0x0000000000024638       0xbc core/built-in.o
+ .text.concat_char
+                0x00000000000246f4       0x98 core/built-in.o
+ .text.char_to_int
+                0x000000000002478c       0x78 core/built-in.o
+ .text.semver_parse_version
+                0x0000000000024804      0x110 core/built-in.o
+                0x0000000000024804                semver_parse_version
+ .text.semver_compare_prerelease
+                0x0000000000024914        0xc core/built-in.o
+                0x0000000000024914                semver_compare_prerelease
+ .text.semver_compare_version
+                0x0000000000024920       0x44 core/built-in.o
+                0x0000000000024920                semver_compare_version
+ .text.semver_compare
+                0x0000000000024964       0x54 core/built-in.o
+                0x0000000000024964                semver_compare
+ .text.semver_gt
+                0x00000000000249b8       0x40 core/built-in.o
+                0x00000000000249b8                semver_gt
+ .text.semver_lt
+                0x00000000000249f8       0x40 core/built-in.o
+                0x00000000000249f8                semver_lt
+ .text.semver_eq
+                0x0000000000024a38       0x40 core/built-in.o
+                0x0000000000024a38                semver_eq
+ .text.semver_neq
+                0x0000000000024a78       0x40 core/built-in.o
+                0x0000000000024a78                semver_neq
+ .text.semver_gte
+                0x0000000000024ab8       0x40 core/built-in.o
+                0x0000000000024ab8                semver_gte
+ .text.semver_lte
+                0x0000000000024af8       0x40 core/built-in.o
+                0x0000000000024af8                semver_lte
+ .text.semver_satisfies_caret
+                0x0000000000024b38       0x64 core/built-in.o
+                0x0000000000024b38                semver_satisfies_caret
+ .text.semver_satisfies_patch
+                0x0000000000024b9c       0x14 core/built-in.o
+                0x0000000000024b9c                semver_satisfies_patch
+ .text.semver_satisfies
+                0x0000000000024bb0      0x138 core/built-in.o
+                0x0000000000024bb0                semver_satisfies
+ .text.semver_free
+                0x0000000000024ce8       0x30 core/built-in.o
+                0x0000000000024ce8                semver_free
+ .text.semver_render
+                0x0000000000024d18       0x8c core/built-in.o
+                0x0000000000024d18                semver_render
+ .text.semver_bump
+                0x0000000000024da4       0x10 core/built-in.o
+                0x0000000000024da4                semver_bump
+ .text.semver_bump_minor
+                0x0000000000024db4       0x10 core/built-in.o
+                0x0000000000024db4                semver_bump_minor
+ .text.semver_bump_patch
+                0x0000000000024dc4       0x10 core/built-in.o
+                0x0000000000024dc4                semver_bump_patch
+ .text.semver_is_valid
+                0x0000000000024dd4       0x3c core/built-in.o
+                0x0000000000024dd4                semver_is_valid
+ .text.semver_parse
+                0x0000000000024e10       0x8c core/built-in.o
+                0x0000000000024e10                semver_parse
+ .text.semver_clean
+                0x0000000000024e9c       0xfc core/built-in.o
+                0x0000000000024e9c                semver_clean
+ .text.semver_numeric
+                0x0000000000024f98      0x11c core/built-in.o
+                0x0000000000024f98                semver_numeric
+ .text.strlcpy  0x00000000000250b4       0x4c core/built-in.o
+                0x00000000000250b4                strlcpy
+ .text.install_nothing
+                0x0000000000025100      0x114 handlers/built-in.o
+ .text.dummy_handler
+                0x0000000000025214       0x1c handlers/built-in.o
+                0x0000000000025214                dummy_handler
+ .text.chain_handler_thread
+                0x0000000000025230      0x108 handlers/built-in.o
+                0x0000000000025230                chain_handler_thread
+ .text.extract  0x0000000000025338      0x820 handlers/built-in.o
+ .text.install_archive_image
+                0x0000000000025b58      0xb5c handlers/built-in.o
+ .text.archive_handler
+                0x00000000000266b4       0x1c handlers/built-in.o
+                0x00000000000266b4                archive_handler
+ .text.untar_handler
+                0x00000000000266d0       0x1c handlers/built-in.o
+                0x00000000000266d0                untar_handler
+ .text.install_boot_environment
+                0x00000000000266ec      0x4c0 handlers/built-in.o
+ .text.uboot_handler
+                0x0000000000026bac       0x1c handlers/built-in.o
+ .text.boot_handler
+                0x0000000000026bc8       0x1c handlers/built-in.o
+ .text.copy_image_file
+                0x0000000000026be4      0x94c handlers/built-in.o
+ .text.copy_handler
+                0x0000000000027530       0x1c handlers/built-in.o
+ .text.raw_copyimage_handler
+                0x000000000002754c       0x1c handlers/built-in.o
+ .text.erase_buffer
+                0x0000000000027568       0x1c handlers/built-in.o
+ .text.install_flash_image
+                0x0000000000027584      0xd48 handlers/built-in.o
+ .text.flash_handler
+                0x00000000000282cc       0x1c handlers/built-in.o
+                0x00000000000282cc                flash_handler
+ .text.blkprotect
+                0x00000000000282e8      0x2d0 handlers/built-in.o
+ .text.install_raw_image
+                0x00000000000285b8      0x12c handlers/built-in.o
+ .text.install_raw_file
+                0x00000000000286e4      0x81c handlers/built-in.o
+ .text.raw_image_handler
+                0x0000000000028f00       0x1c handlers/built-in.o
+                0x0000000000028f00                raw_image_handler
+ .text.raw_file_handler
+                0x0000000000028f1c       0x1c handlers/built-in.o
+                0x0000000000028f1c                raw_file_handler
+ .text.execute_shell_script
+                0x0000000000028f38      0x1e4 handlers/built-in.o
+ .text.start_shell_script
+                0x000000000002911c       0x40 handlers/built-in.o
+ .text.start_preinstall_script
+                0x000000000002915c       0x2c handlers/built-in.o
+ .text.start_postinstall_script
+                0x0000000000029188       0x2c handlers/built-in.o
+ .text.shell_handler
+                0x00000000000291b4       0x1c handlers/built-in.o
+ .text.shell_preinstall_handler
+                0x00000000000291d0       0x1c handlers/built-in.o
+ .text.shell_postinstall_handler
+                0x00000000000291ec       0x1c handlers/built-in.o
+ .text.do_apply_list
+                0x0000000000029208       0x10 bootloader/built-in.o
+ .text.do_env_get
+                0x0000000000029218       0x28 bootloader/built-in.o
+ .text.do_env_unset
+                0x0000000000029240       0x20 bootloader/built-in.o
+ .text.do_env_set
+                0x0000000000029260       0x24 bootloader/built-in.o
+ .text.none_probe
+                0x0000000000029284       0x14 bootloader/built-in.o
+ .text.__ipc_get_status
+                0x0000000000029298      0x154 ipc/built-in.o
+ .text.get_ctrl_socket
+                0x00000000000293ec       0x70 ipc/built-in.o
+                0x00000000000293ec                get_ctrl_socket
+ .text.prepare_ipc
+                0x000000000002945c       0xb0 ipc/built-in.o
+ .text.ipc_postupdate
+                0x000000000002950c      0x170 ipc/built-in.o
+                0x000000000002950c                ipc_postupdate
+ .text.ipc_get_status
+                0x000000000002967c       0x48 ipc/built-in.o
+                0x000000000002967c                ipc_get_status
+ .text.ipc_get_status_timeout
+                0x00000000000296c4       0x60 ipc/built-in.o
+                0x00000000000296c4                ipc_get_status_timeout
+ .text.ipc_notify_connect
+                0x0000000000029724       0xf4 ipc/built-in.o
+                0x0000000000029724                ipc_notify_connect
+ .text.ipc_notify_receive
+                0x0000000000029818       0xa4 ipc/built-in.o
+                0x0000000000029818                ipc_notify_receive
+ .text.ipc_inst_start_ext
+                0x00000000000298bc      0x110 ipc/built-in.o
+                0x00000000000298bc                ipc_inst_start_ext
+ .text.ipc_inst_start
+                0x00000000000299cc        0xc ipc/built-in.o
+                0x00000000000299cc                ipc_inst_start
+ .text.ipc_send_data
+                0x00000000000299d8       0x5c ipc/built-in.o
+                0x00000000000299d8                ipc_send_data
+ .text.ipc_end  0x0000000000029a34        0x4 ipc/built-in.o
+                0x0000000000029a34                ipc_end
+ .text.ipc_wait_for_complete
+                0x0000000000029a38       0xe8 ipc/built-in.o
+                0x0000000000029a38                ipc_wait_for_complete
+ .text.ipc_send_cmd
+                0x0000000000029b20       0x74 ipc/built-in.o
+                0x0000000000029b20                ipc_send_cmd
+ .text.swupdate_async_start
+                0x0000000000029b94      0x11c ipc/built-in.o
+                0x0000000000029b94                swupdate_async_start
+ .text.swupdate_image_write
+                0x0000000000029cb0       0x14 ipc/built-in.o
+                0x0000000000029cb0                swupdate_image_write
+ .text.swupdate_async_thread
+                0x0000000000029cc4      0x124 ipc/built-in.o
+ .text.swupdate_set_aes
+                0x0000000000029de8       0xe0 ipc/built-in.o
+                0x0000000000029de8                swupdate_set_aes
+ .text.swupdate_set_version_range
+                0x0000000000029ec8       0xc4 ipc/built-in.o
+                0x0000000000029ec8                swupdate_set_version_range
+ .text.swupdate_prepare_req
+                0x0000000000029f8c       0x30 ipc/built-in.o
+                0x0000000000029f8c                swupdate_prepare_req
+ .text._progress_ipc_connect
+                0x0000000000029fbc       0xec ipc/built-in.o
+ .text.get_prog_socket
+                0x000000000002a0a8       0x78 ipc/built-in.o
+                0x000000000002a0a8                get_prog_socket
+ .text.progress_ipc_connect_with_path
+                0x000000000002a120        0x4 ipc/built-in.o
+                0x000000000002a120                progress_ipc_connect_with_path
+ .text.progress_ipc_connect
+                0x000000000002a124       0x18 ipc/built-in.o
+                0x000000000002a124                progress_ipc_connect
+ .text.progress_ipc_receive
+                0x000000000002a13c       0x54 ipc/built-in.o
+                0x000000000002a13c                progress_ipc_receive
+ .text.download_settings
+                0x000000000002a190      0x11c corelib/lib.a(downloader.o)
+ .text.download_print_help
+                0x000000000002a2ac       0x24 corelib/lib.a(downloader.o)
+                0x000000000002a2ac                download_print_help
+ .text.start_download
+                0x000000000002a2d0      0x2dc corelib/lib.a(downloader.o)
+                0x000000000002a2d0                start_download
+ .text.lua_dump_table
+                0x000000000002a5ac      0x468 corelib/lib.a(lua_interface.o)
+ .text.push_st_mode
+                0x000000000002aa14       0xbc corelib/lib.a(lua_interface.o)
+ .text.l_get_hw
+                0x000000000002aad0       0xa0 corelib/lib.a(lua_interface.o)
+ .text.push_st_blksize
+                0x000000000002ab70        0x8 corelib/lib.a(lua_interface.o)
+ .text.push_st_blocks
+                0x000000000002ab78        0x8 corelib/lib.a(lua_interface.o)
+ .text.push_st_size
+                0x000000000002ab80        0x8 corelib/lib.a(lua_interface.o)
+ .text.push_st_gid
+                0x000000000002ab88        0x8 corelib/lib.a(lua_interface.o)
+ .text.push_st_uid
+                0x000000000002ab90        0x8 corelib/lib.a(lua_interface.o)
+ .text.push_st_nlink
+                0x000000000002ab98        0x8 corelib/lib.a(lua_interface.o)
+ .text.push_st_ino
+                0x000000000002aba0        0x8 corelib/lib.a(lua_interface.o)
+ .text.getroot_dev_path
+                0x000000000002aba8      0x128 corelib/lib.a(lua_interface.o)
+ .text.l_getroot
+                0x000000000002acd0      0x1e0 corelib/lib.a(lua_interface.o)
+ .text.lua_notify_progress
+                0x000000000002aeb0       0x40 corelib/lib.a(lua_interface.o)
+                0x000000000002aeb0                lua_notify_progress
+ .text.l_get_bootenv
+                0x000000000002aef0       0x78 corelib/lib.a(lua_interface.o)
+ .text.l_umount
+                0x000000000002af68      0x15c corelib/lib.a(lua_interface.o)
+ .text.l_stat   0x000000000002b0c4       0xd0 corelib/lib.a(lua_interface.o)
+ .text.l_mount  0x000000000002b194      0x260 corelib/lib.a(lua_interface.o)
+ .text.l_notify
+                0x000000000002b3f4       0x80 corelib/lib.a(lua_interface.o)
+ .text.lua_push_enum
+                0x000000000002b474       0x34 corelib/lib.a(lua_interface.o)
+ .text.luaopen_swupdate
+                0x000000000002b4a8      0x1a4 corelib/lib.a(lua_interface.o)
+ .text.notify_helper
+                0x000000000002b64c      0x34c corelib/lib.a(lua_interface.o)
+ .text.lua_notify_trace
+                0x000000000002b998        0x8 corelib/lib.a(lua_interface.o)
+                0x000000000002b998                lua_notify_trace
+ .text.lua_notify_error
+                0x000000000002b9a0        0x8 corelib/lib.a(lua_interface.o)
+                0x000000000002b9a0                lua_notify_error
+ .text.lua_notify_info
+                0x000000000002b9a8        0x8 corelib/lib.a(lua_interface.o)
+                0x000000000002b9a8                lua_notify_info
+ .text.lua_notify_warn
+                0x000000000002b9b0        0x8 corelib/lib.a(lua_interface.o)
+                0x000000000002b9b0                lua_notify_warn
+ .text.lua_notify_debug
+                0x000000000002b9b8        0x8 corelib/lib.a(lua_interface.o)
+                0x000000000002b9b8                lua_notify_debug
+ .text.lua_get_swupdate_version
+                0x000000000002b9c0      0x100 corelib/lib.a(lua_interface.o)
+                0x000000000002b9c0                lua_get_swupdate_version
+ .text.push_st_ctime
+                0x000000000002bac0       0x20 corelib/lib.a(lua_interface.o)
+ .text.push_st_mtime
+                0x000000000002bae0       0x20 corelib/lib.a(lua_interface.o)
+ .text.push_st_atime
+                0x000000000002bb00       0x20 corelib/lib.a(lua_interface.o)
+ .text.push_device
+                0x000000000002bb20       0x84 corelib/lib.a(lua_interface.o)
+ .text.push_st_rdev
+                0x000000000002bba4        0x8 corelib/lib.a(lua_interface.o)
+ .text.push_st_dev
+                0x000000000002bbac        0x8 corelib/lib.a(lua_interface.o)
+ .text.l_get_selection
+                0x000000000002bbb4       0x84 corelib/lib.a(lua_interface.o)
+ .text.l_set_bootenv
+                0x000000000002bc38       0x94 corelib/lib.a(lua_interface.o)
+ .text.update_table
+                0x000000000002bccc      0x5c8 corelib/lib.a(lua_interface.o)
+ .text.push_st_perm
+                0x000000000002c294       0xd0 corelib/lib.a(lua_interface.o)
+ .text.LUAstackDump
+                0x000000000002c364      0x274 corelib/lib.a(lua_interface.o)
+                0x000000000002c364                LUAstackDump
+ .text.run_lua_script
+                0x000000000002c5d8      0x420 corelib/lib.a(lua_interface.o)
+                0x000000000002c5d8                run_lua_script
+ .text.lua_handlers_init
+                0x000000000002c9f8        0x8 corelib/lib.a(lua_interface.o)
+                0x000000000002c9f8                lua_handlers_init
+ .text.lua_parser_init
+                0x000000000002ca00      0x19c corelib/lib.a(lua_interface.o)
+                0x000000000002ca00                lua_parser_init
+ .text.lua_parser_fn
+                0x000000000002cb9c      0x974 corelib/lib.a(lua_interface.o)
+                0x000000000002cb9c                lua_parser_fn
+ .text.ubi_insert_list
+                0x000000000002d510       0x3c corelib/lib.a(mtd-interface.o)
+ .text.flash_erase_sector
+                0x000000000002d54c      0x614 corelib/lib.a(mtd-interface.o)
+                0x000000000002d54c                flash_erase_sector
+ .text.flash_erase
+                0x000000000002db60        0xc corelib/lib.a(mtd-interface.o)
+                0x000000000002db60                flash_erase
+ .text.mtd_init
+                0x000000000002db6c      0x108 corelib/lib.a(mtd-interface.o)
+                0x000000000002db6c                mtd_init
+ .text.mtd_set_ubiblacklist
+                0x000000000002dc74       0x14 corelib/lib.a(mtd-interface.o)
+                0x000000000002dc74                mtd_set_ubiblacklist
+ .text.get_mtd_from_device
+                0x000000000002dc88      0x188 corelib/lib.a(mtd-interface.o)
+                0x000000000002dc88                get_mtd_from_device
+ .text.get_mtd_from_name
+                0x000000000002de10       0x68 corelib/lib.a(mtd-interface.o)
+                0x000000000002de10                get_mtd_from_name
+ .text.ubi_init
+                0x000000000002de78      0x13c corelib/lib.a(mtd-interface.o)
+                0x000000000002de78                ubi_init
+ .text.scan_mtd_devices
+                0x000000000002dfb4      0x3b8 corelib/lib.a(mtd-interface.o)
+                0x000000000002dfb4                scan_mtd_devices
+ .text.ubi_mount
+                0x000000000002e36c      0x150 corelib/lib.a(mtd-interface.o)
+                0x000000000002e36c                ubi_mount
+ .text.ubi_umount
+                0x000000000002e4bc        0x4 corelib/lib.a(mtd-interface.o)
+                0x000000000002e4bc                ubi_umount
+ .text.mtd_cleanup
+                0x000000000002e4c0       0x98 corelib/lib.a(mtd-interface.o)
+                0x000000000002e4c0                mtd_cleanup
+ .text.get_value_libconfig
+                0x000000000002e558       0x74 corelib/lib.a(parsing_library_libconfig.o)
+                0x000000000002e558                get_value_libconfig
+ .text.get_child_libconfig
+                0x000000000002e5cc        0x4 corelib/lib.a(parsing_library_libconfig.o)
+                0x000000000002e5cc                get_child_libconfig
+ .text.iterate_field_libconfig
+                0x000000000002e5d0       0xc4 corelib/lib.a(parsing_library_libconfig.o)
+                0x000000000002e5d0                iterate_field_libconfig
+ .text.get_field_cfg
+                0x000000000002e694       0x28 corelib/lib.a(parsing_library_libconfig.o)
+                0x000000000002e694                get_field_cfg
+ .text.get_field_string_libconfig
+                0x000000000002e6bc       0xa0 corelib/lib.a(parsing_library_libconfig.o)
+                0x000000000002e6bc                get_field_string_libconfig
+ .text.get_node_libconfig
+                0x000000000002e75c       0x50 corelib/lib.a(parsing_library_libconfig.o)
+                0x000000000002e75c                get_node_libconfig
+ .text.find_root_libconfig
+                0x000000000002e7ac       0xc8 corelib/lib.a(parsing_library_libconfig.o)
+                0x000000000002e7ac                find_root_libconfig
+ .text.find_json_recursive_node
+                0x000000000002e874       0x78 corelib/lib.a(parsing_library_libjson.o)
+                0x000000000002e874                find_json_recursive_node
+ .text.get_child_json
+                0x000000000002e8ec       0x60 corelib/lib.a(parsing_library_libjson.o)
+                0x000000000002e8ec                get_child_json
+ .text.iterate_field_json
+                0x000000000002e94c       0xe4 corelib/lib.a(parsing_library_libjson.o)
+                0x000000000002e94c                iterate_field_json
+ .text.get_field_string_json
+                0x000000000002ea30       0x74 corelib/lib.a(parsing_library_libjson.o)
+                0x000000000002ea30                get_field_string_json
+ .text.get_value_json
+                0x000000000002eaa4       0x88 corelib/lib.a(parsing_library_libjson.o)
+                0x000000000002eaa4                get_value_json
+ .text.get_field_json
+                0x000000000002eb2c       0x74 corelib/lib.a(parsing_library_libjson.o)
+                0x000000000002eb2c                get_field_json
+ .text.json_get_key
+                0x000000000002eba0       0x4c corelib/lib.a(parsing_library_libjson.o)
+                0x000000000002eba0                json_get_key
+ .text.json_get_value
+                0x000000000002ebec       0x24 corelib/lib.a(parsing_library_libjson.o)
+                0x000000000002ebec                json_get_value
+ .text.json_get_path_key
+                0x000000000002ec10       0x28 corelib/lib.a(parsing_library_libjson.o)
+                0x000000000002ec10                json_get_path_key
+ .text.json_get_data_url
+                0x000000000002ec38       0x78 corelib/lib.a(parsing_library_libjson.o)
+                0x000000000002ec38                json_get_data_url
+ .text.find_root_json
+                0x000000000002ecb0       0x9c corelib/lib.a(parsing_library_libjson.o)
+                0x000000000002ecb0                find_root_json
+ .text.get_node_json
+                0x000000000002ed4c        0x4 corelib/lib.a(parsing_library_libjson.o)
+                0x000000000002ed4c                get_node_json
+ .text.get_run_as
+                0x000000000002ed50       0x50 corelib/lib.a(swupdate_settings.o)
+ .text.read_module_settings
+                0x000000000002eda0      0x168 corelib/lib.a(swupdate_settings.o)
+                0x000000000002eda0                read_module_settings
+ .text.read_settings_user_id
+                0x000000000002ef08       0xa8 corelib/lib.a(swupdate_settings.o)
+                0x000000000002ef08                read_settings_user_id
+ .text.settings_into_dict
+                0x000000000002efb0      0x18c corelib/lib.a(swupdate_settings.o)
+                0x000000000002efb0                settings_into_dict
+ .text.swupdate_cfg_init
+                0x000000000002f13c        0x4 corelib/lib.a(swupdate_settings.o)
+                0x000000000002f13c                swupdate_cfg_init
+ .text.swupdate_cfg_read_file
+                0x000000000002f140      0x1d4 corelib/lib.a(swupdate_settings.o)
+                0x000000000002f140                swupdate_cfg_read_file
+ .text.swupdate_cfg_destroy
+                0x000000000002f314        0x4 corelib/lib.a(swupdate_settings.o)
+                0x000000000002f314                swupdate_cfg_destroy
+ .text._curl_easy_setopt_err_curl_off_t
+                0x000000000002f318        0x4 corelib/lib.a(channel_curl.o)
+ .text._curl_easy_setopt_err_write_callback
+                0x000000000002f31c        0x4 corelib/lib.a(channel_curl.o)
+ .text.channel_log_reply
+                0x000000000002f320      0x1c4 corelib/lib.a(channel_curl.o)
+ .text.channel_get_redirect_url
+                0x000000000002f4e4       0xac corelib/lib.a(channel_curl.o)
+                0x000000000002f4e4                channel_get_redirect_url
+ .text.put_read_callback
+                0x000000000002f590       0x7c corelib/lib.a(channel_curl.o)
+ .text.channel_callback_xferinfo
+                0x000000000002f60c      0x108 corelib/lib.a(channel_curl.o)
+ .text.channel_close
+                0x000000000002f714       0x44 corelib/lib.a(channel_curl.o)
+ .text.setup_reply_buffer
+                0x000000000002f758      0x1ac corelib/lib.a(channel_curl.o)
+ .text.parse_reply
+                0x000000000002f904      0x30c corelib/lib.a(channel_curl.o)
+ .text.channel_open
+                0x000000000002fc10      0x108 corelib/lib.a(channel_curl.o)
+ .text.channel_callback_membuffer
+                0x000000000002fd18      0x12c corelib/lib.a(channel_curl.o)
+                0x000000000002fd18                channel_callback_membuffer
+ .text.channel_callback_headers
+                0x000000000002fe44      0x250 corelib/lib.a(channel_curl.o)
+ .text.channel_set_content_type.isra.0
+                0x0000000000030094      0x314 corelib/lib.a(channel_curl.o)
+ .text.channel_log_effective_url.isra.0
+                0x00000000000303a8      0x144 corelib/lib.a(channel_curl.o)
+ .text.channel_get_total_download_size.isra.0
+                0x00000000000304ec      0x138 corelib/lib.a(channel_curl.o)
+ .text.channel_curl_init
+                0x0000000000030624      0x100 corelib/lib.a(channel_curl.o)
+                0x0000000000030624                channel_curl_init
+ .text.channel_new
+                0x0000000000030724       0x6c corelib/lib.a(channel_curl.o)
+                0x0000000000030724                channel_new
+ .text.channel_map_http_code
+                0x0000000000030790      0x3b4 corelib/lib.a(channel_curl.o)
+                0x0000000000030790                channel_map_http_code
+ .text.channel_callback_ipc
+                0x0000000000030b44      0x1bc corelib/lib.a(channel_curl.o)
+                0x0000000000030b44                channel_callback_ipc
+ .text.channel_map_curl_error
+                0x0000000000030d00       0x20 corelib/lib.a(channel_curl.o)
+                0x0000000000030d00                channel_map_curl_error
+ .text.channel_set_options
+                0x0000000000030d20      0x584 corelib/lib.a(channel_curl.o)
+                0x0000000000030d20                channel_set_options
+ .text.channel_put
+                0x00000000000312a4      0x6d4 corelib/lib.a(channel_curl.o)
+ .text.channel_get_file
+                0x0000000000031978      0xef8 corelib/lib.a(channel_curl.o)
+ .text.channel_get
+                0x0000000000032870      0x3a0 corelib/lib.a(channel_curl.o)
+ .text.signal_handler
+                0x0000000000032c10        0xc mongoose/lib.a(mongoose_interface.o)
+ .text.p_list   0x0000000000032c1c        0x4 mongoose/lib.a(mongoose_interface.o)
+ .text.p_open   0x0000000000032c20       0x14 mongoose/lib.a(mongoose_interface.o)
+ .text.p_close  0x0000000000032c34       0x14 mongoose/lib.a(mongoose_interface.o)
+ .text.p_read   0x0000000000032c48       0x14 mongoose/lib.a(mongoose_interface.o)
+ .text.p_write  0x0000000000032c5c       0x14 mongoose/lib.a(mongoose_interface.o)
+ .text.p_seek   0x0000000000032c70       0x14 mongoose/lib.a(mongoose_interface.o)
+ .text.p_rename
+                0x0000000000032c84       0x14 mongoose/lib.a(mongoose_interface.o)
+ .text.p_remove
+                0x0000000000032c98       0x14 mongoose/lib.a(mongoose_interface.o)
+ .text.p_mkdir  0x0000000000032cac       0x14 mongoose/lib.a(mongoose_interface.o)
+ .text.broadcast
+                0x0000000000032cc0       0x34 mongoose/lib.a(mongoose_interface.o)
+ .text.mg_time  0x0000000000032cf4       0x74 mongoose/lib.a(mongoose_interface.o)
+ .text.cs_md5   0x0000000000032d68      0x184 mongoose/lib.a(mongoose_interface.o)
+ .text.broadcast_callback
+                0x0000000000032eec       0x60 mongoose/lib.a(mongoose_interface.o)
+ .text.p_stat   0x0000000000032f4c       0x4c mongoose/lib.a(mongoose_interface.o)
+ .text.mongoose_settings
+                0x0000000000032f98      0x1fc mongoose/lib.a(mongoose_interface.o)
+ .text.broadcast_progress_thread
+                0x0000000000033194      0x2f8 mongoose/lib.a(mongoose_interface.o)
+ .text.broadcast_message_thread
+                0x000000000003348c      0x130 mongoose/lib.a(mongoose_interface.o)
+ .text.timer_ev_handler
+                0x00000000000335bc      0x174 mongoose/lib.a(mongoose_interface.o)
+ .text.upload_handler
+                0x0000000000033730      0x45c mongoose/lib.a(mongoose_interface.o)
+ .text.mg_check_digest_auth.isra.0
+                0x0000000000033b8c      0x1fc mongoose/lib.a(mongoose_interface.o)
+ .text.mg_http_is_authorized
+                0x0000000000033d88      0x27c mongoose/lib.a(mongoose_interface.o)
+ .text.ev_handler
+                0x0000000000034004      0x3cc mongoose/lib.a(mongoose_interface.o)
+ .text.mongoose_print_help
+                0x00000000000343d0       0x2c mongoose/lib.a(mongoose_interface.o)
+                0x00000000000343d0                mongoose_print_help
+ .text.start_mongoose
+                0x00000000000343fc      0x52c mongoose/lib.a(mongoose_interface.o)
+                0x00000000000343fc                start_mongoose
+ .text.mg_http_multipart_call_handler
+                0x0000000000034928       0x90 mongoose/lib.a(mongoose_multipart.o)
+ .text.mg_http_multipart_continue
+                0x00000000000349b8      0x3fc mongoose/lib.a(mongoose_multipart.o)
+ .text.multipart_upload_handler
+                0x0000000000034db4      0x20c mongoose/lib.a(mongoose_multipart.o)
+                0x0000000000034db4                multipart_upload_handler
+ .text.mg_b64idx
+                0x0000000000034fc0       0x44 mongoose/lib.a(mongoose.o)
+ .text.mg_b64rev
+                0x0000000000035004       0x60 mongoose/lib.a(mongoose.o)
+ .text.addexp   0x0000000000035064       0x94 mongoose/lib.a(mongoose.o)
+ .text.mg_lld   0x00000000000350f8       0xd0 mongoose/lib.a(mongoose.o)
+ .text.scpy     0x00000000000351c8       0x54 mongoose/lib.a(mongoose.o)
+ .text.packed_stat
+                0x000000000003521c        0x8 mongoose/lib.a(mongoose.o)
+ .text.packed_list
+                0x0000000000035224        0x4 mongoose/lib.a(mongoose.o)
+ .text.packed_open
+                0x0000000000035228        0x8 mongoose/lib.a(mongoose.o)
+ .text.packed_write
+                0x0000000000035230        0x8 mongoose/lib.a(mongoose.o)
+ .text.packed_seek
+                0x0000000000035238       0x18 mongoose/lib.a(mongoose.o)
+ .text.packed_rename
+                0x0000000000035250        0x8 mongoose/lib.a(mongoose.o)
+ .text.packed_remove
+                0x0000000000035258        0x8 mongoose/lib.a(mongoose.o)
+ .text.isx      0x0000000000035260       0x28 mongoose/lib.a(mongoose.o)
+ .text.mg_http_status_code_str
+                0x0000000000035288      0x164 mongoose/lib.a(mongoose.o)
+ .text.zeromem  0x00000000000353ec       0x1c mongoose/lib.a(mongoose.o)
+ .text.mg_pass_string
+                0x0000000000035408       0x90 mongoose/lib.a(mongoose.o)
+ .text.mg_atod  0x0000000000035498      0x1c8 mongoose/lib.a(mongoose.o)
+ .text.logc     0x0000000000035660       0x18 mongoose/lib.a(mongoose.o)
+ .text.logs     0x0000000000035678       0x30 mongoose/lib.a(mongoose.o)
+ .text.mg_md5_transform
+                0x00000000000356a8      0x9ec mongoose/lib.a(mongoose.o)
+ .text.blk0     0x0000000000036094       0x14 mongoose/lib.a(mongoose.o)
+ .text.mg_sha1_transform
+                0x00000000000360a8     0x10cc mongoose/lib.a(mongoose.o)
+ .text.mg_ws_mask
+                0x0000000000037174       0x4c mongoose/lib.a(mongoose.o)
+ .text.packed_close
+                0x00000000000371c0        0xc mongoose/lib.a(mongoose.o)
+ .text.mg_dns_parse_name_depth
+                0x00000000000371cc      0x144 mongoose/lib.a(mongoose.o)
+ .text.packed_read
+                0x0000000000037310       0x54 mongoose/lib.a(mongoose.o)
+ .text.mg_aton4
+                0x0000000000037364       0xf8 mongoose/lib.a(mongoose.o)
+ .text.tousa    0x000000000003745c       0x4c mongoose/lib.a(mongoose.o)
+ .text.tomgaddr
+                0x00000000000374a8       0x30 mongoose/lib.a(mongoose.o)
+ .text.skip     0x00000000000374d8       0x88 mongoose/lib.a(mongoose.o)
+ .text.p_mkdir  0x0000000000037560       0x1c mongoose/lib.a(mongoose.o)
+ .text.p_remove
+                0x000000000003757c       0x18 mongoose/lib.a(mongoose.o)
+ .text.p_rename
+                0x0000000000037594       0x18 mongoose/lib.a(mongoose.o)
+ .text.p_seek   0x00000000000375ac       0x1c mongoose/lib.a(mongoose.o)
+ .text.p_write  0x00000000000375c8       0x10 mongoose/lib.a(mongoose.o)
+ .text.p_read   0x00000000000375d8       0x10 mongoose/lib.a(mongoose.o)
+ .text.p_close  0x00000000000375e8        0x4 mongoose/lib.a(mongoose.o)
+ .text.p_open   0x00000000000375ec       0x1c mongoose/lib.a(mongoose.o)
+ .text.p_list   0x0000000000037608       0xa0 mongoose/lib.a(mongoose.o)
+ .text.p_stat   0x00000000000376a8       0x90 mongoose/lib.a(mongoose.o)
+ .text.default_logger
+                0x0000000000037738        0x8 mongoose/lib.a(mongoose.o)
+ .text.setlocaddr
+                0x0000000000037740       0x7c mongoose/lib.a(mongoose.o)
+ .text.mg_set_non_blocking_mode
+                0x00000000000377bc       0x38 mongoose/lib.a(mongoose.o)
+ .text.raccept  0x00000000000377f4       0x68 mongoose/lib.a(mongoose.o)
+ .text.urlparse
+                0x000000000003785c      0x168 mongoose/lib.a(mongoose.o)
+ .text.mg_dns_free.isra.0
+                0x00000000000379c4       0x28 mongoose/lib.a(mongoose.o)
+ .text.setsockopts.isra.0
+                0x00000000000379ec       0x88 mongoose/lib.a(mongoose.o)
+ .text.mg_tls_err.isra.0
+                0x0000000000037a74       0x38 mongoose/lib.a(mongoose.o)
+ .text.qcpy     0x0000000000037aac       0xc8 mongoose/lib.a(mongoose.o)
+ .text.Qcpy     0x0000000000037b74       0x5c mongoose/lib.a(mongoose.o)
+ .text.packed_mkdir
+                0x0000000000037bd0        0x8 mongoose/lib.a(mongoose.o)
+ .text.mg_putchar_iobuf_static
+                0x0000000000037bd8       0x4c mongoose/lib.a(mongoose.o)
+ .text.mg_base64_update
+                0x0000000000037c24       0x90 mongoose/lib.a(mongoose.o)
+                0x0000000000037c24                mg_base64_update
+ .text.mg_base64_final
+                0x0000000000037cb4       0x64 mongoose/lib.a(mongoose.o)
+                0x0000000000037cb4                mg_base64_final
+ .text.mg_base64_encode
+                0x0000000000037d18       0x54 mongoose/lib.a(mongoose.o)
+                0x0000000000037d18                mg_base64_encode
+ .text.mg_base64_decode
+                0x0000000000037d6c       0xe4 mongoose/lib.a(mongoose.o)
+                0x0000000000037d6c                mg_base64_decode
+ .text.mg_resolve_cancel
+                0x0000000000037e50       0x40 mongoose/lib.a(mongoose.o)
+                0x0000000000037e50                mg_resolve_cancel
+ .text.mg_dns_parse_rr
+                0x0000000000037e90       0xe0 mongoose/lib.a(mongoose.o)
+                0x0000000000037e90                mg_dns_parse_rr
+ .text.mg_dns_parse
+                0x0000000000037f70      0x1e8 mongoose/lib.a(mongoose.o)
+                0x0000000000037f70                mg_dns_parse
+ .text.mg_call  0x0000000000038158       0x58 mongoose/lib.a(mongoose.o)
+                0x0000000000038158                mg_call
+ .text.mg_vxprintf
+                0x00000000000381b0      0x9e4 mongoose/lib.a(mongoose.o)
+                0x00000000000381b0                mg_vxprintf
+ .text.mg_vsnprintf
+                0x0000000000038b94       0x70 mongoose/lib.a(mongoose.o)
+                0x0000000000038b94                mg_vsnprintf
+ .text.mg_error
+                0x0000000000038c04       0xc4 mongoose/lib.a(mongoose.o)
+                0x0000000000038c04                mg_error
+ .text.mg_snprintf
+                0x0000000000038cc8       0x8c mongoose/lib.a(mongoose.o)
+                0x0000000000038cc8                mg_snprintf
+ .text.mg_dtoa.constprop.0
+                0x0000000000038d54      0x35c mongoose/lib.a(mongoose.o)
+ .text.mg_vmprintf
+                0x00000000000390b0       0x60 mongoose/lib.a(mongoose.o)
+                0x00000000000390b0                mg_vmprintf
+ .text.mg_mprintf
+                0x0000000000039110       0x90 mongoose/lib.a(mongoose.o)
+                0x0000000000039110                mg_mprintf
+ .text.mg_xprintf
+                0x00000000000391a0       0x8c mongoose/lib.a(mongoose.o)
+                0x00000000000391a0                mg_xprintf
+ .text.print_methods
+                0x000000000003922c       0xc0 mongoose/lib.a(mongoose.o)
+ .text.mg_fs_open
+                0x00000000000392ec       0x6c mongoose/lib.a(mongoose.o)
+                0x00000000000392ec                mg_fs_open
+ .text.mg_fs_close
+                0x0000000000039358       0x2c mongoose/lib.a(mongoose.o)
+                0x0000000000039358                mg_fs_close
+ .text.mg_file_read
+                0x0000000000039384       0xf4 mongoose/lib.a(mongoose.o)
+                0x0000000000039384                mg_file_read
+ .text.mg_file_write
+                0x0000000000039478      0x114 mongoose/lib.a(mongoose.o)
+                0x0000000000039478                mg_file_write
+ .text.mg_file_printf
+                0x000000000003958c       0xd4 mongoose/lib.a(mongoose.o)
+                0x000000000003958c                mg_file_printf
+ .text.mg_unpack
+                0x0000000000039660        0x8 mongoose/lib.a(mongoose.o)
+                0x0000000000039660                mg_unpack
+ .text.mg_unlist
+                0x0000000000039668        0x8 mongoose/lib.a(mongoose.o)
+                0x0000000000039668                mg_unlist
+ .text.mg_http_get_request_len
+                0x0000000000039670       0x7c mongoose/lib.a(mongoose.o)
+                0x0000000000039670                mg_http_get_request_len
+ .text.mg_http_etag
+                0x00000000000396ec       0x24 mongoose/lib.a(mongoose.o)
+                0x00000000000396ec                mg_http_etag
+ .text.mg_http_get_header_var
+                0x0000000000039710      0x12c mongoose/lib.a(mongoose.o)
+                0x0000000000039710                mg_http_get_header_var
+ .text.mg_http_status
+                0x000000000003983c        0x8 mongoose/lib.a(mongoose.o)
+                0x000000000003983c                mg_http_status
+ .text.mg_iobuf_resize
+                0x0000000000039844       0xc4 mongoose/lib.a(mongoose.o)
+                0x0000000000039844                mg_iobuf_resize
+ .text.mg_pfn_iobuf
+                0x0000000000039908       0x7c mongoose/lib.a(mongoose.o)
+                0x0000000000039908                mg_pfn_iobuf
+ .text.static_cb
+                0x0000000000039984       0xb8 mongoose/lib.a(mongoose.o)
+ .text.mg_iobuf_init
+                0x0000000000039a3c        0xc mongoose/lib.a(mongoose.o)
+                0x0000000000039a3c                mg_iobuf_init
+ .text.mg_iobuf_add
+                0x0000000000039a48       0xb8 mongoose/lib.a(mongoose.o)
+                0x0000000000039a48                mg_iobuf_add
+ .text.mg_iobuf_del
+                0x0000000000039b00       0x84 mongoose/lib.a(mongoose.o)
+                0x0000000000039b00                mg_iobuf_del
+ .text.mg_http_delete_chunk
+                0x0000000000039b84       0x30 mongoose/lib.a(mongoose.o)
+                0x0000000000039b84                mg_http_delete_chunk
+ .text.mg_iobuf_free
+                0x0000000000039bb4        0x8 mongoose/lib.a(mongoose.o)
+                0x0000000000039bb4                mg_iobuf_free
+ .text.mg_json_get
+                0x0000000000039bbc      0x4f0 mongoose/lib.a(mongoose.o)
+                0x0000000000039bbc                mg_json_get
+ .text.mg_json_get_num
+                0x000000000003a0ac       0x98 mongoose/lib.a(mongoose.o)
+                0x000000000003a0ac                mg_json_get_num
+ .text.mg_json_get_bool
+                0x000000000003a144       0x58 mongoose/lib.a(mongoose.o)
+                0x000000000003a144                mg_json_get_bool
+ .text.mg_json_get_b64
+                0x000000000003a19c       0xbc mongoose/lib.a(mongoose.o)
+                0x000000000003a19c                mg_json_get_b64
+ .text.mg_json_get_long
+                0x000000000003a258       0x64 mongoose/lib.a(mongoose.o)
+                0x000000000003a258                mg_json_get_long
+ .text.mg_log_set_fn
+                0x000000000003a2bc       0x14 mongoose/lib.a(mongoose.o)
+                0x000000000003a2bc                mg_log_set_fn
+ .text.mg_log_set
+                0x000000000003a2d0        0xc mongoose/lib.a(mongoose.o)
+                0x000000000003a2d0                mg_log_set
+ .text.mg_log   0x000000000003a2dc       0xac mongoose/lib.a(mongoose.o)
+                0x000000000003a2dc                mg_log
+ .text.mg_hexdump
+                0x000000000003a388      0x1d8 mongoose/lib.a(mongoose.o)
+                0x000000000003a388                mg_hexdump
+ .text.iolog    0x000000000003a560      0x13c mongoose/lib.a(mongoose.o)
+ .text.mg_md5_init
+                0x000000000003a69c       0x30 mongoose/lib.a(mongoose.o)
+                0x000000000003a69c                mg_md5_init
+ .text.mg_md5_update
+                0x000000000003a6cc      0x10c mongoose/lib.a(mongoose.o)
+                0x000000000003a6cc                mg_md5_update
+ .text.mg_md5_final
+                0x000000000003a7d8       0xb4 mongoose/lib.a(mongoose.o)
+                0x000000000003a7d8                mg_md5_final
+ .text.mg_mqtt_parse
+                0x000000000003a88c      0x184 mongoose/lib.a(mongoose.o)
+                0x000000000003a88c                mg_mqtt_parse
+ .text.mg_vprintf
+                0x000000000003aa10       0x78 mongoose/lib.a(mongoose.o)
+                0x000000000003aa10                mg_vprintf
+ .text.mg_printf
+                0x000000000003aa88       0x9c mongoose/lib.a(mongoose.o)
+                0x000000000003aa88                mg_printf
+ .text.mg_http_reply
+                0x000000000003ab24      0x134 mongoose/lib.a(mongoose.o)
+                0x000000000003ab24                mg_http_reply
+ .text.mg_ntoa  0x000000000003ac58       0xcc mongoose/lib.a(mongoose.o)
+                0x000000000003ac58                mg_ntoa
+ .text.mg_straddr
+                0x000000000003ad24       0xac mongoose/lib.a(mongoose.o)
+                0x000000000003ad24                mg_straddr
+ .text.mg_alloc_conn
+                0x000000000003add0       0x44 mongoose/lib.a(mongoose.o)
+                0x000000000003add0                mg_alloc_conn
+ .text.mg_wrapfd
+                0x000000000003ae14       0xc0 mongoose/lib.a(mongoose.o)
+                0x000000000003ae14                mg_wrapfd
+ .text.mg_timer_add
+                0x000000000003aed4       0x68 mongoose/lib.a(mongoose.o)
+                0x000000000003aed4                mg_timer_add
+ .text.mg_mgr_init
+                0x000000000003af3c       0x54 mongoose/lib.a(mongoose.o)
+                0x000000000003af3c                mg_mgr_init
+ .text.mg_rpc_del
+                0x000000000003af90       0x58 mongoose/lib.a(mongoose.o)
+                0x000000000003af90                mg_rpc_del
+ .text.mg_rpc_vok
+                0x000000000003afe8       0xd0 mongoose/lib.a(mongoose.o)
+                0x000000000003afe8                mg_rpc_vok
+ .text.mg_rpc_ok
+                0x000000000003b0b8       0x8c mongoose/lib.a(mongoose.o)
+                0x000000000003b0b8                mg_rpc_ok
+ .text.mg_rpc_verr
+                0x000000000003b144      0x110 mongoose/lib.a(mongoose.o)
+                0x000000000003b144                mg_rpc_verr
+ .text.mg_rpc_err
+                0x000000000003b254       0x8c mongoose/lib.a(mongoose.o)
+                0x000000000003b254                mg_rpc_err
+ .text.mg_rpc_list
+                0x000000000003b2e0       0x18 mongoose/lib.a(mongoose.o)
+                0x000000000003b2e0                mg_rpc_list
+ .text.mg_sha1_init
+                0x000000000003b2f8       0x3c mongoose/lib.a(mongoose.o)
+                0x000000000003b2f8                mg_sha1_init
+ .text.mg_sha1_update
+                0x000000000003b334       0xc8 mongoose/lib.a(mongoose.o)
+                0x000000000003b334                mg_sha1_update
+ .text.mg_sha1_final
+                0x000000000003b3fc      0x110 mongoose/lib.a(mongoose.o)
+                0x000000000003b3fc                mg_sha1_final
+ .text.mg_sock_would_block
+                0x000000000003b50c       0x30 mongoose/lib.a(mongoose.o)
+                0x000000000003b50c                mg_sock_would_block
+ .text.mg_sock_send
+                0x000000000003b53c       0xd4 mongoose/lib.a(mongoose.o)
+ .text.mg_sock_conn_reset
+                0x000000000003b610       0x24 mongoose/lib.a(mongoose.o)
+                0x000000000003b610                mg_sock_conn_reset
+ .text.mg_send  0x000000000003b634       0x68 mongoose/lib.a(mongoose.o)
+                0x000000000003b634                mg_send
+ .text.mg_http_vprintf_chunk
+                0x000000000003b69c      0x100 mongoose/lib.a(mongoose.o)
+ .text.mg_http_printf_chunk
+                0x000000000003b79c       0x9c mongoose/lib.a(mongoose.o)
+                0x000000000003b79c                mg_http_printf_chunk
+ .text.mg_http_write_chunk
+                0x000000000003b838       0x60 mongoose/lib.a(mongoose.o)
+                0x000000000003b838                mg_http_write_chunk
+ .text.mg_mqtt_send_header
+                0x000000000003b898       0x8c mongoose/lib.a(mongoose.o)
+                0x000000000003b898                mg_mqtt_send_header
+ .text.mg_mqtt_ping
+                0x000000000003b924       0x10 mongoose/lib.a(mongoose.o)
+                0x000000000003b924                mg_mqtt_ping
+ .text.mg_mqtt_pong
+                0x000000000003b934       0x10 mongoose/lib.a(mongoose.o)
+                0x000000000003b934                mg_mqtt_pong
+ .text.mg_mqtt_disconnect
+                0x000000000003b944       0x10 mongoose/lib.a(mongoose.o)
+                0x000000000003b944                mg_mqtt_disconnect
+ .text.mg_send_u16
+                0x000000000003b954       0x1c mongoose/lib.a(mongoose.o)
+ .text.mg_dns_send
+                0x000000000003b970      0x138 mongoose/lib.a(mongoose.o)
+ .text.mg_mqtt_pub
+                0x000000000003baa8      0x124 mongoose/lib.a(mongoose.o)
+                0x000000000003baa8                mg_mqtt_pub
+ .text.mg_mqtt_sub
+                0x000000000003bbcc       0xf8 mongoose/lib.a(mongoose.o)
+                0x000000000003bbcc                mg_mqtt_sub
+ .text.mqtt_cb  0x000000000003bcc4      0x148 mongoose/lib.a(mongoose.o)
+ .text.mg_connect_resolved
+                0x000000000003be0c      0x1a8 mongoose/lib.a(mongoose.o)
+                0x000000000003be0c                mg_connect_resolved
+ .text.mg_mkpipe
+                0x000000000003bfb4      0x2a8 mongoose/lib.a(mongoose.o)
+                0x000000000003bfb4                mg_mkpipe
+ .text.mg_http_serve_ssi
+                0x000000000003c25c       0x14 mongoose/lib.a(mongoose.o)
+                0x000000000003c25c                mg_http_serve_ssi
+ .text.mg_str_s
+                0x000000000003c270       0x28 mongoose/lib.a(mongoose.o)
+                0x000000000003c270                mg_str_s
+ .text.mg_http_bauth
+                0x000000000003c298      0x13c mongoose/lib.a(mongoose.o)
+                0x000000000003c298                mg_http_bauth
+ .text.mg_str_n
+                0x000000000003c3d4        0x4 mongoose/lib.a(mongoose.o)
+                0x000000000003c3d4                mg_str_n
+ .text.mg_lower
+                0x000000000003c3d8       0x18 mongoose/lib.a(mongoose.o)
+                0x000000000003c3d8                mg_lower
+ .text.mg_ncasecmp
+                0x000000000003c3f0       0x54 mongoose/lib.a(mongoose.o)
+                0x000000000003c3f0                mg_ncasecmp
+ .text.mg_http_next_multipart
+                0x000000000003c444      0x1ec mongoose/lib.a(mongoose.o)
+                0x000000000003c444                mg_http_next_multipart
+ .text.mg_http_get_header
+                0x000000000003c630       0x74 mongoose/lib.a(mongoose.o)
+                0x000000000003c630                mg_http_get_header
+ .text.mg_casecmp
+                0x000000000003c6a4        0x8 mongoose/lib.a(mongoose.o)
+                0x000000000003c6a4                mg_casecmp
+ .text.mg_vcmp  0x000000000003c6ac       0x50 mongoose/lib.a(mongoose.o)
+                0x000000000003c6ac                mg_vcmp
+ .text.mg_vcasecmp
+                0x000000000003c6fc       0x48 mongoose/lib.a(mongoose.o)
+                0x000000000003c6fc                mg_vcasecmp
+ .text.mg_strdup
+                0x000000000003c744       0x64 mongoose/lib.a(mongoose.o)
+                0x000000000003c744                mg_strdup
+ .text.mg_rpc_add
+                0x000000000003c7a8       0x68 mongoose/lib.a(mongoose.o)
+                0x000000000003c7a8                mg_rpc_add
+ .text.mg_strcmp
+                0x000000000003c810       0x4c mongoose/lib.a(mongoose.o)
+                0x000000000003c810                mg_strcmp
+ .text.mg_strstr
+                0x000000000003c85c       0x6c mongoose/lib.a(mongoose.o)
+                0x000000000003c85c                mg_strstr
+ .text.mg_strstrip
+                0x000000000003c8c8       0x60 mongoose/lib.a(mongoose.o)
+                0x000000000003c8c8                mg_strstrip
+ .text.mg_match
+                0x000000000003c928      0x154 mongoose/lib.a(mongoose.o)
+                0x000000000003c928                mg_match
+ .text.mg_http_match_uri
+                0x000000000003ca7c       0x28 mongoose/lib.a(mongoose.o)
+                0x000000000003ca7c                mg_http_match_uri
+ .text.mg_rpc_call
+                0x000000000003caa4       0x7c mongoose/lib.a(mongoose.o)
+ .text.mg_rpc_process
+                0x000000000003cb20      0x104 mongoose/lib.a(mongoose.o)
+                0x000000000003cb20                mg_rpc_process
+ .text.mg_globmatch
+                0x000000000003cc24       0x20 mongoose/lib.a(mongoose.o)
+                0x000000000003cc24                mg_globmatch
+ .text.mg_split
+                0x000000000003cc44       0xc0 mongoose/lib.a(mongoose.o)
+                0x000000000003cc44                mg_split
+ .text.mg_http_var
+                0x000000000003cd04       0xa4 mongoose/lib.a(mongoose.o)
+                0x000000000003cd04                mg_http_var
+ .text.mg_commalist
+                0x000000000003cda8        0x8 mongoose/lib.a(mongoose.o)
+                0x000000000003cda8                mg_commalist
+ .text.guess_content_type
+                0x000000000003cdb0      0x114 mongoose/lib.a(mongoose.o)
+ .text.mg_hex   0x000000000003cec4       0x58 mongoose/lib.a(mongoose.o)
+                0x000000000003cec4                mg_hex
+ .text.mg_url_encode
+                0x000000000003cf1c      0x130 mongoose/lib.a(mongoose.o)
+                0x000000000003cf1c                mg_url_encode
+ .text.printdirentry
+                0x000000000003d04c      0x194 mongoose/lib.a(mongoose.o)
+ .text.mg_unhexn
+                0x000000000003d1e0       0x5c mongoose/lib.a(mongoose.o)
+                0x000000000003d1e0                mg_unhexn
+ .text.mg_json_get_str
+                0x000000000003d23c      0x19c mongoose/lib.a(mongoose.o)
+                0x000000000003d23c                mg_json_get_str
+ .text.mg_aton  0x000000000003d3d8      0x278 mongoose/lib.a(mongoose.o)
+                0x000000000003d3d8                mg_aton
+ .text.mg_unhex
+                0x000000000003d650       0x48 mongoose/lib.a(mongoose.o)
+                0x000000000003d650                mg_unhex
+ .text.mg_url_decode
+                0x000000000003d698       0xe4 mongoose/lib.a(mongoose.o)
+                0x000000000003d698                mg_url_decode
+ .text.mg_http_get_var
+                0x000000000003d77c       0x9c mongoose/lib.a(mongoose.o)
+                0x000000000003d77c                mg_http_get_var
+ .text.mg_http_creds
+                0x000000000003d818      0x1b4 mongoose/lib.a(mongoose.o)
+                0x000000000003d818                mg_http_creds
+ .text.mg_http_upload
+                0x000000000003d9cc      0x220 mongoose/lib.a(mongoose.o)
+                0x000000000003d9cc                mg_http_upload
+ .text.mg_json_get_hex
+                0x000000000003dbec       0xe0 mongoose/lib.a(mongoose.o)
+                0x000000000003dbec                mg_json_get_hex
+ .text.mg_tou64
+                0x000000000003dccc       0x64 mongoose/lib.a(mongoose.o)
+                0x000000000003dccc                mg_tou64
+ .text.mg_to64  0x000000000003dd30       0xa4 mongoose/lib.a(mongoose.o)
+                0x000000000003dd30                mg_to64
+ .text.mg_http_parse
+                0x000000000003ddd4      0x2a8 mongoose/lib.a(mongoose.o)
+                0x000000000003ddd4                mg_http_parse
+ .text.http_cb  0x000000000003e07c      0x3e8 mongoose/lib.a(mongoose.o)
+ .text.mg_ws_client_handshake
+                0x000000000003e464      0x114 mongoose/lib.a(mongoose.o)
+ .text.mg_http_serve_file
+                0x000000000003e578      0x438 mongoose/lib.a(mongoose.o)
+                0x000000000003e578                mg_http_serve_file
+ .text.mg_remove_double_dots
+                0x000000000003e9b0       0x80 mongoose/lib.a(mongoose.o)
+                0x000000000003e9b0                mg_remove_double_dots
+ .text.mg_http_serve_dir
+                0x000000000003ea30      0x4d4 mongoose/lib.a(mongoose.o)
+                0x000000000003ea30                mg_http_serve_dir
+ .text.mg_timer_init
+                0x000000000003ef04       0x20 mongoose/lib.a(mongoose.o)
+                0x000000000003ef04                mg_timer_init
+ .text.mg_timer_free
+                0x000000000003ef24       0x24 mongoose/lib.a(mongoose.o)
+                0x000000000003ef24                mg_timer_free
+ .text.mg_timer_poll
+                0x000000000003ef48       0xc8 mongoose/lib.a(mongoose.o)
+                0x000000000003ef48                mg_timer_poll
+ .text.mg_tls_handshake
+                0x000000000003f010       0x8c mongoose/lib.a(mongoose.o)
+                0x000000000003f010                mg_tls_handshake
+ .text.mg_tls_init
+                0x000000000003f09c      0x2c0 mongoose/lib.a(mongoose.o)
+                0x000000000003f09c                mg_tls_init
+ .text.mg_tls_free
+                0x000000000003f35c       0x3c mongoose/lib.a(mongoose.o)
+                0x000000000003f35c                mg_tls_free
+ .text.mg_close_conn
+                0x000000000003f398       0x88 mongoose/lib.a(mongoose.o)
+                0x000000000003f398                mg_close_conn
+ .text.mg_tls_pending
+                0x000000000003f420       0x28 mongoose/lib.a(mongoose.o)
+                0x000000000003f420                mg_tls_pending
+ .text.mg_iotest
+                0x000000000003f448      0x1cc mongoose/lib.a(mongoose.o)
+ .text.mg_tls_recv
+                0x000000000003f614       0x54 mongoose/lib.a(mongoose.o)
+                0x000000000003f614                mg_tls_recv
+ .text.mg_tls_send
+                0x000000000003f668       0x54 mongoose/lib.a(mongoose.o)
+                0x000000000003f668                mg_tls_send
+ .text.mg_url_is_ssl
+                0x000000000003f6bc       0xa0 mongoose/lib.a(mongoose.o)
+                0x000000000003f6bc                mg_url_is_ssl
+ .text.mg_url_host
+                0x000000000003f75c       0x74 mongoose/lib.a(mongoose.o)
+                0x000000000003f75c                mg_url_host
+ .text.mg_url_uri
+                0x000000000003f7d0       0x64 mongoose/lib.a(mongoose.o)
+                0x000000000003f7d0                mg_url_uri
+ .text.mg_url_port
+                0x000000000003f834      0x120 mongoose/lib.a(mongoose.o)
+                0x000000000003f834                mg_url_port
+ .text.mg_open_listener
+                0x000000000003f954      0x1cc mongoose/lib.a(mongoose.o)
+                0x000000000003f954                mg_open_listener
+ .text.mg_listen
+                0x000000000003fb20       0xb4 mongoose/lib.a(mongoose.o)
+                0x000000000003fb20                mg_listen
+ .text.mg_http_listen
+                0x000000000003fbd4       0x20 mongoose/lib.a(mongoose.o)
+                0x000000000003fbd4                mg_http_listen
+ .text.mg_mqtt_listen
+                0x000000000003fbf4       0x24 mongoose/lib.a(mongoose.o)
+                0x000000000003fbf4                mg_mqtt_listen
+ .text.mg_url_user
+                0x000000000003fc18       0x90 mongoose/lib.a(mongoose.o)
+                0x000000000003fc18                mg_url_user
+ .text.mg_url_pass
+                0x000000000003fca8       0x78 mongoose/lib.a(mongoose.o)
+                0x000000000003fca8                mg_url_pass
+ .text.mg_random
+                0x000000000003fd20       0x88 mongoose/lib.a(mongoose.o)
+                0x000000000003fd20                mg_random
+ .text.mg_mqtt_login
+                0x000000000003fda8      0x2b8 mongoose/lib.a(mongoose.o)
+                0x000000000003fda8                mg_mqtt_login
+ .text.mg_random_str
+                0x0000000000040060       0x8c mongoose/lib.a(mongoose.o)
+                0x0000000000040060                mg_random_str
+ .text.mg_ntohl
+                0x00000000000400ec        0x8 mongoose/lib.a(mongoose.o)
+                0x00000000000400ec                mg_ntohl
+ .text.gettimestamp
+                0x00000000000400f4       0x64 mongoose/lib.a(mongoose.o)
+ .text.mkhdr    0x0000000000040158       0xa4 mongoose/lib.a(mongoose.o)
+ .text.mg_ntohs
+                0x00000000000401fc       0x10 mongoose/lib.a(mongoose.o)
+                0x00000000000401fc                mg_ntohs
+ .text.mg_crc32
+                0x000000000004020c       0x4c mongoose/lib.a(mongoose.o)
+                0x000000000004020c                mg_crc32
+ .text.mg_check_ip_acl
+                0x0000000000040258      0x1d8 mongoose/lib.a(mongoose.o)
+                0x0000000000040258                mg_check_ip_acl
+ .text.mg_millis
+                0x0000000000040430       0x64 mongoose/lib.a(mongoose.o)
+                0x0000000000040430                mg_millis
+ .text.mg_sendnsreq
+                0x0000000000040494      0x130 mongoose/lib.a(mongoose.o)
+ .text.mg_resolve
+                0x00000000000405c4       0xb8 mongoose/lib.a(mongoose.o)
+                0x00000000000405c4                mg_resolve
+ .text.mg_connect
+                0x000000000004067c       0xc0 mongoose/lib.a(mongoose.o)
+                0x000000000004067c                mg_connect
+ .text.mg_http_connect
+                0x000000000004073c       0x20 mongoose/lib.a(mongoose.o)
+                0x000000000004073c                mg_http_connect
+ .text.mg_mqtt_connect
+                0x000000000004075c       0x94 mongoose/lib.a(mongoose.o)
+                0x000000000004075c                mg_mqtt_connect
+ .text.mg_sntp_connect
+                0x00000000000407f0       0x2c mongoose/lib.a(mongoose.o)
+                0x00000000000407f0                mg_sntp_connect
+ .text.dns_cb   0x000000000004081c      0x1ec mongoose/lib.a(mongoose.o)
+ .text.mg_log_prefix
+                0x0000000000040a08      0x108 mongoose/lib.a(mongoose.o)
+                0x0000000000040a08                mg_log_prefix
+ .text.mg_sntp_parse
+                0x0000000000040b10       0x9c mongoose/lib.a(mongoose.o)
+                0x0000000000040b10                mg_sntp_parse
+ .text.mg_sntp_request
+                0x0000000000040bac       0xd0 mongoose/lib.a(mongoose.o)
+                0x0000000000040bac                mg_sntp_request
+ .text.sntp_cb  0x0000000000040c7c       0x9c mongoose/lib.a(mongoose.o)
+ .text.mg_mgr_poll
+                0x0000000000040d18      0x49c mongoose/lib.a(mongoose.o)
+                0x0000000000040d18                mg_mgr_poll
+ .text.mg_mgr_free
+                0x00000000000411b4       0x70 mongoose/lib.a(mongoose.o)
+                0x00000000000411b4                mg_mgr_free
+ .text.mg_ws_send
+                0x0000000000041224       0xac mongoose/lib.a(mongoose.o)
+                0x0000000000041224                mg_ws_send
+ .text.mg_ws_cb
+                0x00000000000412d0      0x324 mongoose/lib.a(mongoose.o)
+ .text.mg_ws_connect
+                0x00000000000415f4      0x160 mongoose/lib.a(mongoose.o)
+                0x00000000000415f4                mg_ws_connect
+ .text.mg_ws_upgrade
+                0x0000000000041754      0x1ec mongoose/lib.a(mongoose.o)
+                0x0000000000041754                mg_ws_upgrade
+ .text.mg_ws_wrap
+                0x0000000000041940       0xcc mongoose/lib.a(mongoose.o)
+                0x0000000000041940                mg_ws_wrap
+ .text.mg_ws_vprintf
+                0x0000000000041a0c       0x54 mongoose/lib.a(mongoose.o)
+                0x0000000000041a0c                mg_ws_vprintf
+ .text.mg_ws_printf
+                0x0000000000041a60       0x8c mongoose/lib.a(mongoose.o)
+                0x0000000000041a60                mg_ws_printf
+ .text.parse_external
+                0x0000000000041aec      0x9b8 parser/lib.a(parse_external.o)
+                0x0000000000041aec                parse_external
+ .text.find_node_and_path
+                0x00000000000424a4      0x1b8 parser/lib.a(parser.o)
+ .text.find_node
+                0x000000000004265c       0x6c parser/lib.a(parser.o)
+ .text.parser_follow_link
+                0x00000000000426c8      0x19c parser/lib.a(parser.o)
+ .text.add_properties
+                0x0000000000042864       0xdc parser/lib.a(parser.o)
+ .text.run_embscript
+                0x0000000000042940       0x7c parser/lib.a(parser.o)
+ .text.get_common_fields
+                0x00000000000429bc      0x444 parser/lib.a(parser.o)
+ .text.parse_common_attributes
+                0x0000000000042e00      0x588 parser/lib.a(parser.o)
+ .text.add_properties_cb
+                0x0000000000043388      0x158 parser/lib.a(parser.o)
+ .text._parse_files
+                0x00000000000434e0      0x408 parser/lib.a(parser.o)
+ .text._parse_images
+                0x00000000000438e8      0x498 parser/lib.a(parser.o)
+ .text._parse_scripts
+                0x0000000000043d80      0x338 parser/lib.a(parser.o)
+ .text._parse_partitions
+                0x00000000000440b8      0x3a4 parser/lib.a(parser.o)
+ .text._parse_bootloader
+                0x000000000004445c      0x3dc parser/lib.a(parser.o)
+ .text.parser   0x0000000000044838      0x424 parser/lib.a(parser.o)
+ .text.parse_cfg
+                0x0000000000044c5c      0x190 parser/lib.a(parser.o)
+                0x0000000000044c5c                parse_cfg
+ .text.parse_json
+                0x0000000000044dec      0x2f8 parser/lib.a(parser.o)
+                0x0000000000044dec                parse_json
+ *(SORT_BY_ALIGNMENT(.gnu.warning))
+
+.fini           0x00000000000450e4       0x10
+ *(SORT_NONE(.fini))
+ .fini          0x00000000000450e4        0x8 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o
+                0x00000000000450e4                _fini
+ .fini          0x00000000000450ec        0x8 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crtn.o
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+
+.rodata         0x00000000000450f8     0xcda6
+ *(SORT_BY_ALIGNMENT(.rodata) SORT_BY_ALIGNMENT(.rodata.*) SORT_BY_ALIGNMENT(.gnu.linkonce.r.*))
+ .rodata.cst8   0x00000000000450f8        0x8 corelib/lib.a(lua_interface.o)
+ .rodata.cst8   0x0000000000045100        0x8 mongoose/lib.a(mongoose.o)
+ .rodata.str1.8
+                0x0000000000045108      0x698 /usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libubi.a(libubi.o)
+                                        0x6a8 (size before relaxing)
+ .rodata.str1.8
+                0x00000000000457a0      0x6c6 /usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libmtd.a(libmtd.o)
+                                        0x9ce (size before relaxing)
+ *fill*         0x0000000000045e66        0x2 
+ .rodata        0x0000000000045e68        0x3 /usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libmtd.a(libmtd.o)
+ *fill*         0x0000000000045e6b        0x5 
+ .rodata.str1.8
+                0x0000000000045e70      0x38d /usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libmtd.a(libmtd_legacy.o)
+                                        0x48d (size before relaxing)
+ *fill*         0x00000000000461fd        0x3 
+ .rodata.cst4   0x0000000000046200        0x4 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o
+                0x0000000000046200                _IO_stdin_used
+ .rodata.main   0x0000000000046204      0x11e core/built-in.o
+ *fill*         0x0000000000046322        0x2 
+ .rodata.console_notifier
+                0x0000000000046324       0x11 core/built-in.o
+ *fill*         0x0000000000046335        0x3 
+ .rodata.syslog_notifier
+                0x0000000000046338        0x7 core/built-in.o
+ *fill*         0x000000000004633f        0x1 
+ .rodata.network_thread
+                0x0000000000046340       0x1a core/built-in.o
+ *fill*         0x000000000004635a        0x2 
+ .rodata.get_state_string
+                0x000000000004635c        0x6 core/built-in.o
+ *fill*         0x0000000000046362        0x2 
+ .rodata.lua_dump_table
+                0x0000000000046364        0xc corelib/lib.a(lua_interface.o)
+ .rodata.notify_helper
+                0x0000000000046370        0x4 corelib/lib.a(lua_interface.o)
+ .rodata.LUAstackDump
+                0x0000000000046374        0x6 corelib/lib.a(lua_interface.o)
+ *fill*         0x000000000004637a        0x2 
+ .rodata.lua_parser_fn
+                0x000000000004637c        0xa corelib/lib.a(lua_interface.o)
+ *fill*         0x0000000000046386        0x2 
+ .rodata.get_value_libconfig
+                0x0000000000046388        0x5 corelib/lib.a(parsing_library_libconfig.o)
+ *fill*         0x000000000004638d        0x3 
+ .rodata.get_value_json
+                0x0000000000046390        0x6 corelib/lib.a(parsing_library_libjson.o)
+ *fill*         0x0000000000046396        0x2 
+ .rodata.channel_map_http_code
+                0x0000000000046398        0xa corelib/lib.a(channel_curl.o)
+ *fill*         0x00000000000463a2        0x2 
+ .rodata.start_mongoose
+                0x00000000000463a4        0x9 mongoose/lib.a(mongoose_interface.o)
+ *fill*         0x00000000000463ad        0x3 
+ .rodata.mg_http_multipart_continue
+                0x00000000000463b0        0xc mongoose/lib.a(mongoose_multipart.o)
+ .rodata.mg_http_status_code_str
+                0x00000000000463bc        0xd mongoose/lib.a(mongoose.o)
+ *fill*         0x00000000000463c9        0x3 
+ .rodata.mg_ws_cb
+                0x00000000000463cc        0xb mongoose/lib.a(mongoose.o)
+ .rodata.parse_image_selector.str1.1
+                0x00000000000463d7       0x8f core/built-in.o
+ .rodata.read_processes_settings.str1.1
+                0x0000000000046466       0xaa core/built-in.o
+                                         0xaf (size before relaxing)
+ .rodata.parse_cert_purpose.str1.1
+                0x0000000000046510       0x61 core/built-in.o
+ .rodata.read_globals_settings.str1.1
+                0x0000000000046571      0x141 core/built-in.o
+                                        0x148 (size before relaxing)
+ .rodata.main.str1.1
+                0x00000000000466b2      0xd9b core/built-in.o
+                                        0xda6 (size before relaxing)
+ .rodata.str1.1
+                0x000000000004744d       0xcd core/built-in.o
+                                        0x105 (size before relaxing)
+ .rodata.CODE_SIGN.11148
+                0x000000000004751a        0xc core/built-in.o
+ .rodata.EMAIL_PROT.11149
+                0x0000000000047526       0x10 core/built-in.o
+ .rodata.__func__.11133
+                0x0000000000047536        0xd core/built-in.o
+ .rodata.__func__.11140
+                0x0000000000047543       0x15 core/built-in.o
+ .rodata.__func__.11151
+                0x0000000000047558       0x13 core/built-in.o
+ .rodata.__func__.11159
+                0x000000000004756b       0x16 core/built-in.o
+ .rodata.__func__.11183
+                0x0000000000047581       0x18 core/built-in.o
+ .rodata.__func__.11233
+                0x0000000000047599        0x5 core/built-in.o
+ .rodata.fill_buffer.str1.1
+                0x000000000004759e       0x61 core/built-in.o
+ .rodata.gunzip_step.str1.1
+                0x00000000000475ff       0x57 core/built-in.o
+ .rodata.copy_write.str1.1
+                0x0000000000047656       0xb2 core/built-in.o
+ .rodata.__swupdate_copy.str1.1
+                0x0000000000047708      0x25d core/built-in.o
+ .rodata.get_cpiohdr.str1.1
+                0x0000000000047965       0x83 core/built-in.o
+ .rodata.extract_padding.str1.1
+                0x00000000000479e8       0x5d core/built-in.o
+ .rodata.extract_cpio_header.str1.1
+                0x0000000000047a45       0xe6 core/built-in.o
+ .rodata.extract_img_from_cpio.str1.1
+                0x0000000000047b2b       0x90 core/built-in.o
+ .rodata.swupdate_verify_chksum.str1.1
+                0x0000000000047bbb       0x81 core/built-in.o
+ .rodata.extract_next_file.str1.1
+                0x0000000000047c3c       0xa3 core/built-in.o
+ .rodata.cpio_scan.str1.1
+                0x0000000000047cdf       0x8c core/built-in.o
+ .rodata.__func__.7333
+                0x0000000000047d6b        0xc core/built-in.o
+ .rodata.__func__.7346
+                0x0000000000047d77        0xc core/built-in.o
+ .rodata.__func__.7361
+                0x0000000000047d83       0x10 core/built-in.o
+ .rodata.__func__.7371
+                0x0000000000047d93        0xb core/built-in.o
+ .rodata.__func__.7440
+                0x0000000000047d9e        0xc core/built-in.o
+ .rodata.__func__.7476
+                0x0000000000047daa       0x10 core/built-in.o
+ .rodata.__func__.7528
+                0x0000000000047dba       0x14 core/built-in.o
+ .rodata.__func__.7536
+                0x0000000000047dce       0x16 core/built-in.o
+ .rodata.__func__.7553
+                0x0000000000047de4       0x12 core/built-in.o
+ .rodata.__func__.7578
+                0x0000000000047df6        0xa core/built-in.o
+ .rodata.__func__.7588
+                0x0000000000047e00       0x17 core/built-in.o
+ .rodata.progress_notifier.str1.1
+                0x0000000000047e17        0x8 core/built-in.o
+ .rodata.console_notifier.str1.1
+                0x0000000000047e1f       0xfb core/built-in.o
+                                        0x110 (size before relaxing)
+ .rodata.notifier_thread.str1.1
+                0x0000000000047f1a       0x56 core/built-in.o
+                                         0x76 (size before relaxing)
+ .rodata.notify_init.str1.1
+                0x0000000000047f70       0xa9 core/built-in.o
+ .rodata.__func__.8833
+                0x0000000000048019        0xc core/built-in.o
+ .rodata.print_registered_handlers.str1.1
+                0x0000000000048025       0x27 core/built-in.o
+ .rodata.__func__.7531
+                0x000000000004804c       0x1a core/built-in.o
+ .rodata.print_registered_bootloaders.str1.1
+                0x0000000000048066       0x43 core/built-in.o
+                                         0x4b (size before relaxing)
+ .rodata.__func__.6954
+                0x00000000000480a9       0x1d core/built-in.o
+ .rodata.endupdate.str1.1
+                0x00000000000480c6       0x7f core/built-in.o
+ .rodata.install_from_file.str1.1
+                0x0000000000048145       0x72 core/built-in.o
+ .rodata.__func__.8306
+                0x00000000000481b7        0xa core/built-in.o
+ .rodata.__func__.8320
+                0x00000000000481c1       0x12 core/built-in.o
+ .rodata.filter_slave.str1.1
+                0x00000000000481d3       0x72 core/built-in.o
+                                          0x5 (size before relaxing)
+ .rodata.get_root_containerized_fs.str1.1
+                0x00000000000481d3       0x1c core/built-in.o
+ .rodata.getroot_abs_path.str1.1
+                0x00000000000481ef        0x6 core/built-in.o
+ .rodata.get_root_from_partitions.str1.1
+                0x00000000000481f5       0x21 core/built-in.o
+                                         0x25 (size before relaxing)
+ .rodata.check_free_space.str1.1
+                0x0000000000048216      0x11c core/built-in.o
+ .rodata.get_tmpdir.str1.1
+                0x0000000000048332       0x11 core/built-in.o
+ .rodata.get_tmpdirscripts.str1.1
+                0x0000000000048343        0xe core/built-in.o
+                                         0x1c (size before relaxing)
+ .rodata.swupdate_create_directory.str1.1
+                0x0000000000048351       0x8b core/built-in.o
+ .rodata.swupdate_remove_directory.str1.1
+                0x00000000000483dc       0x59 core/built-in.o
+ .rodata.mstrcat.str1.1
+                0x0000000000048435       0x43 core/built-in.o
+                                         0x4b (size before relaxing)
+ .rodata.openfileoutput.str1.1
+                0x0000000000048478       0x45 core/built-in.o
+ .rodata.get_hw_revision.str1.1
+                0x00000000000484bd       0x97 core/built-in.o
+ .rodata.hwid_match.str1.1
+                0x0000000000048554       0xa0 core/built-in.o
+ .rodata.from_ascii.str1.1
+                0x00000000000485f4       0xac core/built-in.o
+ .rodata.hash_to_ascii.str1.1
+                0x00000000000486a0        0x5 core/built-in.o
+ .rodata.load_decryption_key.str1.1
+                0x00000000000486a5       0x90 core/built-in.o
+ .rodata.strtobool.str1.1
+                0x0000000000048735        0xa core/built-in.o
+ .rodata.swupdate_time_iso8601.str1.1
+                0x000000000004873f       0x17 core/built-in.o
+ .rodata.get_root_device.str1.1
+                0x0000000000048756       0x55 core/built-in.o
+                                         0x5a (size before relaxing)
+ .rodata.read_lines_notify.str1.1
+                0x00000000000487ab       0x2d core/built-in.o
+                                         0x30 (size before relaxing)
+ .rodata.get_output_size.str1.1
+                0x00000000000487d8      0x2bf core/built-in.o
+ .rodata.__func__.8476
+                0x0000000000048a97       0x1a core/built-in.o
+ .rodata.__func__.8490
+                0x0000000000048ab1       0x1a core/built-in.o
+ .rodata.__func__.8513
+                0x0000000000048acb        0x8 core/built-in.o
+ .rodata.__func__.8538
+                0x0000000000048ad3        0xf core/built-in.o
+ .rodata.__func__.8555
+                0x0000000000048ae2       0x10 core/built-in.o
+ .rodata.__func__.8569
+                0x0000000000048af2        0xb core/built-in.o
+ .rodata.__func__.8594
+                0x0000000000048afd        0xb core/built-in.o
+ .rodata.__func__.8636
+                0x0000000000048b08       0x14 core/built-in.o
+ .rodata.__func__.8835
+                0x0000000000048b1c       0x12 core/built-in.o
+ .rodata.__func__.8846
+                0x0000000000048b2e       0x10 core/built-in.o
+ .rodata.__func__.8860
+                0x0000000000048b3e       0x11 core/built-in.o
+ .rodata.check_handler.str1.1
+                0x0000000000048b4f      0x123 core/built-in.o
+ .rodata.check_hash_absent.isra.0.str1.1
+                0x0000000000048c72       0x8b core/built-in.o
+ .rodata.parse.str1.1
+                0x0000000000048cfd      0x318 core/built-in.o
+                                        0x32e (size before relaxing)
+ .rodata.__func__.7216
+                0x0000000000049015       0x12 core/built-in.o
+ .rodata.__func__.7227
+                0x0000000000049027        0xe core/built-in.o
+ .rodata.__func__.7252
+                0x0000000000049035        0x6 core/built-in.o
+ .rodata.start_swupdate_subprocess.str1.1
+                0x000000000004903b      0x268 core/built-in.o
+ .rodata.run_system_cmd.str1.1
+                0x00000000000492a3      0x224 core/built-in.o
+                                        0x258 (size before relaxing)
+ .rodata.sigchld_handler.str1.1
+                0x00000000000494c7       0x53 core/built-in.o
+                                         0x68 (size before relaxing)
+ .rodata.pctl_getname_from_type.str1.1
+                0x000000000004951a        0x1 core/built-in.o
+ .rodata.__func__.9218
+                0x000000000004951a        0xe core/built-in.o
+ .rodata.__func__.9236
+                0x0000000000049528       0x1a core/built-in.o
+ .rodata.__func__.9271
+                0x0000000000049542        0xf core/built-in.o
+ .rodata.save_state.str1.1
+                0x0000000000049551        0x5 core/built-in.o
+ .rodata.get_state.str1.1
+                0x0000000000049551      0x199 core/built-in.o
+ .rodata.__func__.7143
+                0x00000000000496ea        0xb core/built-in.o
+ .rodata.__func__.7152
+                0x00000000000496f5        0xd core/built-in.o
+ .rodata.__func__.7160
+                0x0000000000049702        0xa core/built-in.o
+ .rodata.syslog_notifier.str1.1
+                0x000000000004970c       0x46 core/built-in.o
+                                         0x47 (size before relaxing)
+ .rodata.CSWTCH.3
+                0x0000000000049752        0x5 core/built-in.o
+ .rodata.extract_scripts.isra.0.str1.1
+                0x0000000000049757      0x15c core/built-in.o
+                                        0x161 (size before relaxing)
+ .rodata.check_if_required.str1.1
+                0x00000000000498b3       0x8b core/built-in.o
+ .rodata.install_single_image.str1.1
+                0x000000000004993e       0x7a core/built-in.o
+ .rodata.install_images.str1.1
+                0x00000000000499b8      0x2e8 core/built-in.o
+ .rodata.cleanup_files.str1.1
+                0x0000000000049ca0        0xf core/built-in.o
+ .rodata.preupdatecmd.str1.1
+                0x0000000000049ca0       0x4e core/built-in.o
+ .rodata.postupdate.str1.1
+                0x0000000000049cee       0x50 core/built-in.o
+ .rodata.__func__.8135
+                0x0000000000049d3e       0x12 core/built-in.o
+ .rodata.__func__.8152
+                0x0000000000049d50       0x10 core/built-in.o
+ .rodata.__func__.8172
+                0x0000000000049d60       0x16 core/built-in.o
+ .rodata.__func__.8196
+                0x0000000000049d76       0x15 core/built-in.o
+ .rodata.__func__.8212
+                0x0000000000049d8b        0xf core/built-in.o
+ .rodata.__func__.8239
+                0x0000000000049d9a       0x11 core/built-in.o
+ .rodata.__func__.8257
+                0x0000000000049dab        0xe core/built-in.o
+ .rodata.__func__.8275
+                0x0000000000049db9        0xd core/built-in.o
+ .rodata.__func__.8282
+                0x0000000000049dc6        0xb core/built-in.o
+ .rodata.send_subprocess_reply.str1.1
+                0x0000000000049dd1       0x75 core/built-in.o
+ .rodata.write_notify_msg.str1.1
+                0x0000000000049e46       0x38 core/built-in.o
+ .rodata.handle_subprocess_ipc.str1.1
+                0x0000000000049e7e      0x191 core/built-in.o
+ .rodata.listener_create.str1.1
+                0x000000000004a00f       0x9f core/built-in.o
+                                         0xc6 (size before relaxing)
+ .rodata.network_thread.str1.1
+                0x000000000004a0ae      0x4d8 core/built-in.o
+                                        0x4e7 (size before relaxing)
+ .rodata.__func__.9415
+                0x000000000004a586       0x15 core/built-in.o
+ .rodata.__func__.9474
+                0x000000000004a59b       0x10 core/built-in.o
+ .rodata.__func__.9511
+                0x000000000004a5ab       0x16 core/built-in.o
+ .rodata.__func__.9518
+                0x000000000004a5c1       0x16 core/built-in.o
+ .rodata.__func__.9563
+                0x000000000004a5d7        0xf core/built-in.o
+ .rodata.get_state_string.str1.1
+                0x000000000004a5e6       0x31 core/built-in.o
+                                         0x3e (size before relaxing)
+ .rodata.update_transaction_state.str1.1
+                0x000000000004a617       0x42 core/built-in.o
+ .rodata.extract_file_to_tmp.constprop.0.str1.1
+                0x000000000004a659       0x97 core/built-in.o
+                                         0xf0 (size before relaxing)
+ .rodata.network_initializer.str1.1
+                0x000000000004a6f0      0x615 core/built-in.o
+                                        0x6cf (size before relaxing)
+ .rodata.__func__.9343
+                0x000000000004ad05       0x14 core/built-in.o
+ .rodata.__func__.9353
+                0x000000000004ad19       0x19 core/built-in.o
+ .rodata.__func__.9374
+                0x000000000004ad32        0xe core/built-in.o
+ .rodata.__func__.9440
+                0x000000000004ad40        0xc core/built-in.o
+ .rodata.__func__.9455
+                0x000000000004ad4c       0x14 core/built-in.o
+ .rodata.swupdate_download_update.str1.1
+                0x000000000004ad60        0x8 core/built-in.o
+ .rodata.swupdate_progress_info.str1.1
+                0x000000000004ad60        0xb core/built-in.o
+ .rodata.swupdate_progress_done.str1.1
+                0x000000000004ad6b        0x3 core/built-in.o
+ .rodata.progress_bar_thread.str1.1
+                0x000000000004ad6b       0x82 core/built-in.o
+                                        0x158 (size before relaxing)
+ .rodata.__func__.8974
+                0x000000000004aded       0x14 core/built-in.o
+ .rodata.check_field_string.str1.1
+                0x000000000004ae01       0x60 core/built-in.o
+ .rodata.get_hash_value.str1.1
+                0x000000000004ae61        0x7 core/built-in.o
+ .rodata.set_find_path.str1.1
+                0x000000000004ae68      0x13c core/built-in.o
+                                        0x143 (size before relaxing)
+ .rodata.__func__.7956
+                0x000000000004afa4       0x13 core/built-in.o
+ .rodata.__func__.8060
+                0x000000000004afb7        0xe core/built-in.o
+ .rodata.version_to_number.str1.1
+                0x000000000004afc5       0x8d core/built-in.o
+ .rodata.versions_settings.str1.1
+                0x000000000004b052       0x79 core/built-in.o
+                                         0x86 (size before relaxing)
+ .rodata.read_sw_version_file.str1.1
+                0x000000000004b0cb       0x7a core/built-in.o
+                                         0x84 (size before relaxing)
+ .rodata.get_sw_versions.str1.1
+                0x000000000004b145       0x7a core/built-in.o
+                                          0x9 (size before relaxing)
+ .rodata.compare_versions.str1.1
+                0x000000000004b145       0xd2 core/built-in.o
+ .rodata.ACCEPTED_CHARS
+                0x000000000004b217        0xc core/built-in.o
+ .rodata.__func__.8025
+                0x000000000004b223       0x15 core/built-in.o
+ .rodata.__func__.8041
+                0x000000000004b238       0x12 core/built-in.o
+ .rodata.__func__.8061
+                0x000000000004b24a       0x12 core/built-in.o
+ .rodata.__func__.8083
+                0x000000000004b25c       0x11 core/built-in.o
+ .rodata.dict_parse_script.str1.1
+                0x000000000004b26d       0xfa core/built-in.o
+                                         0xfd (size before relaxing)
+ .rodata.__func__.7344
+                0x000000000004b367       0x12 core/built-in.o
+ .rodata.concat_num.str1.1
+                0x000000000004b379        0x5 core/built-in.o
+                                          0x8 (size before relaxing)
+ .rodata.concat_char.str1.1
+                0x000000000004b37e        0x5 core/built-in.o
+ .rodata.char_to_int.str1.1
+                0x000000000004b37e       0x42 core/built-in.o
+ .rodata.semver_render.str1.1
+                0x000000000004b3c0        0x2 core/built-in.o
+                                          0x6 (size before relaxing)
+ .rodata.semver_numeric.str1.1
+                0x000000000004b3c2        0xb core/built-in.o
+ .rodata.install_nothing.str1.1
+                0x000000000004b3cd       0x30 handlers/built-in.o
+ .rodata.dummy_handler.str1.1
+                0x000000000004b3fd        0x6 handlers/built-in.o
+ .rodata.__func__.7149
+                0x000000000004b3fd       0x10 handlers/built-in.o
+ .rodata.chain_handler_thread.str1.1
+                0x000000000004b40d       0x76 handlers/built-in.o
+ .rodata.__func__.8071
+                0x000000000004b483       0x15 handlers/built-in.o
+ .rodata.extract.str1.1
+                0x000000000004b498      0x383 handlers/built-in.o
+                                        0x389 (size before relaxing)
+ .rodata.install_archive_image.str1.1
+                0x000000000004b81b      0x4e9 handlers/built-in.o
+                                        0x59a (size before relaxing)
+ .rodata.archive_handler.str1.1
+                0x000000000004bd04      0x4e9 handlers/built-in.o
+                                          0x8 (size before relaxing)
+ .rodata.untar_handler.str1.1
+                0x000000000004bd04        0x4 handlers/built-in.o
+ .rodata.__func__.9238
+                0x000000000004bd08        0xa handlers/built-in.o
+ .rodata.__func__.9257
+                0x000000000004bd12        0x8 handlers/built-in.o
+ .rodata.__func__.9284
+                0x000000000004bd1a       0x16 handlers/built-in.o
+ .rodata.install_boot_environment.str1.1
+                0x000000000004bd30       0xf9 handlers/built-in.o
+                                        0x146 (size before relaxing)
+ .rodata.uboot_handler.str1.1
+                0x000000000004be29        0x6 handlers/built-in.o
+ .rodata.boot_handler.str1.1
+                0x000000000004be2f        0xb handlers/built-in.o
+ .rodata.__func__.7207
+                0x000000000004be2f       0x19 handlers/built-in.o
+ .rodata.copy_image_file.str1.1
+                0x000000000004be48      0x4a6 handlers/built-in.o
+                                        0x526 (size before relaxing)
+ .rodata.copy_handler.str1.1
+                0x000000000004c2ee      0x4a6 handlers/built-in.o
+                                          0x5 (size before relaxing)
+ .rodata.raw_copyimage_handler.str1.1
+                0x000000000004c2ee      0x4a6 handlers/built-in.o
+                                          0x8 (size before relaxing)
+ .rodata.__func__.8691
+                0x000000000004c2ee       0x10 handlers/built-in.o
+ .rodata.install_flash_image.str1.1
+                0x000000000004c2fe      0x603 handlers/built-in.o
+                                        0x60e (size before relaxing)
+ .rodata.flash_handler.str1.1
+                0x000000000004c901        0x6 handlers/built-in.o
+ .rodata.__func__.7784
+                0x000000000004c907       0x11 handlers/built-in.o
+ .rodata.__func__.7827
+                0x000000000004c918       0x10 handlers/built-in.o
+ .rodata.__func__.7842
+                0x000000000004c928       0x14 handlers/built-in.o
+ .rodata.blkprotect.str1.1
+                0x000000000004c93c       0x9c handlers/built-in.o
+                                         0xa2 (size before relaxing)
+ .rodata.install_raw_image.str1.1
+                0x000000000004c9d8       0x26 handlers/built-in.o
+ .rodata.install_raw_file.str1.1
+                0x000000000004c9d8      0x1fe handlers/built-in.o
+                                        0x3a6 (size before relaxing)
+ .rodata.raw_image_handler.str1.1
+                0x000000000004cbd6        0x4 handlers/built-in.o
+ .rodata.raw_file_handler.str1.1
+                0x000000000004cbd6        0x8 handlers/built-in.o
+ .rodata.__func__.7428
+                0x000000000004cbde        0xb handlers/built-in.o
+ .rodata.__func__.7441
+                0x000000000004cbe9       0x12 handlers/built-in.o
+ .rodata.__func__.7453
+                0x000000000004cbfb       0x11 handlers/built-in.o
+ .rodata.execute_shell_script.str1.1
+                0x000000000004cc0c       0x96 handlers/built-in.o
+                                         0x9b (size before relaxing)
+ .rodata.start_shell_script.str1.1
+                0x000000000004cca2        0x8 handlers/built-in.o
+ .rodata.start_preinstall_script.str1.1
+                0x000000000004ccaa        0x1 handlers/built-in.o
+ .rodata.shell_handler.str1.1
+                0x000000000004ccaa        0xc handlers/built-in.o
+ .rodata.shell_preinstall_handler.str1.1
+                0x000000000004ccb6        0xb handlers/built-in.o
+ .rodata.shell_postinstall_handler.str1.1
+                0x000000000004ccb6        0xc handlers/built-in.o
+ .rodata.__func__.7810
+                0x000000000004ccb6       0x15 handlers/built-in.o
+ .rodata.none_probe.str1.1
+                0x000000000004cccb        0x5 bootloader/built-in.o
+ .rodata.get_ctrl_socket.str1.1
+                0x000000000004cccb       0x17 ipc/built-in.o
+                                         0x31 (size before relaxing)
+ .rodata.ipc_notify_connect.str1.1
+                0x000000000004cce2       0x26 ipc/built-in.o
+ .rodata.ipc_notify_receive.str1.1
+                0x000000000004cd08       0x3c ipc/built-in.o
+ .rodata.str1.1
+                0x000000000004cd44        0x2 ipc/built-in.o
+ .rodata.swupdate_async_start.str1.1
+                0x000000000004cd44       0x1b ipc/built-in.o
+ .rodata.swupdate_async_thread.str1.1
+                0x000000000004cd5f       0x2c ipc/built-in.o
+ .rodata._progress_ipc_connect.str1.1
+                0x000000000004cd8b       0x29 ipc/built-in.o
+ .rodata.get_prog_socket.str1.1
+                0x000000000004cdb4       0x12 ipc/built-in.o
+                                         0x31 (size before relaxing)
+ .rodata.download_settings.str1.1
+                0x000000000004cdc6       0x1b corelib/lib.a(downloader.o)
+                                         0x23 (size before relaxing)
+ .rodata.download_print_help.str1.1
+                0x000000000004cde1      0x1bc corelib/lib.a(downloader.o)
+ .rodata.start_download.str1.1
+                0x000000000004cf9d       0x2c corelib/lib.a(downloader.o)
+                                         0x35 (size before relaxing)
+ .rodata.__func__.7842
+                0x000000000004cfc9       0x12 corelib/lib.a(downloader.o)
+ .rodata.lua_dump_table.str1.1
+                0x000000000004cfdb       0x92 corelib/lib.a(lua_interface.o)
+                                         0x9a (size before relaxing)
+ .rodata.push_st_mode.str1.1
+                0x000000000004d06d       0x31 corelib/lib.a(lua_interface.o)
+                                         0x4f (size before relaxing)
+ .rodata.l_get_hw.str1.1
+                0x000000000004d09e        0xa corelib/lib.a(lua_interface.o)
+                                         0x13 (size before relaxing)
+ .rodata.l_getroot.str1.1
+                0x000000000004d0a8       0x5b corelib/lib.a(lua_interface.o)
+                                         0x6b (size before relaxing)
+ .rodata.l_umount.str1.1
+                0x000000000004d103       0x49 corelib/lib.a(lua_interface.o)
+ .rodata.l_mount.str1.1
+                0x000000000004d14c       0xa2 corelib/lib.a(lua_interface.o)
+                                         0xab (size before relaxing)
+ .rodata.luaopen_swupdate.str1.1
+                0x000000000004d1ee       0x35 corelib/lib.a(lua_interface.o)
+                                         0x62 (size before relaxing)
+ .rodata.notify_helper.str1.1
+                0x000000000004d223       0x74 corelib/lib.a(lua_interface.o)
+                                         0xa8 (size before relaxing)
+ .rodata.lua_get_swupdate_version.str1.1
+                0x000000000004d297       0x15 corelib/lib.a(lua_interface.o)
+                                         0x31 (size before relaxing)
+ .rodata.push_device.str1.1
+                0x000000000004d2ac        0xc corelib/lib.a(lua_interface.o)
+ .rodata.update_table.str1.1
+                0x000000000004d2b8       0xc2 corelib/lib.a(lua_interface.o)
+                                         0xeb (size before relaxing)
+ .rodata.LUAstackDump.str1.1
+                0x000000000004d37a       0x96 corelib/lib.a(lua_interface.o)
+ .rodata.run_lua_script.str1.1
+                0x000000000004d410      0x162 corelib/lib.a(lua_interface.o)
+                                        0x16b (size before relaxing)
+ .rodata.lua_parser_init.str1.1
+                0x000000000004d572       0x8b corelib/lib.a(lua_interface.o)
+ .rodata.lua_parser_fn.str1.1
+                0x000000000004d5fd      0x16d corelib/lib.a(lua_interface.o)
+ .rodata.str1.1
+                0x000000000004d76a       0xa5 corelib/lib.a(lua_interface.o)
+                                         0xd4 (size before relaxing)
+ .rodata.__func__.8155
+                0x000000000004d80f        0xf corelib/lib.a(lua_interface.o)
+ .rodata.__func__.8179
+                0x000000000004d81e        0xd corelib/lib.a(lua_interface.o)
+ .rodata.__func__.8203
+                0x000000000004d82b        0xf corelib/lib.a(lua_interface.o)
+ .rodata.__func__.8217
+                0x000000000004d83a       0x12 corelib/lib.a(lua_interface.o)
+ .rodata.__func__.8275
+                0x000000000004d84c        0xe corelib/lib.a(lua_interface.o)
+ .rodata.__func__.8311
+                0x000000000004d85a        0x8 corelib/lib.a(lua_interface.o)
+ .rodata.__func__.8321
+                0x000000000004d862        0x9 corelib/lib.a(lua_interface.o)
+ .rodata.__func__.8472
+                0x000000000004d86b       0x10 corelib/lib.a(lua_interface.o)
+ .rodata.__func__.8480
+                0x000000000004d87b        0xe corelib/lib.a(lua_interface.o)
+ .rodata.flash_erase_sector.str1.1
+                0x000000000004d889      0x190 corelib/lib.a(mtd-interface.o)
+                                        0x217 (size before relaxing)
+ .rodata.mtd_init.str1.1
+                0x000000000004da19       0x42 corelib/lib.a(mtd-interface.o)
+ .rodata.get_mtd_from_device.str1.1
+                0x000000000004da5b       0x2e corelib/lib.a(mtd-interface.o)
+                                         0x3a (size before relaxing)
+ .rodata.ubi_init.str1.1
+                0x000000000004da89       0xe4 corelib/lib.a(mtd-interface.o)
+ .rodata.scan_mtd_devices.str1.1
+                0x000000000004db6d      0x10b corelib/lib.a(mtd-interface.o)
+                                        0x10d (size before relaxing)
+ .rodata.ubi_mount.str1.1
+                0x000000000004dc78       0xa3 corelib/lib.a(mtd-interface.o)
+ .rodata.__func__.7729
+                0x000000000004dd1b       0x13 corelib/lib.a(mtd-interface.o)
+ .rodata.__func__.7753
+                0x000000000004dd2e        0x9 corelib/lib.a(mtd-interface.o)
+ .rodata.__func__.7766
+                0x000000000004dd37       0x14 corelib/lib.a(mtd-interface.o)
+ .rodata.__func__.7783
+                0x000000000004dd4b        0x9 corelib/lib.a(mtd-interface.o)
+ .rodata.__func__.7806
+                0x000000000004dd54       0x11 corelib/lib.a(mtd-interface.o)
+ .rodata.__func__.7830
+                0x000000000004dd65        0xa corelib/lib.a(mtd-interface.o)
+ .rodata.get_node_libconfig.str1.1
+                0x000000000004dd6f        0x2 corelib/lib.a(parsing_library_libconfig.o)
+ .rodata.find_root_libconfig.str1.1
+                0x000000000004dd6f       0xa3 corelib/lib.a(parsing_library_libconfig.o)
+                                          0x4 (size before relaxing)
+ .rodata.json_get_value.str1.1
+                0x000000000004dd6f        0x1 corelib/lib.a(parsing_library_libjson.o)
+ .rodata.json_get_data_url.str1.1
+                0x000000000004dd6f        0xc corelib/lib.a(parsing_library_libjson.o)
+ .rodata.find_root_json.str1.1
+                0x000000000004dd7b        0x4 corelib/lib.a(parsing_library_libjson.o)
+ .rodata.get_run_as.str1.1
+                0x000000000004dd7b        0xf corelib/lib.a(swupdate_settings.o)
+ .rodata.read_module_settings.str1.1
+                0x000000000004dd8a       0x5b corelib/lib.a(swupdate_settings.o)
+                                         0x5e (size before relaxing)
+ .rodata.settings_into_dict.str1.1
+                0x000000000004dde5       0x2b corelib/lib.a(swupdate_settings.o)
+                                         0x36 (size before relaxing)
+ .rodata.swupdate_cfg_read_file.str1.1
+                0x000000000004de10       0xb3 corelib/lib.a(swupdate_settings.o)
+ .rodata.__func__.7964
+                0x000000000004dec3       0x13 corelib/lib.a(swupdate_settings.o)
+ .rodata.__func__.7973
+                0x000000000004ded6       0x15 corelib/lib.a(swupdate_settings.o)
+ .rodata.__func__.8000
+                0x000000000004deeb       0x13 corelib/lib.a(swupdate_settings.o)
+ .rodata.__func__.8012
+                0x000000000004defe       0x17 corelib/lib.a(swupdate_settings.o)
+ .rodata.channel_log_reply.str1.1
+                0x000000000004df15       0xf2 corelib/lib.a(channel_curl.o)
+ .rodata.channel_get_redirect_url.str1.1
+                0x000000000004e007       0x17 corelib/lib.a(channel_curl.o)
+ .rodata.channel_callback_xferinfo.str1.1
+                0x000000000004e01e       0x28 corelib/lib.a(channel_curl.o)
+ .rodata.setup_reply_buffer.str1.1
+                0x000000000004e046       0xfc corelib/lib.a(channel_curl.o)
+ .rodata.parse_reply.str1.1
+                0x000000000004e142      0x198 corelib/lib.a(channel_curl.o)
+ .rodata.channel_open.str1.1
+                0x000000000004e2da       0x61 corelib/lib.a(channel_curl.o)
+ .rodata.channel_callback_membuffer.str1.1
+                0x000000000004e33b       0x69 corelib/lib.a(channel_curl.o)
+ .rodata.channel_callback_headers.str1.1
+                0x000000000004e3a4       0xd4 corelib/lib.a(channel_curl.o)
+ .rodata.channel_set_content_type.isra.0.str1.1
+                0x000000000004e478      0x15f corelib/lib.a(channel_curl.o)
+ .rodata.channel_log_effective_url.isra.0.str1.1
+                0x000000000004e5d7       0xd4 corelib/lib.a(channel_curl.o)
+ .rodata.channel_get_total_download_size.isra.0.str1.1
+                0x000000000004e6ab       0x65 corelib/lib.a(channel_curl.o)
+ .rodata.channel_curl_init.str1.1
+                0x000000000004e710       0x75 corelib/lib.a(channel_curl.o)
+ .rodata.channel_map_http_code.str1.1
+                0x000000000004e785      0x1e9 corelib/lib.a(channel_curl.o)
+ .rodata.channel_callback_ipc.str1.1
+                0x000000000004e96e       0xd2 corelib/lib.a(channel_curl.o)
+ .rodata.channel_set_options.str1.1
+                0x000000000004ea40      0x27f corelib/lib.a(channel_curl.o)
+                                        0x286 (size before relaxing)
+ .rodata.channel_put.str1.1
+                0x000000000004ecbf      0x347 corelib/lib.a(channel_curl.o)
+ .rodata.channel_get_file.str1.1
+                0x000000000004f006      0x7bc corelib/lib.a(channel_curl.o)
+ .rodata.channel_get.str1.1
+                0x000000000004f7c2       0x85 corelib/lib.a(channel_curl.o)
+ .rodata.CSWTCH.682
+                0x000000000004f847       0x59 corelib/lib.a(channel_curl.o)
+ .rodata.__func__.13697
+                0x000000000004f8a0       0x12 corelib/lib.a(channel_curl.o)
+ .rodata.__func__.13713
+                0x000000000004f8b2        0xd corelib/lib.a(channel_curl.o)
+ .rodata.__func__.13722
+                0x000000000004f8bf       0x15 corelib/lib.a(channel_curl.o)
+ .rodata.__func__.13733
+                0x000000000004f8d4       0x12 corelib/lib.a(channel_curl.o)
+ .rodata.__func__.13746
+                0x000000000004f8e6       0x1b corelib/lib.a(channel_curl.o)
+ .rodata.__func__.13755
+                0x000000000004f901       0x1a corelib/lib.a(channel_curl.o)
+ .rodata.__func__.13762
+                0x000000000004f91b       0x19 corelib/lib.a(channel_curl.o)
+ .rodata.__func__.13774
+                0x000000000004f934       0x16 corelib/lib.a(channel_curl.o)
+ .rodata.__func__.13854
+                0x000000000004f94a       0x1a corelib/lib.a(channel_curl.o)
+ .rodata.__func__.13868
+                0x000000000004f964       0x19 corelib/lib.a(channel_curl.o)
+ .rodata.__func__.13884
+                0x000000000004f97d       0x19 corelib/lib.a(channel_curl.o)
+ .rodata.__func__.13893
+                0x000000000004f996       0x14 corelib/lib.a(channel_curl.o)
+ .rodata.__func__.13980
+                0x000000000004f9aa       0x20 corelib/lib.a(channel_curl.o)
+ .rodata.__func__.14012
+                0x000000000004f9ca       0x12 corelib/lib.a(channel_curl.o)
+ .rodata.__func__.14025
+                0x000000000004f9dc       0x13 corelib/lib.a(channel_curl.o)
+ .rodata.__func__.14036
+                0x000000000004f9ef        0xc corelib/lib.a(channel_curl.o)
+ .rodata.__func__.14067
+                0x000000000004f9fb       0x14 corelib/lib.a(channel_curl.o)
+ .rodata.__func__.14092
+                0x000000000004fa0f       0x13 corelib/lib.a(channel_curl.o)
+ .rodata.__func__.14119
+                0x000000000004fa22        0xc corelib/lib.a(channel_curl.o)
+ .rodata.__func__.14130
+                0x000000000004fa2e       0x11 corelib/lib.a(channel_curl.o)
+ .rodata.__func__.14198
+                0x000000000004fa3f        0xc corelib/lib.a(channel_curl.o)
+ .rodata.str1.1
+                0x000000000004fa4b       0x55 mongoose/lib.a(mongoose_interface.o)
+                                         0x95 (size before relaxing)
+ .rodata.mongoose_settings.str1.1
+                0x000000000004faa0       0x87 mongoose/lib.a(mongoose_interface.o)
+                                         0x8f (size before relaxing)
+ .rodata.broadcast_progress_thread.str1.1
+                0x000000000004fb27       0xdf mongoose/lib.a(mongoose_interface.o)
+ .rodata.broadcast_message_thread.str1.1
+                0x000000000004fc06       0x3c mongoose/lib.a(mongoose_interface.o)
+ .rodata.timer_ev_handler.str1.1
+                0x000000000004fc42       0xb6 mongoose/lib.a(mongoose_interface.o)
+                                         0xba (size before relaxing)
+ .rodata.upload_handler.str1.1
+                0x000000000004fcf8      0x133 mongoose/lib.a(mongoose_interface.o)
+                                        0x136 (size before relaxing)
+ .rodata.mg_check_digest_auth.isra.0.str1.1
+                0x000000000004fe2b        0xf mongoose/lib.a(mongoose_interface.o)
+ .rodata.mg_http_is_authorized.str1.1
+                0x000000000004fe3a       0x32 mongoose/lib.a(mongoose_interface.o)
+                                         0x3a (size before relaxing)
+ .rodata.ev_handler.str1.1
+                0x000000000004fe6c       0xed mongoose/lib.a(mongoose_interface.o)
+ .rodata.mongoose_print_help.str1.1
+                0x000000000004ff59      0x2cb mongoose/lib.a(mongoose_interface.o)
+                                        0x2cd (size before relaxing)
+ .rodata.start_mongoose.str1.1
+                0x0000000000050224       0xb9 mongoose/lib.a(mongoose_interface.o)
+                                         0xcc (size before relaxing)
+ .rodata.CSWTCH.70
+                0x00000000000502dd        0x3 mongoose/lib.a(mongoose_interface.o)
+ .rodata.__func__.27337
+                0x00000000000502e0       0x11 mongoose/lib.a(mongoose_interface.o)
+ .rodata.__func__.27352
+                0x00000000000502f1        0xf mongoose/lib.a(mongoose_interface.o)
+ .rodata.__func__.27372
+                0x0000000000050300        0xb mongoose/lib.a(mongoose_interface.o)
+ .rodata.__func__.27413
+                0x000000000005030b        0xf mongoose/lib.a(mongoose_interface.o)
+ .rodata.colon.27214
+                0x000000000005031a        0x2 mongoose/lib.a(mongoose_interface.o)
+ .rodata.mg_http_multipart_continue.str1.1
+                0x000000000005031c       0x1b mongoose/lib.a(mongoose_multipart.o)
+                                         0x2c (size before relaxing)
+ .rodata.multipart_upload_handler.str1.1
+                0x0000000000050337       0x20 mongoose/lib.a(mongoose_multipart.o)
+                                         0x4c (size before relaxing)
+ .rodata.mg_lld.str1.1
+                0x0000000000050357       0x11 mongoose/lib.a(mongoose.o)
+ .rodata.mg_http_status_code_str.str1.1
+                0x0000000000050368       0xb7 mongoose/lib.a(mongoose.o)
+                                         0xbd (size before relaxing)
+ .rodata.mg_pass_string.str1.1
+                0x000000000005041f       0x10 mongoose/lib.a(mongoose.o)
+ .rodata.p_open.str1.1
+                0x000000000005042f        0x4 mongoose/lib.a(mongoose.o)
+                                          0x7 (size before relaxing)
+ .rodata.p_list.str1.1
+                0x0000000000050433        0x5 mongoose/lib.a(mongoose.o)
+ .rodata.mg_vxprintf.str1.1
+                0x0000000000050433       0x44 mongoose/lib.a(mongoose.o)
+ .rodata.mg_dtoa.constprop.0.str1.1
+                0x0000000000050477        0x9 mongoose/lib.a(mongoose.o)
+                                         0x17 (size before relaxing)
+ .rodata.print_methods.str1.1
+                0x0000000000050480        0x7 mongoose/lib.a(mongoose.o)
+                                          0xa (size before relaxing)
+ .rodata.mg_file_write.str1.1
+                0x0000000000050487        0x7 mongoose/lib.a(mongoose.o)
+ .rodata.mg_http_etag.str1.1
+                0x000000000005048e        0xc mongoose/lib.a(mongoose.o)
+ .rodata.mg_json_get.str1.1
+                0x000000000005049a        0xc mongoose/lib.a(mongoose.o)
+                                         0x10 (size before relaxing)
+ .rodata.mg_hexdump.str1.1
+                0x000000000005049a        0x4 mongoose/lib.a(mongoose.o)
+                                          0x7 (size before relaxing)
+ .rodata.mg_http_reply.str1.1
+                0x000000000005049e       0x38 mongoose/lib.a(mongoose.o)
+ .rodata.mg_ntoa.str1.1
+                0x00000000000504d6       0x24 mongoose/lib.a(mongoose.o)
+ .rodata.mg_straddr.str1.1
+                0x00000000000504fa        0xe mongoose/lib.a(mongoose.o)
+ .rodata.mg_mgr_init.str1.1
+                0x0000000000050508       0x31 mongoose/lib.a(mongoose.o)
+ .rodata.mg_rpc_vok.str1.1
+                0x0000000000050539       0x12 mongoose/lib.a(mongoose.o)
+                                         0x1e (size before relaxing)
+ .rodata.mg_rpc_verr.str1.1
+                0x000000000005054b       0x29 mongoose/lib.a(mongoose.o)
+                                         0x2f (size before relaxing)
+ .rodata.mg_rpc_list.str1.1
+                0x0000000000050574        0x5 mongoose/lib.a(mongoose.o)
+ .rodata.mg_http_vprintf_chunk.str1.1
+                0x0000000000050579       0x11 mongoose/lib.a(mongoose.o)
+                                         0x14 (size before relaxing)
+ .rodata.mg_http_write_chunk.str1.1
+                0x000000000005058a        0x6 mongoose/lib.a(mongoose.o)
+ .rodata.mg_connect_resolved.str1.1
+                0x0000000000050590       0x19 mongoose/lib.a(mongoose.o)
+ .rodata.mg_http_serve_ssi.str1.1
+                0x00000000000505a9       0x10 mongoose/lib.a(mongoose.o)
+ .rodata.mg_http_bauth.str1.1
+                0x00000000000505b9       0x16 mongoose/lib.a(mongoose.o)
+ .rodata.mg_http_next_multipart.str1.1
+                0x00000000000505cf       0x14 mongoose/lib.a(mongoose.o)
+                                         0x22 (size before relaxing)
+ .rodata.mg_rpc_call.str1.1
+                0x00000000000505e3       0x11 mongoose/lib.a(mongoose.o)
+ .rodata.mg_rpc_process.str1.1
+                0x00000000000505f4       0x1a mongoose/lib.a(mongoose.o)
+                                         0x1f (size before relaxing)
+ .rodata.guess_content_type.str1.1
+                0x000000000005060e       0x1a mongoose/lib.a(mongoose.o)
+ .rodata.printdirentry.str1.1
+                0x0000000000050628       0x6e mongoose/lib.a(mongoose.o)
+                                         0x70 (size before relaxing)
+ .rodata.mg_aton.str1.1
+                0x0000000000050696        0xa mongoose/lib.a(mongoose.o)
+ .rodata.mg_http_creds.str1.1
+                0x00000000000506a0       0x1c mongoose/lib.a(mongoose.o)
+                                         0x31 (size before relaxing)
+ .rodata.mg_http_upload.str1.1
+                0x00000000000506bc       0x4a mongoose/lib.a(mongoose.o)
+                                         0x51 (size before relaxing)
+ .rodata.mg_http_parse.str1.1
+                0x0000000000050706       0x22 mongoose/lib.a(mongoose.o)
+                                         0x2b (size before relaxing)
+ .rodata.http_cb.str1.1
+                0x0000000000050728       0x2b mongoose/lib.a(mongoose.o)
+ .rodata.mg_ws_client_handshake.str1.1
+                0x0000000000050753       0x1d mongoose/lib.a(mongoose.o)
+ .rodata.mg_http_serve_file.str1.1
+                0x0000000000050770       0xdb mongoose/lib.a(mongoose.o)
+ .rodata.mg_http_serve_dir.str1.1
+                0x000000000005084b      0x68d mongoose/lib.a(mongoose.o)
+                                        0x6a0 (size before relaxing)
+ .rodata.mg_tls_handshake.str1.1
+                0x0000000000050ed8       0x16 mongoose/lib.a(mongoose.o)
+ .rodata.mg_tls_init.str1.1
+                0x0000000000050eee       0x75 mongoose/lib.a(mongoose.o)
+ .rodata.mg_iotest.str1.1
+                0x0000000000050f63        0xd mongoose/lib.a(mongoose.o)
+ .rodata.mg_url_is_ssl.str1.1
+                0x0000000000050f70       0x1d mongoose/lib.a(mongoose.o)
+ .rodata.mg_url_port.str1.1
+                0x0000000000050f8d       0x10 mongoose/lib.a(mongoose.o)
+ .rodata.mg_open_listener.str1.1
+                0x0000000000050f9d        0x5 mongoose/lib.a(mongoose.o)
+ .rodata.mg_random.str1.1
+                0x0000000000050fa2        0xd mongoose/lib.a(mongoose.o)
+ .rodata.mg_check_ip_acl.str1.1
+                0x0000000000050faf       0x1f mongoose/lib.a(mongoose.o)
+ .rodata.mg_sendnsreq.str1.1
+                0x0000000000050fce       0x49 mongoose/lib.a(mongoose.o)
+ .rodata.mg_sntp_connect.str1.1
+                0x0000000000051017       0x1a mongoose/lib.a(mongoose.o)
+ .rodata.dns_cb.str1.1
+                0x0000000000051031       0x2b mongoose/lib.a(mongoose.o)
+ .rodata.mg_log_prefix.str1.1
+                0x000000000005105c       0x11 mongoose/lib.a(mongoose.o)
+ .rodata.mg_mgr_poll.str1.1
+                0x000000000005106d       0x1e mongoose/lib.a(mongoose.o)
+ .rodata.mg_ws_cb.str1.1
+                0x000000000005108b       0x11 mongoose/lib.a(mongoose.o)
+ .rodata.mg_ws_connect.str1.1
+                0x000000000005109c       0x79 mongoose/lib.a(mongoose.o)
+ .rodata.mg_ws_upgrade.str1.1
+                0x0000000000051115       0xd6 mongoose/lib.a(mongoose.o)
+                                         0xe8 (size before relaxing)
+ .rodata.str1.1
+                0x00000000000511eb      0x194 mongoose/lib.a(mongoose.o)
+                                        0x205 (size before relaxing)
+ .rodata        0x000000000005137f        0x6 mongoose/lib.a(mongoose.o)
+ .rodata.parse_external.str1.1
+                0x0000000000051385      0x219 parser/lib.a(parse_external.o)
+                                        0x32e (size before relaxing)
+ .rodata.__func__.7504
+                0x000000000005159e       0x11 parser/lib.a(parse_external.o)
+ .rodata.__func__.7515
+                0x00000000000515af        0xf parser/lib.a(parse_external.o)
+ .rodata.find_node_and_path.str1.1
+                0x00000000000515be        0x9 parser/lib.a(parser.o)
+                                          0xa (size before relaxing)
+ .rodata.parser_follow_link.str1.1
+                0x00000000000515c7       0x20 parser/lib.a(parser.o)
+                                         0x24 (size before relaxing)
+ .rodata.add_properties.str1.1
+                0x00000000000515e7       0x20 parser/lib.a(parser.o)
+                                         0x2b (size before relaxing)
+ .rodata.run_embscript.str1.1
+                0x0000000000051607        0x5 parser/lib.a(parser.o)
+ .rodata.get_common_fields.str1.1
+                0x000000000005160c      0x18b parser/lib.a(parser.o)
+                                        0x1b1 (size before relaxing)
+ .rodata.parse_common_attributes.str1.1
+                0x0000000000051797       0xe4 parser/lib.a(parser.o)
+                                        0x1e7 (size before relaxing)
+ .rodata.add_properties_cb.str1.1
+                0x000000000005187b       0x78 parser/lib.a(parser.o)
+ .rodata._parse_files.str1.1
+                0x00000000000518f3       0x92 parser/lib.a(parser.o)
+                                         0xf1 (size before relaxing)
+ .rodata._parse_images.str1.1
+                0x0000000000051985       0xa5 parser/lib.a(parser.o)
+                                         0xa9 (size before relaxing)
+ .rodata._parse_scripts.str1.1
+                0x0000000000051a2a       0x41 parser/lib.a(parser.o)
+                                         0x45 (size before relaxing)
+ .rodata._parse_partitions.str1.1
+                0x0000000000051a6b       0xa7 parser/lib.a(parser.o)
+                                         0xac (size before relaxing)
+ .rodata._parse_bootloader.str1.1
+                0x0000000000051b12       0x7a parser/lib.a(parser.o)
+                                         0x80 (size before relaxing)
+ .rodata.parser.str1.1
+                0x0000000000051b8c      0x13c parser/lib.a(parser.o)
+                                        0x163 (size before relaxing)
+ .rodata.parse_cfg.str1.1
+                0x0000000000051cc8       0x1e parser/lib.a(parser.o)
+                                         0x32 (size before relaxing)
+ .rodata.parse_json.str1.1
+                0x0000000000051ce6       0xcd parser/lib.a(parser.o)
+ .rodata.__func__.8600
+                0x0000000000051db3       0x13 parser/lib.a(parser.o)
+ .rodata.__func__.8620
+                0x0000000000051dc6       0x12 parser/lib.a(parser.o)
+ .rodata.__func__.8634
+                0x0000000000051dd8       0x12 parser/lib.a(parser.o)
+ .rodata.__func__.8643
+                0x0000000000051dea        0xf parser/lib.a(parser.o)
+ .rodata.__func__.8655
+                0x0000000000051df9       0x13 parser/lib.a(parser.o)
+ .rodata.__func__.8667
+                0x0000000000051e0c       0x10 parser/lib.a(parser.o)
+ .rodata.__func__.8689
+                0x0000000000051e1c       0x18 parser/lib.a(parser.o)
+ .rodata.__func__.8707
+                0x0000000000051e34       0x12 parser/lib.a(parser.o)
+ .rodata.__func__.8737
+                0x0000000000051e46        0xf parser/lib.a(parser.o)
+ .rodata.__func__.8768
+                0x0000000000051e55       0x12 parser/lib.a(parser.o)
+ .rodata.__func__.8799
+                0x0000000000051e67        0xe parser/lib.a(parser.o)
+ .rodata.__func__.8829
+                0x0000000000051e75        0xd parser/lib.a(parser.o)
+ .rodata.__func__.8852
+                0x0000000000051e82        0x7 parser/lib.a(parser.o)
+ .rodata.__func__.8865
+                0x0000000000051e89        0xa parser/lib.a(parser.o)
+ .rodata.__func__.8878
+                0x0000000000051e93        0xb parser/lib.a(parser.o)
+
+.rodata1
+ *(SORT_BY_ALIGNMENT(.rodata1))
+
+.eh_frame_hdr   0x0000000000051ea0      0x2c4
+ *(SORT_BY_ALIGNMENT(.eh_frame_hdr))
+ .eh_frame_hdr  0x0000000000051ea0      0x2c4 /usr/lib/gcc/aarch64-linux-gnu/9/crtbeginS.o
+                0x0000000000051ea0                __GNU_EH_FRAME_HDR
+ *(SORT_BY_ALIGNMENT(.eh_frame_entry) SORT_BY_ALIGNMENT(.eh_frame_entry.*))
+
+.eh_frame       0x0000000000052168     0x1258
+ *(SORT_BY_ALIGNMENT(.eh_frame))
+ .eh_frame      0x0000000000052168       0x78 /usr/lib/gcc/aarch64-linux-gnu/9/crtbeginS.o
+ .eh_frame      0x00000000000521e0      0x830 /usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libubi.a(libubi.o)
+                                        0x840 (size before relaxing)
+ .eh_frame      0x0000000000052a10      0x6c8 /usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libmtd.a(libmtd.o)
+                                        0x6d8 (size before relaxing)
+ .eh_frame      0x00000000000530d8      0x258 /usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libmtd.a(libmtd_legacy.o)
+                                        0x268 (size before relaxing)
+ .eh_frame      0x0000000000053330       0x48 /usr/lib/aarch64-linux-gnu/libc_nonshared.a(elf-init.oS)
+                                         0x60 (size before relaxing)
+ .eh_frame      0x0000000000053378       0x18 /usr/lib/aarch64-linux-gnu/libc_nonshared.a(atexit.oS)
+                                         0x28 (size before relaxing)
+ .eh_frame      0x0000000000053390       0x18 /usr/lib/aarch64-linux-gnu/libc_nonshared.a(stat.oS)
+                                         0x28 (size before relaxing)
+ .eh_frame      0x00000000000533a8       0x14 /usr/lib/aarch64-linux-gnu/libc_nonshared.a(fstat.oS)
+                                         0x28 (size before relaxing)
+ .eh_frame      0x00000000000533bc        0x4 /usr/lib/gcc/aarch64-linux-gnu/9/crtendS.o
+ *(SORT_BY_ALIGNMENT(.eh_frame.*))
+
+.gcc_except_table
+ *(SORT_BY_ALIGNMENT(.gcc_except_table) SORT_BY_ALIGNMENT(.gcc_except_table.*))
+
+.gnu_extab
+ *(SORT_BY_ALIGNMENT(.gnu_extab*))
+
+.exception_ranges
+ *(SORT_BY_ALIGNMENT(.exception_ranges*))
+                0x0000000000063cb0                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(SORT_BY_ALIGNMENT(.eh_frame))
+ *(SORT_BY_ALIGNMENT(.eh_frame.*))
+
+.gnu_extab
+ *(SORT_BY_ALIGNMENT(.gnu_extab))
+
+.gcc_except_table
+ *(SORT_BY_ALIGNMENT(.gcc_except_table) SORT_BY_ALIGNMENT(.gcc_except_table.*))
+
+.exception_ranges
+ *(SORT_BY_ALIGNMENT(.exception_ranges*))
+
+.tdata          0x0000000000063cb0        0x0
+                [!provide]                        PROVIDE (__tdata_start = .)
+ *(SORT_BY_ALIGNMENT(.tdata) SORT_BY_ALIGNMENT(.tdata.*) SORT_BY_ALIGNMENT(.gnu.linkonce.td.*))
+
+.tbss
+ *(SORT_BY_ALIGNMENT(.tbss) SORT_BY_ALIGNMENT(.tbss.*) SORT_BY_ALIGNMENT(.gnu.linkonce.tb.*))
+ *(SORT_BY_ALIGNMENT(.tcommon))
+
+.preinit_array  0x0000000000063cb0        0x0
+                [!provide]                        PROVIDE (__preinit_array_start = .)
+ *(SORT_BY_ALIGNMENT(.preinit_array))
+                [!provide]                        PROVIDE (__preinit_array_end = .)
+
+.init_array     0x0000000000063cb0       0x78
+                0x0000000000063cb0                PROVIDE (__init_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(SORT_BY_ALIGNMENT(.init_array) SORT_BY_ALIGNMENT(EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors))
+ .init_array    0x0000000000063cb0        0x8 /usr/lib/gcc/aarch64-linux-gnu/9/crtbeginS.o
+ .init_array    0x0000000000063cb8       0x68 handlers/built-in.o
+ .init_array    0x0000000000063d20        0x8 bootloader/built-in.o
+                0x0000000000063d28                PROVIDE (__init_array_end = .)
+
+.fini_array     0x0000000000063d28        0x8
+                [!provide]                        PROVIDE (__fini_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(SORT_BY_ALIGNMENT(.fini_array) SORT_BY_ALIGNMENT(EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors))
+ .fini_array    0x0000000000063d28        0x8 /usr/lib/gcc/aarch64-linux-gnu/9/crtbeginS.o
+                [!provide]                        PROVIDE (__fini_array_end = .)
+
+.ctors
+ *crtbegin.o(SORT_BY_ALIGNMENT(.ctors))
+ *crtbegin?.o(SORT_BY_ALIGNMENT(.ctors))
+ *(SORT_BY_ALIGNMENT(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors))
+ *(SORT_BY_NAME(SORT_BY_ALIGNMENT(.ctors.*)))
+ *(SORT_BY_ALIGNMENT(.ctors))
+
+.dtors
+ *crtbegin.o(SORT_BY_ALIGNMENT(.dtors))
+ *crtbegin?.o(SORT_BY_ALIGNMENT(.dtors))
+ *(SORT_BY_ALIGNMENT(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors))
+ *(SORT_BY_NAME(SORT_BY_ALIGNMENT(.dtors.*)))
+ *(SORT_BY_ALIGNMENT(.dtors))
+
+.jcr
+ *(SORT_BY_ALIGNMENT(.jcr))
+
+.data.rel.ro    0x0000000000063d30      0x598
+ *(SORT_BY_ALIGNMENT(.data.rel.ro.local*) SORT_BY_ALIGNMENT(.gnu.linkonce.d.rel.ro.local.*))
+ .data.rel.ro.local.ascii_string_attributes
+                0x0000000000063d30       0x48 core/built-in.o
+ .data.rel.ro.local.ascii_string_colors
+                0x0000000000063d78       0x48 core/built-in.o
+ .data.rel.ro.local.l_swupdate
+                0x0000000000063dc0       0xe0 corelib/lib.a(lua_interface.o)
+ .data.rel.ro.local.l_swupdate_bootenv
+                0x0000000000063ea0       0x40 corelib/lib.a(lua_interface.o)
+ .data.rel.ro.local.s_known_types
+                0x0000000000063ee0      0x3d0 mongoose/lib.a(mongoose.o)
+ *(SORT_BY_ALIGNMENT(.data.rel.ro) SORT_BY_ALIGNMENT(.data.rel.ro.*) SORT_BY_ALIGNMENT(.gnu.linkonce.d.rel.ro.*))
+ .data.rel.ro.parsers
+                0x00000000000642b0       0x18 core/built-in.o
+ .data.rel.ro   0x00000000000642c8        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o
+
+.dynamic        0x00000000000642c8      0x2a0
+ *(SORT_BY_ALIGNMENT(.dynamic))
+ .dynamic       0x00000000000642c8      0x2a0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o
+                0x00000000000642c8                _DYNAMIC
+
+.got            0x0000000000064568      0xa98
+ *(SORT_BY_ALIGNMENT(.got.plt))
+ .got.plt       0x0000000000064568      0x980 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o
+ *(SORT_BY_ALIGNMENT(.igot.plt))
+ *(SORT_BY_ALIGNMENT(.got))
+ .got           0x0000000000064ee8      0x118 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o
+                0x0000000000064ee8                _GLOBAL_OFFSET_TABLE_
+ *(SORT_BY_ALIGNMENT(.igot))
+                0x0000000000065000                . = DATA_SEGMENT_RELRO_END (., 0x0)
+
+.data           0x0000000000065000      0x935
+                [!provide]                        PROVIDE (__data_start = .)
+ *(SORT_BY_ALIGNMENT(.data) SORT_BY_ALIGNMENT(.data.*) SORT_BY_ALIGNMENT(.gnu.linkonce.d.*))
+ .data.rel.local
+                0x0000000000065000        0x8 /usr/lib/gcc/aarch64-linux-gnu/9/crtbeginS.o
+                0x0000000000065000                __dso_handle
+ .data.rel.local.loglevnames
+                0x0000000000065008       0x30 core/built-in.o
+                0x0000000000065008                loglevnames
+ .data.rel.local.long_options
+                0x0000000000065038      0x300 core/built-in.o
+ .data.handler_index
+                0x0000000000065338        0x8 core/built-in.o
+ .data.rel.local.none
+                0x0000000000065340       0x20 bootloader/built-in.o
+ .data.rel.local.SOCKET_CTRL_PATH
+                0x0000000000065360        0x8 ipc/built-in.o
+ .data.rel.local.SOCKET_PROGRESS_PATH
+                0x0000000000065368        0x8 ipc/built-in.o
+                0x0000000000065368                SOCKET_PROGRESS_PATH
+ .data.channel_options
+                0x0000000000065370      0x128 corelib/lib.a(downloader.o)
+ .data.rel.local.long_options
+                0x0000000000065498       0xa0 corelib/lib.a(downloader.o)
+ .data.rel.local.statfields
+                0x0000000000065538       0xf0 corelib/lib.a(lua_interface.o)
+                0x0000000000065538                statfields
+ .data          0x0000000000065628       0x68 mongoose/lib.a(mongoose_interface.o)
+ .data.rel.local.fs_posix_no_list
+                0x0000000000065690       0x50 mongoose/lib.a(mongoose_interface.o)
+ .data.rel.local.long_options
+                0x00000000000656e0      0x140 mongoose/lib.a(mongoose_interface.o)
+ .data.rel.local.mg_fs_packed
+                0x0000000000065820       0x50 mongoose/lib.a(mongoose.o)
+                0x0000000000065820                mg_fs_packed
+ .data.rel.local.mg_fs_posix
+                0x0000000000065870       0x50 mongoose/lib.a(mongoose.o)
+                0x0000000000065870                mg_fs_posix
+ .data.rel.local.s_log_func
+                0x00000000000658c0        0x8 mongoose/lib.a(mongoose.o)
+ .data.loglevel
+                0x00000000000658c8        0x4 core/built-in.o
+                0x00000000000658c8                loglevel
+ .data.consolecolors
+                0x00000000000658cc       0x48 core/built-in.o
+                0x00000000000658cc                consolecolors
+ .data.notifyfd
+                0x0000000000065914        0x4 core/built-in.o
+ .data.sw_sockfd
+                0x0000000000065918        0x4 core/built-in.o
+                0x0000000000065918                sw_sockfd
+ .data.s_level  0x000000000006591c        0x4 mongoose/lib.a(mongoose.o)
+ .data          0x0000000000065920        0x4 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o
+                0x0000000000065920                __data_start
+                0x0000000000065920                data_start
+ .data.codetab.8584
+                0x0000000000065924       0x11 core/built-in.o
+
+.tm_clone_table
+                0x0000000000065938        0x0
+ .tm_clone_table
+                0x0000000000065938        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/crtbeginS.o
+ .tm_clone_table
+                0x0000000000065938        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/crtendS.o
+
+.data1
+ *(SORT_BY_ALIGNMENT(.data1))
+                0x0000000000065935                _edata = .
+                [!provide]                        PROVIDE (edata = .)
+                0x0000000000065938                . = .
+                0x0000000000065935                __bss_start = .
+                0x0000000000065935                __bss_start__ = .
+
+.bss            0x0000000000065938     0x7ca8
+ *(SORT_BY_ALIGNMENT(.dynbss))
+ .dynbss        0x0000000000065938        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o
+ *(SORT_BY_ALIGNMENT(.bss) SORT_BY_ALIGNMENT(.bss.*) SORT_BY_ALIGNMENT(.gnu.linkonce.b.*))
+ .bss.flashdesc
+                0x0000000000065938       0x40 core/built-in.o
+ .bss.network_daemon
+                0x0000000000065978        0x8 core/built-in.o
+ .bss.swcfg     0x0000000000065980     0x1280 core/built-in.o
+ .bss.clients   0x0000000000066c00       0x10 core/built-in.o
+ .bss.clients_mutex
+                0x0000000000066c10       0x30 core/built-in.o
+ .bss.nr_installers
+                0x0000000000066c40        0x8 core/built-in.o
+ .bss.available
+                0x0000000000066c48        0x8 core/built-in.o
+ .bss.current   0x0000000000066c50        0x8 core/built-in.o
+ .bss.cv_end    0x0000000000066c58       0x30 core/built-in.o
+ .bss.install_file_mutex
+                0x0000000000066c88       0x30 core/built-in.o
+ .bss.TMPDIR    0x0000000000066cb8        0x8 core/built-in.o
+ .bss.TMPDIRSCRIPT
+                0x0000000000066cc0        0x8 core/built-in.o
+ .bss.aes_key   0x0000000000066cc8        0x8 core/built-in.o
+ .bss.procs     0x0000000000066cd0       0xf0 core/built-in.o
+ .bss.threads_towait_cond
+                0x0000000000066dc0       0x30 core/built-in.o
+ .bss.threads_towait_lock
+                0x0000000000066df0       0x30 core/built-in.o
+ .bss.msglock   0x0000000000066e20       0x30 core/built-in.o
+ .bss.notify_conns
+                0x0000000000066e50       0x10 core/built-in.o
+ .bss.notifymsgs
+                0x0000000000066e60       0x10 core/built-in.o
+ .bss.nrmsgs    0x0000000000066e70        0x8 core/built-in.o
+ .bss.subprocess_messages
+                0x0000000000066e78       0x10 core/built-in.o
+ .bss.subprocess_msg_lock
+                0x0000000000066e88       0x30 core/built-in.o
+ .bss.subprocess_wkup
+                0x0000000000066eb8       0x30 core/built-in.o
+ .bss.inst      0x0000000000066ee8      0x478 core/built-in.o
+ .bss.stream_mutex
+                0x0000000000067360       0x30 core/built-in.o
+                0x0000000000067360                stream_mutex
+ .bss.stream_wkup
+                0x0000000000067390       0x30 core/built-in.o
+                0x0000000000067390                stream_wkup
+ .bss.progress  0x00000000000673c0      0x9c8 core/built-in.o
+ .bss.environment
+                0x0000000000067d88        0x8 bootloader/built-in.o
+ .bss.async_thread_id
+                0x0000000000067d90        0x8 ipc/built-in.o
+ .bss.request   0x0000000000067d98       0x20 ipc/built-in.o
+ .bss.s_http_server_opts
+                0x0000000000067db8       0x30 mongoose/lib.a(mongoose_interface.o)
+ .bss.tls_opts  0x0000000000067de8       0x40 mongoose/lib.a(mongoose_interface.o)
+ .bss.s_log_func_param
+                0x0000000000067e28        0x8 mongoose/lib.a(mongoose.o)
+ .bss.exit_code
+                0x0000000000067e30        0x4 core/built-in.o
+                0x0000000000067e30                exit_code
+ .bss.num_available
+                0x0000000000067e34        0x4 core/built-in.o
+ .bss.end_status
+                0x0000000000067e38        0x4 core/built-in.o
+ .bss.fd        0x0000000000067e3c        0x4 core/built-in.o
+ .bss.nprocs    0x0000000000067e40        0x4 core/built-in.o
+ .bss.pid       0x0000000000067e44        0x4 core/built-in.o
+                0x0000000000067e44                pid
+ .bss.threads_towait
+                0x0000000000067e48        0x4 core/built-in.o
+ .bss.running   0x0000000000067e4c        0x4 ipc/built-in.o
+ .bss.result_channel_callback_ipc
+                0x0000000000067e50        0x4 corelib/lib.a(channel_curl.o)
+ .bss.s_signo   0x0000000000067e54        0x4 mongoose/lib.a(mongoose_interface.o)
+ .bss.watchdog_conn
+                0x0000000000067e58        0x4 mongoose/lib.a(mongoose_interface.o)
+ .bss.ws_pipe   0x0000000000067e5c        0x4 mongoose/lib.a(mongoose_interface.o)
+ .bss.notify_client
+                0x0000000000067e60       0x6e core/built-in.o
+ .bss.notify_server
+                0x0000000000067ece       0x6e core/built-in.o
+ .bss           0x0000000000067f3c        0x1 /usr/lib/gcc/aarch64-linux-gnu/9/crtbeginS.o
+ .bss.console_ansi_colors
+                0x0000000000067f3d        0x1 core/built-in.o
+ .bss.console_priority_prefix
+                0x0000000000067f3e        0x1 core/built-in.o
+ .bss.buf       0x0000000000067f3f     0x4000 core/built-in.o
+ .bss.mtd_ubi_blacklist
+                0x000000000006bf3f       0x64 corelib/lib.a(mtd-interface.o)
+ .bss.run_postupdate
+                0x000000000006bfa3        0x1 mongoose/lib.a(mongoose_interface.o)
+ .bss.ssl       0x000000000006bfa4        0x1 mongoose/lib.a(mongoose_interface.o)
+ .bss.s_initialised.27705
+                0x000000000006bfa5        0x1 mongoose/lib.a(mongoose.o)
+ *(SORT_BY_ALIGNMENT(COMMON))
+ *fill*         0x000000000006bfa6        0x2 
+ COMMON         0x000000000006bfa8     0x1620 core/built-in.o
+                0x000000000006bfa8                bootloader_env_get
+                0x000000000006bfb0                bootloader_env_set
+                0x000000000006bfb8                bootloader_apply_list
+                0x000000000006bfc0                supported_types
+                0x000000000006d5c0                bootloader_env_unset
+ COMMON         0x000000000006d5c8        0x8 handlers/built-in.o
+                0x000000000006d5c8                extract_thread
+ COMMON         0x000000000006d5d0       0x10 mongoose/lib.a(mongoose_interface.o)
+                0x000000000006d5d0                global_auth_domain
+                0x000000000006d5d8                global_auth_file
+                0x000000000006d5e0                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x000000000006d5e0                _bss_end__ = .
+                0x000000000006d5e0                __bss_end__ = .
+                0x000000000006d5e0                . = ALIGN (0x8)
+                0x000000000006d5e0                . = SEGMENT_START ("ldata-segment", .)
+                0x000000000006d5e0                . = ALIGN (0x8)
+                0x000000000006d5e0                __end__ = .
+                0x000000000006d5e0                _end = .
+                [!provide]                        PROVIDE (end = .)
+                0x000000000006d5e0                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(SORT_BY_ALIGNMENT(.stab))
+
+.stabstr
+ *(SORT_BY_ALIGNMENT(.stabstr))
+
+.stab.excl
+ *(SORT_BY_ALIGNMENT(.stab.excl))
+
+.stab.exclstr
+ *(SORT_BY_ALIGNMENT(.stab.exclstr))
+
+.stab.index
+ *(SORT_BY_ALIGNMENT(.stab.index))
+
+.stab.indexstr
+ *(SORT_BY_ALIGNMENT(.stab.indexstr))
+
+.comment        0x0000000000000000       0x2b
+ *(SORT_BY_ALIGNMENT(.comment))
+ .comment       0x0000000000000000       0x2b /usr/lib/gcc/aarch64-linux-gnu/9/crtbeginS.o
+                                         0x2c (size before relaxing)
+ .comment       0x000000000000002b      0x370 core/built-in.o
+ .comment       0x000000000000002b      0x160 handlers/built-in.o
+ .comment       0x000000000000002b       0x2c bootloader/built-in.o
+ .comment       0x000000000000002b       0x84 ipc/built-in.o
+ .comment       0x000000000000002b       0x2c corelib/lib.a(downloader.o)
+ .comment       0x000000000000002b       0x2c corelib/lib.a(lua_interface.o)
+ .comment       0x000000000000002b       0x2c corelib/lib.a(mtd-interface.o)
+ .comment       0x000000000000002b       0x2c corelib/lib.a(parsing_library_libconfig.o)
+ .comment       0x000000000000002b       0x2c corelib/lib.a(parsing_library_libjson.o)
+ .comment       0x000000000000002b       0x2c corelib/lib.a(swupdate_settings.o)
+ .comment       0x000000000000002b       0x2c corelib/lib.a(channel_curl.o)
+ .comment       0x000000000000002b       0x2c mongoose/lib.a(mongoose_interface.o)
+ .comment       0x000000000000002b       0x2c mongoose/lib.a(mongoose_multipart.o)
+ .comment       0x000000000000002b       0x2c mongoose/lib.a(mongoose.o)
+ .comment       0x000000000000002b       0x2c parser/lib.a(parse_external.o)
+ .comment       0x000000000000002b       0x2c parser/lib.a(parser.o)
+ .comment       0x000000000000002b       0x2c /usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libubi.a(libubi.o)
+ .comment       0x000000000000002b       0x2c /usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libmtd.a(libmtd.o)
+ .comment       0x000000000000002b       0x2c /usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libmtd.a(libmtd_legacy.o)
+ .comment       0x000000000000002b       0x2c /usr/lib/gcc/aarch64-linux-gnu/9/crtendS.o
+
+.gnu.build.attributes
+ *(SORT_BY_ALIGNMENT(.gnu.build.attributes) SORT_BY_ALIGNMENT(.gnu.build.attributes.*))
+
+.debug
+ *(SORT_BY_ALIGNMENT(.debug))
+
+.line
+ *(SORT_BY_ALIGNMENT(.line))
+
+.debug_srcinfo
+ *(SORT_BY_ALIGNMENT(.debug_srcinfo))
+
+.debug_sfnames
+ *(SORT_BY_ALIGNMENT(.debug_sfnames))
+
+.debug_aranges  0x0000000000000000       0x90
+ *(SORT_BY_ALIGNMENT(.debug_aranges))
+ .debug_aranges
+                0x0000000000000000       0x30 /usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libubi.a(libubi.o)
+ .debug_aranges
+                0x0000000000000030       0x30 /usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libmtd.a(libmtd.o)
+ .debug_aranges
+                0x0000000000000060       0x30 /usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libmtd.a(libmtd_legacy.o)
+
+.debug_pubnames
+ *(SORT_BY_ALIGNMENT(.debug_pubnames))
+
+.debug_info     0x0000000000000000    0x11438
+ *(SORT_BY_ALIGNMENT(.debug_info) SORT_BY_ALIGNMENT(.gnu.linkonce.wi.*))
+ .debug_info    0x0000000000000000     0x6dd0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libubi.a(libubi.o)
+ .debug_info    0x0000000000006dd0     0x7d49 /usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libmtd.a(libmtd.o)
+ .debug_info    0x000000000000eb19     0x291f /usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libmtd.a(libmtd_legacy.o)
+
+.debug_abbrev   0x0000000000000000      0xf95
+ *(SORT_BY_ALIGNMENT(.debug_abbrev))
+ .debug_abbrev  0x0000000000000000      0x579 /usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libubi.a(libubi.o)
+ .debug_abbrev  0x0000000000000579      0x5b8 /usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libmtd.a(libmtd.o)
+ .debug_abbrev  0x0000000000000b31      0x464 /usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libmtd.a(libmtd_legacy.o)
+
+.debug_line     0x0000000000000000     0x6add
+ *(SORT_BY_ALIGNMENT(.debug_line) SORT_BY_ALIGNMENT(.debug_line.*) SORT_BY_ALIGNMENT(.debug_line_end))
+ .debug_line    0x0000000000000000     0x29c2 /usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libubi.a(libubi.o)
+ .debug_line    0x00000000000029c2     0x2fc5 /usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libmtd.a(libmtd.o)
+ .debug_line    0x0000000000005987     0x1156 /usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libmtd.a(libmtd_legacy.o)
+
+.debug_frame
+ *(SORT_BY_ALIGNMENT(.debug_frame))
+
+.debug_str      0x0000000000000000     0x1209
+ *(SORT_BY_ALIGNMENT(.debug_str))
+ .debug_str     0x0000000000000000      0xbbf /usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libubi.a(libubi.o)
+                                        0xdb2 (size before relaxing)
+ .debug_str     0x0000000000000bbf      0x546 /usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libmtd.a(libmtd.o)
+                                        0xd4a (size before relaxing)
+ .debug_str     0x0000000000001105      0x104 /usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libmtd.a(libmtd_legacy.o)
+                                        0x919 (size before relaxing)
+
+.debug_loc      0x0000000000000000    0x13d44
+ *(SORT_BY_ALIGNMENT(.debug_loc))
+ .debug_loc     0x0000000000000000     0x7c36 /usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libubi.a(libubi.o)
+ .debug_loc     0x0000000000007c36     0xa209 /usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libmtd.a(libmtd.o)
+ .debug_loc     0x0000000000011e3f     0x1f05 /usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libmtd.a(libmtd_legacy.o)
+
+.debug_macinfo
+ *(SORT_BY_ALIGNMENT(.debug_macinfo))
+
+.debug_weaknames
+ *(SORT_BY_ALIGNMENT(.debug_weaknames))
+
+.debug_funcnames
+ *(SORT_BY_ALIGNMENT(.debug_funcnames))
+
+.debug_typenames
+ *(SORT_BY_ALIGNMENT(.debug_typenames))
+
+.debug_varnames
+ *(SORT_BY_ALIGNMENT(.debug_varnames))
+
+.debug_pubtypes
+ *(SORT_BY_ALIGNMENT(.debug_pubtypes))
+
+.debug_ranges   0x0000000000000000     0x48c0
+ *(SORT_BY_ALIGNMENT(.debug_ranges))
+ .debug_ranges  0x0000000000000000     0x1ac0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libubi.a(libubi.o)
+ .debug_ranges  0x0000000000001ac0     0x2290 /usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libmtd.a(libmtd.o)
+ .debug_ranges  0x0000000000003d50      0xb70 /usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/libmtd.a(libmtd_legacy.o)
+
+.debug_macro
+ *(SORT_BY_ALIGNMENT(.debug_macro))
+
+.debug_addr
+ *(SORT_BY_ALIGNMENT(.debug_addr))
+
+.ARM.attributes
+ *(SORT_BY_ALIGNMENT(.ARM.attributes))
+ *(SORT_BY_ALIGNMENT(.gnu.attributes))
+
+.note.gnu.arm.ident
+ *(SORT_BY_ALIGNMENT(.note.gnu.arm.ident))
+
+/DISCARD/
+ *(SORT_BY_ALIGNMENT(.note.GNU-stack))
+ *(SORT_BY_ALIGNMENT(.gnu_debuglink))
+ *(SORT_BY_ALIGNMENT(.gnu.lto_*))
+OUTPUT(swupdate_unstripped elf64-littleaarch64)
+LOAD linker stubs

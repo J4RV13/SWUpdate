@@ -1,0 +1,1 @@
+cmd_handlers/built-in.o :=  cc  -nostdlib  -r -o handlers/built-in.o handlers/dummy_handler.o handlers/chain_handler.o handlers/archive_handler.o handlers/boot_handler.o handlers/copy_handler.o handlers/flash_handler.o handlers/raw_handler.o handlers/shell_scripthandler.o

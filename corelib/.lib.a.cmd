@@ -1,0 +1,1 @@
+cmd_corelib/lib.a := rm -f corelib/lib.a; ar rcs corelib/lib.a corelib/channel_curl.o corelib/downloader.o corelib/lua_compat.o corelib/lua_interface.o corelib/mtd-interface.o corelib/multipart_parser.o corelib/parsing_library_libconfig.o corelib/parsing_library_libjson.o corelib/swupdate_settings.o

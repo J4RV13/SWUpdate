@@ -1,0 +1,31 @@
+# SPDX-FileCopyrightText: 2021 Siemens AG
+#
+# SPDX-License-Identifier: MIT
+
+ubuntu-focal:
+  image: ubuntu:focal
+  stage: build
+  before_script:
+    - ./ci/setup.sh
+    - ./ci/install-src-deps.sh
+  script:
+    - if [ $CI_COMMIT_BRANCH == "coverity_scan" ]; then ./ci/coverity.sh;fi
+    - ./ci/test-configs.sh
+
+ubuntu-jammy:
+  image: ubuntu:jammy
+  stage: build
+  before_script:
+    - ./ci/setup.sh
+    - ./ci/install-src-deps.sh
+  script:
+    - ./ci/test-configs.sh
+
+reuse:
+  needs: []
+  stage: test
+  image:
+    name: fsfe/reuse:latest
+    entrypoint: [""]
+  script:
+    - reuse lint

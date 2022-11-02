@@ -1,0 +1,497 @@
+
+As-needed library included to satisfy reference by file (symbol)
+
+libc.so.6                     ipc/built-in.o (socket@@GLIBC_2.17)
+ld-linux-aarch64.so.1         ipc/built-in.o (__stack_chk_guard@@GLIBC_2.17)
+
+Discarded input sections
+
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/crtbeginS.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/crtbeginS.o
+ .text          0x0000000000000000        0x0 ipc/built-in.o
+ .data          0x0000000000000000        0x0 ipc/built-in.o
+ .bss           0x0000000000000000        0x0 ipc/built-in.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 ipc/built-in.o
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/crtendS.o
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/crtendS.o
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/crtendS.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/crtendS.o
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crtn.o
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crtn.o
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crtn.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o
+LOAD /usr/lib/gcc/aarch64-linux-gnu/9/crtbeginS.o
+START GROUP
+LOAD ipc/built-in.o
+END GROUP
+LOAD /usr/lib/gcc/aarch64-linux-gnu/9/libgcc.a
+LOAD /usr/lib/gcc/aarch64-linux-gnu/9/libgcc_eh.a
+LOAD /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/libc.so
+START GROUP
+LOAD /lib/aarch64-linux-gnu/libc.so.6
+LOAD /usr/lib/aarch64-linux-gnu/libc_nonshared.a
+LOAD /lib/aarch64-linux-gnu/ld-linux-aarch64.so.1
+END GROUP
+LOAD /usr/lib/gcc/aarch64-linux-gnu/9/libgcc.a
+LOAD /usr/lib/gcc/aarch64-linux-gnu/9/libgcc_eh.a
+LOAD /usr/lib/gcc/aarch64-linux-gnu/9/crtendS.o
+LOAD /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crtn.o
+                0x00000000000001c8                . = (SEGMENT_START ("text-segment", 0x0) + SIZEOF_HEADERS)
+
+.note.gnu.build-id
+                0x00000000000001c8       0x24
+ *(SORT_BY_ALIGNMENT(.note.gnu.build-id))
+ .note.gnu.build-id
+                0x00000000000001c8       0x24 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o
+
+.hash
+ *(SORT_BY_ALIGNMENT(.hash))
+
+.gnu.hash       0x00000000000001f0       0xbc
+ *(SORT_BY_ALIGNMENT(.gnu.hash))
+ .gnu.hash      0x00000000000001f0       0xbc /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o
+
+.dynsym         0x00000000000002b0      0x5d0
+ *(SORT_BY_ALIGNMENT(.dynsym))
+ .dynsym        0x00000000000002b0      0x5d0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o
+
+.dynstr         0x0000000000000880      0x379
+ *(SORT_BY_ALIGNMENT(.dynstr))
+ .dynstr        0x0000000000000880      0x379 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o
+
+.gnu.version    0x0000000000000bfa       0x7c
+ *(SORT_BY_ALIGNMENT(.gnu.version))
+ .gnu.version   0x0000000000000bfa       0x7c /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o
+
+.gnu.version_d  0x0000000000000c78        0x0
+ *(SORT_BY_ALIGNMENT(.gnu.version_d))
+ .gnu.version_d
+                0x0000000000000c78        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o
+
+.gnu.version_r  0x0000000000000c78       0x40
+ *(SORT_BY_ALIGNMENT(.gnu.version_r))
+ .gnu.version_r
+                0x0000000000000c78       0x40 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o
+
+.rela.dyn       0x0000000000000cb8      0x138
+ *(SORT_BY_ALIGNMENT(.rela.init))
+ *(SORT_BY_ALIGNMENT(.rela.text) SORT_BY_ALIGNMENT(.rela.text.*) SORT_BY_ALIGNMENT(.rela.gnu.linkonce.t.*))
+ *(SORT_BY_ALIGNMENT(.rela.fini))
+ *(SORT_BY_ALIGNMENT(.rela.rodata) SORT_BY_ALIGNMENT(.rela.rodata.*) SORT_BY_ALIGNMENT(.rela.gnu.linkonce.r.*))
+ *(SORT_BY_ALIGNMENT(.rela.data) SORT_BY_ALIGNMENT(.rela.data.*) SORT_BY_ALIGNMENT(.rela.gnu.linkonce.d.*))
+ .rela.data.rel.local
+                0x0000000000000cb8       0x18 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o
+ .rela.data.rel.local.SOCKET_CTRL_PATH
+                0x0000000000000cd0       0x18 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o
+ .rela.data.rel.local.SOCKET_PROGRESS_PATH
+                0x0000000000000ce8       0x18 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o
+ *(SORT_BY_ALIGNMENT(.rela.tdata) SORT_BY_ALIGNMENT(.rela.tdata.*) SORT_BY_ALIGNMENT(.rela.gnu.linkonce.td.*))
+ *(SORT_BY_ALIGNMENT(.rela.tbss) SORT_BY_ALIGNMENT(.rela.tbss.*) SORT_BY_ALIGNMENT(.rela.gnu.linkonce.tb.*))
+ *(SORT_BY_ALIGNMENT(.rela.ctors))
+ *(SORT_BY_ALIGNMENT(.rela.dtors))
+ *(SORT_BY_ALIGNMENT(.rela.got))
+ .rela.got      0x0000000000000d00       0xc0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o
+ *(SORT_BY_ALIGNMENT(.rela.bss) SORT_BY_ALIGNMENT(.rela.bss.*) SORT_BY_ALIGNMENT(.rela.gnu.linkonce.b.*))
+ *(SORT_BY_ALIGNMENT(.rela.ifunc))
+ .rela.ifunc    0x0000000000000dc0        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o
+ .rela.fini_array
+                0x0000000000000dc0       0x18 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o
+ .rela.init_array
+                0x0000000000000dd8       0x18 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o
+
+.rela.plt       0x0000000000000df0      0x3d8
+ *(SORT_BY_ALIGNMENT(.rela.plt))
+ .rela.plt      0x0000000000000df0      0x3d8 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o
+ *(SORT_BY_ALIGNMENT(.rela.iplt))
+
+.init           0x00000000000011c8       0x14
+ *(SORT_NONE(.init))
+ .init          0x00000000000011c8        0xc /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o
+                0x00000000000011c8                _init
+ .init          0x00000000000011d4        0x8 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crtn.o
+
+.plt            0x00000000000011e0      0x2b0
+ *(SORT_BY_ALIGNMENT(.plt))
+ .plt           0x00000000000011e0      0x2b0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o
+ *(SORT_BY_ALIGNMENT(.iplt))
+
+.text           0x0000000000001490      0xfc8
+ *(SORT_BY_ALIGNMENT(.text.unlikely) SORT_BY_ALIGNMENT(.text.*_unlikely) SORT_BY_ALIGNMENT(.text.unlikely.*))
+ *(SORT_BY_ALIGNMENT(.text.exit) SORT_BY_ALIGNMENT(.text.exit.*))
+ *(SORT_BY_ALIGNMENT(.text.startup) SORT_BY_ALIGNMENT(.text.startup.*))
+ *(SORT_BY_ALIGNMENT(.text.hot) SORT_BY_ALIGNMENT(.text.hot.*))
+ *(SORT_BY_NAME(SORT_BY_ALIGNMENT(.text.sorted.*)))
+ *(SORT_BY_ALIGNMENT(.text) SORT_BY_ALIGNMENT(.stub) SORT_BY_ALIGNMENT(.text.*) SORT_BY_ALIGNMENT(.gnu.linkonce.t.*))
+ .text          0x0000000000001490       0xbc /usr/lib/gcc/aarch64-linux-gnu/9/crtbeginS.o
+ .text          0x000000000000154c       0x14 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o
+ .text.__ipc_get_status
+                0x0000000000001560      0x154 ipc/built-in.o
+ .text.get_ctrl_socket
+                0x00000000000016b4       0x70 ipc/built-in.o
+                0x00000000000016b4                get_ctrl_socket
+ .text.prepare_ipc
+                0x0000000000001724       0xb0 ipc/built-in.o
+ .text.ipc_postupdate
+                0x00000000000017d4      0x170 ipc/built-in.o
+                0x00000000000017d4                ipc_postupdate
+ .text.ipc_get_status
+                0x0000000000001944       0x48 ipc/built-in.o
+                0x0000000000001944                ipc_get_status
+ .text.ipc_get_status_timeout
+                0x000000000000198c       0x60 ipc/built-in.o
+                0x000000000000198c                ipc_get_status_timeout
+ .text.ipc_notify_connect
+                0x00000000000019ec       0xf4 ipc/built-in.o
+                0x00000000000019ec                ipc_notify_connect
+ .text.ipc_notify_receive
+                0x0000000000001ae0       0xa4 ipc/built-in.o
+                0x0000000000001ae0                ipc_notify_receive
+ .text.ipc_inst_start_ext
+                0x0000000000001b84      0x110 ipc/built-in.o
+                0x0000000000001b84                ipc_inst_start_ext
+ .text.ipc_inst_start
+                0x0000000000001c94        0xc ipc/built-in.o
+                0x0000000000001c94                ipc_inst_start
+ .text.ipc_send_data
+                0x0000000000001ca0       0x5c ipc/built-in.o
+                0x0000000000001ca0                ipc_send_data
+ .text.ipc_end  0x0000000000001cfc        0x4 ipc/built-in.o
+                0x0000000000001cfc                ipc_end
+ .text.ipc_wait_for_complete
+                0x0000000000001d00       0xe8 ipc/built-in.o
+                0x0000000000001d00                ipc_wait_for_complete
+ .text.ipc_send_cmd
+                0x0000000000001de8       0x74 ipc/built-in.o
+                0x0000000000001de8                ipc_send_cmd
+ .text.swupdate_async_start
+                0x0000000000001e5c      0x11c ipc/built-in.o
+                0x0000000000001e5c                swupdate_async_start
+ .text.swupdate_image_write
+                0x0000000000001f78       0x14 ipc/built-in.o
+                0x0000000000001f78                swupdate_image_write
+ .text.swupdate_async_thread
+                0x0000000000001f8c      0x124 ipc/built-in.o
+ .text.swupdate_set_aes
+                0x00000000000020b0       0xe0 ipc/built-in.o
+                0x00000000000020b0                swupdate_set_aes
+ .text.swupdate_set_version_range
+                0x0000000000002190       0xc4 ipc/built-in.o
+                0x0000000000002190                swupdate_set_version_range
+ .text.swupdate_prepare_req
+                0x0000000000002254       0x30 ipc/built-in.o
+                0x0000000000002254                swupdate_prepare_req
+ .text._progress_ipc_connect
+                0x0000000000002284       0xec ipc/built-in.o
+ .text.get_prog_socket
+                0x0000000000002370       0x78 ipc/built-in.o
+                0x0000000000002370                get_prog_socket
+ .text.progress_ipc_connect_with_path
+                0x00000000000023e8        0x4 ipc/built-in.o
+                0x00000000000023e8                progress_ipc_connect_with_path
+ .text.progress_ipc_connect
+                0x00000000000023ec       0x18 ipc/built-in.o
+                0x00000000000023ec                progress_ipc_connect
+ .text.progress_ipc_receive
+                0x0000000000002404       0x54 ipc/built-in.o
+                0x0000000000002404                progress_ipc_receive
+ *(SORT_BY_ALIGNMENT(.gnu.warning))
+
+.fini           0x0000000000002458       0x10
+ *(SORT_NONE(.fini))
+ .fini          0x0000000000002458        0x8 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o
+                0x0000000000002458                _fini
+ .fini          0x0000000000002460        0x8 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crtn.o
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+
+.rodata         0x0000000000002468      0x108
+ *(SORT_BY_ALIGNMENT(.rodata) SORT_BY_ALIGNMENT(.rodata.*) SORT_BY_ALIGNMENT(.gnu.linkonce.r.*))
+ .rodata.get_ctrl_socket.str1.1
+                0x0000000000002468       0x24 ipc/built-in.o
+                                         0x31 (size before relaxing)
+ .rodata.ipc_notify_connect.str1.1
+                0x000000000000248c       0x26 ipc/built-in.o
+ .rodata.ipc_notify_receive.str1.1
+                0x00000000000024b2       0x3c ipc/built-in.o
+ .rodata.str1.1
+                0x00000000000024ee       0x3c ipc/built-in.o
+                                          0x2 (size before relaxing)
+ .rodata.swupdate_async_start.str1.1
+                0x00000000000024ee       0x1b ipc/built-in.o
+ .rodata.swupdate_async_thread.str1.1
+                0x0000000000002509       0x2c ipc/built-in.o
+ .rodata._progress_ipc_connect.str1.1
+                0x0000000000002535       0x29 ipc/built-in.o
+ .rodata.get_prog_socket.str1.1
+                0x000000000000255e       0x12 ipc/built-in.o
+                                         0x31 (size before relaxing)
+
+.rodata1
+ *(SORT_BY_ALIGNMENT(.rodata1))
+
+.eh_frame_hdr   0x0000000000002570       0x2c
+ *(SORT_BY_ALIGNMENT(.eh_frame_hdr))
+ .eh_frame_hdr  0x0000000000002570       0x2c /usr/lib/gcc/aarch64-linux-gnu/9/crtbeginS.o
+                0x0000000000002570                __GNU_EH_FRAME_HDR
+ *(SORT_BY_ALIGNMENT(.eh_frame_entry) SORT_BY_ALIGNMENT(.eh_frame_entry.*))
+
+.eh_frame       0x00000000000025a0       0x78
+ *(SORT_BY_ALIGNMENT(.eh_frame))
+ .eh_frame      0x00000000000025a0       0x74 /usr/lib/gcc/aarch64-linux-gnu/9/crtbeginS.o
+                                         0x78 (size before relaxing)
+ .eh_frame      0x0000000000002614        0x4 /usr/lib/gcc/aarch64-linux-gnu/9/crtendS.o
+ *(SORT_BY_ALIGNMENT(.eh_frame.*))
+
+.gcc_except_table
+ *(SORT_BY_ALIGNMENT(.gcc_except_table) SORT_BY_ALIGNMENT(.gcc_except_table.*))
+
+.gnu_extab
+ *(SORT_BY_ALIGNMENT(.gnu_extab*))
+
+.exception_ranges
+ *(SORT_BY_ALIGNMENT(.exception_ranges*))
+                0x0000000000012db0                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(SORT_BY_ALIGNMENT(.eh_frame))
+ *(SORT_BY_ALIGNMENT(.eh_frame.*))
+
+.gnu_extab
+ *(SORT_BY_ALIGNMENT(.gnu_extab))
+
+.gcc_except_table
+ *(SORT_BY_ALIGNMENT(.gcc_except_table) SORT_BY_ALIGNMENT(.gcc_except_table.*))
+
+.exception_ranges
+ *(SORT_BY_ALIGNMENT(.exception_ranges*))
+
+.tdata
+ *(SORT_BY_ALIGNMENT(.tdata) SORT_BY_ALIGNMENT(.tdata.*) SORT_BY_ALIGNMENT(.gnu.linkonce.td.*))
+
+.tbss
+ *(SORT_BY_ALIGNMENT(.tbss) SORT_BY_ALIGNMENT(.tbss.*) SORT_BY_ALIGNMENT(.gnu.linkonce.tb.*))
+ *(SORT_BY_ALIGNMENT(.tcommon))
+
+.preinit_array
+ *(SORT_BY_ALIGNMENT(.preinit_array))
+
+.init_array     0x0000000000012db0        0x8
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(SORT_BY_ALIGNMENT(.init_array) SORT_BY_ALIGNMENT(EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors))
+ .init_array    0x0000000000012db0        0x8 /usr/lib/gcc/aarch64-linux-gnu/9/crtbeginS.o
+
+.fini_array     0x0000000000012db8        0x8
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(SORT_BY_ALIGNMENT(.fini_array) SORT_BY_ALIGNMENT(EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors))
+ .fini_array    0x0000000000012db8        0x8 /usr/lib/gcc/aarch64-linux-gnu/9/crtbeginS.o
+
+.ctors
+ *crtbegin.o(SORT_BY_ALIGNMENT(.ctors))
+ *crtbegin?.o(SORT_BY_ALIGNMENT(.ctors))
+ *(SORT_BY_ALIGNMENT(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors))
+ *(SORT_BY_NAME(SORT_BY_ALIGNMENT(.ctors.*)))
+ *(SORT_BY_ALIGNMENT(.ctors))
+
+.dtors
+ *crtbegin.o(SORT_BY_ALIGNMENT(.dtors))
+ *crtbegin?.o(SORT_BY_ALIGNMENT(.dtors))
+ *(SORT_BY_ALIGNMENT(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors))
+ *(SORT_BY_NAME(SORT_BY_ALIGNMENT(.dtors.*)))
+ *(SORT_BY_ALIGNMENT(.dtors))
+
+.jcr
+ *(SORT_BY_ALIGNMENT(.jcr))
+
+.data.rel.ro    0x0000000000012dc0        0x0
+ *(SORT_BY_ALIGNMENT(.data.rel.ro.local*) SORT_BY_ALIGNMENT(.gnu.linkonce.d.rel.ro.local.*))
+ *(SORT_BY_ALIGNMENT(.data.rel.ro) SORT_BY_ALIGNMENT(.data.rel.ro.*) SORT_BY_ALIGNMENT(.gnu.linkonce.d.rel.ro.*))
+ .data.rel.ro   0x0000000000012dc0        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o
+
+.dynamic        0x0000000000012dc0      0x1e0
+ *(SORT_BY_ALIGNMENT(.dynamic))
+ .dynamic       0x0000000000012dc0      0x1e0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o
+                0x0000000000012dc0                _DYNAMIC
+
+.got            0x0000000000012fa0       0x48
+ *(SORT_BY_ALIGNMENT(.got))
+ .got           0x0000000000012fa0       0x48 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o
+                0x0000000000012fa0                _GLOBAL_OFFSET_TABLE_
+ *(SORT_BY_ALIGNMENT(.igot))
+                0x0000000000012fe8                . = DATA_SEGMENT_RELRO_END (., 0x18)
+
+.got.plt        0x0000000000012fe8      0x160
+ *(SORT_BY_ALIGNMENT(.got.plt))
+ .got.plt       0x0000000000012fe8      0x160 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o
+ *(SORT_BY_ALIGNMENT(.igot.plt))
+
+.data           0x0000000000013148       0x18
+                [!provide]                        PROVIDE (__data_start = .)
+ *(SORT_BY_ALIGNMENT(.data) SORT_BY_ALIGNMENT(.data.*) SORT_BY_ALIGNMENT(.gnu.linkonce.d.*))
+ .data.rel.local
+                0x0000000000013148        0x8 /usr/lib/gcc/aarch64-linux-gnu/9/crtbeginS.o
+                0x0000000000013148                __dso_handle
+ .data.rel.local.SOCKET_CTRL_PATH
+                0x0000000000013150        0x8 ipc/built-in.o
+ .data.rel.local.SOCKET_PROGRESS_PATH
+                0x0000000000013158        0x8 ipc/built-in.o
+                0x0000000000013158                SOCKET_PROGRESS_PATH
+
+.tm_clone_table
+                0x0000000000013160        0x0
+ .tm_clone_table
+                0x0000000000013160        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/crtbeginS.o
+ .tm_clone_table
+                0x0000000000013160        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/crtendS.o
+
+.data1
+ *(SORT_BY_ALIGNMENT(.data1))
+                [!provide]                        PROVIDE (_edata = .)
+                [!provide]                        PROVIDE (edata = .)
+                0x0000000000013160                . = .
+                [!provide]                        PROVIDE (__bss_start = .)
+                [!provide]                        PROVIDE (__bss_start__ = .)
+
+.bss            0x0000000000013160       0x30
+ *(SORT_BY_ALIGNMENT(.dynbss))
+ .dynbss        0x0000000000013160        0x0 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o
+ *(SORT_BY_ALIGNMENT(.bss) SORT_BY_ALIGNMENT(.bss.*) SORT_BY_ALIGNMENT(.gnu.linkonce.b.*))
+ .bss.async_thread_id
+                0x0000000000013160        0x8 ipc/built-in.o
+ .bss.request   0x0000000000013168       0x20 ipc/built-in.o
+ .bss.running   0x0000000000013188        0x4 ipc/built-in.o
+ .bss           0x000000000001318c        0x1 /usr/lib/gcc/aarch64-linux-gnu/9/crtbeginS.o
+ *(SORT_BY_ALIGNMENT(COMMON))
+                0x0000000000013190                . = ALIGN ((. != 0x0)?0x8:0x1)
+ *fill*         0x000000000001318d        0x3 
+                [!provide]                        PROVIDE (_bss_end__ = .)
+                [!provide]                        PROVIDE (__bss_end__ = .)
+                0x0000000000013190                . = ALIGN (0x8)
+                0x0000000000013190                . = SEGMENT_START ("ldata-segment", .)
+                0x0000000000013190                . = ALIGN (0x8)
+                [!provide]                        PROVIDE (__end__ = .)
+                [!provide]                        PROVIDE (_end = .)
+                [!provide]                        PROVIDE (end = .)
+                0x0000000000013190                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(SORT_BY_ALIGNMENT(.stab))
+
+.stabstr
+ *(SORT_BY_ALIGNMENT(.stabstr))
+
+.stab.excl
+ *(SORT_BY_ALIGNMENT(.stab.excl))
+
+.stab.exclstr
+ *(SORT_BY_ALIGNMENT(.stab.exclstr))
+
+.stab.index
+ *(SORT_BY_ALIGNMENT(.stab.index))
+
+.stab.indexstr
+ *(SORT_BY_ALIGNMENT(.stab.indexstr))
+
+.comment        0x0000000000000000       0x2b
+ *(SORT_BY_ALIGNMENT(.comment))
+ .comment       0x0000000000000000       0x2b /usr/lib/gcc/aarch64-linux-gnu/9/crtbeginS.o
+                                         0x2c (size before relaxing)
+ .comment       0x000000000000002b       0x84 ipc/built-in.o
+ .comment       0x000000000000002b       0x2c /usr/lib/gcc/aarch64-linux-gnu/9/crtendS.o
+
+.gnu.build.attributes
+ *(SORT_BY_ALIGNMENT(.gnu.build.attributes) SORT_BY_ALIGNMENT(.gnu.build.attributes.*))
+
+.debug
+ *(SORT_BY_ALIGNMENT(.debug))
+
+.line
+ *(SORT_BY_ALIGNMENT(.line))
+
+.debug_srcinfo
+ *(SORT_BY_ALIGNMENT(.debug_srcinfo))
+
+.debug_sfnames
+ *(SORT_BY_ALIGNMENT(.debug_sfnames))
+
+.debug_aranges
+ *(SORT_BY_ALIGNMENT(.debug_aranges))
+
+.debug_pubnames
+ *(SORT_BY_ALIGNMENT(.debug_pubnames))
+
+.debug_info
+ *(SORT_BY_ALIGNMENT(.debug_info) SORT_BY_ALIGNMENT(.gnu.linkonce.wi.*))
+
+.debug_abbrev
+ *(SORT_BY_ALIGNMENT(.debug_abbrev))
+
+.debug_line
+ *(SORT_BY_ALIGNMENT(.debug_line) SORT_BY_ALIGNMENT(.debug_line.*) SORT_BY_ALIGNMENT(.debug_line_end))
+
+.debug_frame
+ *(SORT_BY_ALIGNMENT(.debug_frame))
+
+.debug_str
+ *(SORT_BY_ALIGNMENT(.debug_str))
+
+.debug_loc
+ *(SORT_BY_ALIGNMENT(.debug_loc))
+
+.debug_macinfo
+ *(SORT_BY_ALIGNMENT(.debug_macinfo))
+
+.debug_weaknames
+ *(SORT_BY_ALIGNMENT(.debug_weaknames))
+
+.debug_funcnames
+ *(SORT_BY_ALIGNMENT(.debug_funcnames))
+
+.debug_typenames
+ *(SORT_BY_ALIGNMENT(.debug_typenames))
+
+.debug_varnames
+ *(SORT_BY_ALIGNMENT(.debug_varnames))
+
+.debug_pubtypes
+ *(SORT_BY_ALIGNMENT(.debug_pubtypes))
+
+.debug_ranges
+ *(SORT_BY_ALIGNMENT(.debug_ranges))
+
+.debug_macro
+ *(SORT_BY_ALIGNMENT(.debug_macro))
+
+.debug_addr
+ *(SORT_BY_ALIGNMENT(.debug_addr))
+
+.ARM.attributes
+ *(SORT_BY_ALIGNMENT(.ARM.attributes))
+ *(SORT_BY_ALIGNMENT(.gnu.attributes))
+
+.note.gnu.arm.ident
+ *(SORT_BY_ALIGNMENT(.note.gnu.arm.ident))
+
+/DISCARD/
+ *(SORT_BY_ALIGNMENT(.note.GNU-stack))
+ *(SORT_BY_ALIGNMENT(.gnu_debuglink))
+ *(SORT_BY_ALIGNMENT(.gnu.lto_*))
+OUTPUT(libswupdate.so.0.1 elf64-littleaarch64)
+LOAD linker stubs

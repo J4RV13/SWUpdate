@@ -1,0 +1,30 @@
+# SPDX-FileCopyrightText: 2013 Stefano Babic <sbabic@denx.de>
+#
+# SPDX-License-Identifier: GPL-2.0-only
+
+# ==========================================================================
+# Build system
+# ==========================================================================
+
+help:
+	@echo 'Cleaning:'
+	@echo '  clean			- delete temporary files created by build'
+	@echo '  distclean		- delete all non-source files (including .config)'
+	@echo
+	@echo 'Build:'
+	@echo '  all			- Executable'
+	@echo '  swupdate		- software updater executable'
+	@echo
+	@echo 'Configuration:'
+	@echo '  allnoconfig		- disable all symbols in .config'
+	@echo '  allyesconfig		- enable all symbols in .config'
+	@echo '  config		- text based configurator (of last resort)'
+	@echo '  menuconfig		- interactive curses-based configurator'
+	@echo '  oldconfig		- resolve any unresolved symbols in .config'
+	@echo
+	@echo 'Development:'
+	@echo '  randconfig		- generate a random configuration'
+	@echo '  tests			- build and run tests for current configuration'
+	@echo
+	@echo 'Documentation:'
+	@$(MAKE) -f $(srctree)/doc/Makefile help
